@@ -84,7 +84,7 @@
     --fw-bold: 700;
 
     /* Layout */
-    --site-margin: 10vw;
+    --site-margin: 6rem;
 
     /* Effects */
     --radius: 16px;
@@ -92,7 +92,7 @@
     --transition: 0.3s ease;
 
     /* Header */
-    --header-height: 84px;
+    --header-height: 90px;
 
     /* Stock ticker */
     --stock-scroll-speed: 30s; /* normal speed */
@@ -159,7 +159,7 @@ p {
 .site-name {
     font-size: var(--fs-xl);
     color: var(--text-light);
-    margin: 1rem 0;
+    margin: 0.5rem 0;
 }
 
 .site-header-first-section {
@@ -180,6 +180,7 @@ p {
 .site-header-first-section-left a {
     color: var(--text-light);
     text-decoration: none;
+    font-size: var(--fs-sm);
     font-weight: var(--fw-semibold);
 }
 
@@ -194,29 +195,6 @@ p {
     cursor: default;
 }
 
-#sign-up-link {
-    color: var(--header-bg);
-    background-color: var(--bg);
-    border-radius: var(--radius-sm);
-    padding: 0.5rem 1rem;
-}
-
-#sign-up-link:hover {
-    background-color: var(--card);
-    transition: background-color var(--transition);
-}
-
-.nav a {
-    color: var(--text-light);
-    margin-left: 1.2rem;
-    transition: color var(--transition);
-}
-
-.nav a:hover {
-    color: var(--accent);
-    padding: 0.5rem 1rem;
-}
-
 .header-search-form {
     display: flex;
     align-items: center;
@@ -225,7 +203,7 @@ p {
 
 .header-search-form input {
     width: 20rem;
-    height: 2.5rem;
+    height: 2rem;
     padding: 0.5rem 1rem;
     border: none;
     background: var(--accent);
@@ -248,17 +226,45 @@ p {
 }
 
 .header-search-button {
-    height: 2.5rem;
+    height: 2rem;
     background: var(--accent);
     color: var(--text-light);
     border: none;
-    padding: 0.5rem;
+    padding-top: 0.3rem;
     cursor: pointer;
     transition: background var(--transition);
 }
 
 .header-search-button:hover {
     background: var(--accent-hover);
+}
+
+#sign-up-link {
+    color: var(--header-bg);
+    background-color: var(--bg);
+    border-radius: var(--radius-sm);
+    padding: 0.3rem 0.5rem;
+}
+
+#sign-up-link:hover {
+    background-color: var(--card);
+    transition: background-color var(--transition);
+}
+
+.nav {
+    font-size: var(--fs-sm);
+    padding-bottom: 1rem;
+/* margin: 1rem 0; */
+}
+
+.nav a {
+    color: var(--text-light);
+    transition: color var(--transition);
+}
+
+.nav a:hover {
+    color: var(--accent);
+    padding: 0.5rem 1rem;
 }
 
 /* Stock Ticker
@@ -366,11 +372,9 @@ p {
 .quick-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    flex-direction: row;
     justify-content: space-between;
     margin: 1rem var(--site-margin);
-    font-size: var(--fs-lg);
+    font-size: var(--fs-md);
     font-weight: var(--fw-semibold);
 }
 
