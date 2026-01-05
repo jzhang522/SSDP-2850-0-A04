@@ -24,7 +24,7 @@
     /* Core surfaces */
     --bg: #ffffff;
     --navbar: #f3f4f6; 
-    --card: #f8fafc; 
+    --card: #f0f0f0; 
     --surface: #eef2f7;
     
     /* Header */
@@ -37,8 +37,8 @@
     --subtle: #9ca3af; 
 
     /* Brand / accent */
-    --accent: #0052cc; 
-    --accent-hover: #003d99; 
+    --accent: #003d99; 
+    --accent-hover: #0052cc;
 
     /* Market colors */
     --up: #16a34a;
@@ -57,7 +57,9 @@
     --ticker-bg: #0b1320; /* dark ticker strip */
     --ticker-text: #ffffff;
     --ticker-up: #22c55e;
+    --ticker-up-hover: #16a34a;
     --ticker-down: #ef4444;
+    --ticker-down-hover: #b91c1c;
 
     /* Focus / accessibility */
     --focus: #2563eb;
@@ -75,10 +77,11 @@
     --fs-xxl: 2.5rem;
 
     /* Layout */
-    --site-margin: ;
+    --site-margin: 10vw;
 
     /* Effects */
     --radius: 16px;
+    --radius-sm: 8px;
     --transition: 0.3s ease;
 
     /* Header */
@@ -162,6 +165,48 @@ p {
     color: var(--accent);
 }
 
+.header-search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-search-form input {
+    width: 20rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: var(--accent);
+    color: var(--text-light);
+}
+
+.header-search-form input::placeholder {
+    color: var(--text-light);
+}
+
+.header-search-form input:hover {
+    background: var(--accent-hover);
+    transition: background var(--transition);
+    border: 2px solid var(--accent-hover);
+}
+
+.header-search-form input:focus {
+    outline: none;
+    color: var(--text-light);
+}
+
+.header-search-button {
+    background: var(--accent);
+    color: var(--text-light);
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background var(--transition);
+}
+
+.header-search-button:hover {
+    background: var(--accent-hover);
+}
+
 /* Stock Ticker
 --------------------------------------------- */
 
@@ -175,6 +220,8 @@ p {
 }
 
 .stock-tickers {
+    display: flex;
+    width: fit-content;
     --ease: linear;
     animation: scroll 30s var(--ease) infinite;
     transition: --ease 0.5s ease;
@@ -182,28 +229,44 @@ p {
 
 .tickers {
     display: flex;
+    gap: 2rem;
+    flex-shrink: 0;
 }
 
 .ticker-container {
-    text-decoration: none;
+    text-decoration: none;  
     font-size: var(--fs-md);
     font-weight: 600;
-    min-width: 12rem;
-    height: 6rem;
+    min-width: 14rem;
+    min-height: 6rem;
     background: var(--ticker-up);
     color: var(--text-light);
     padding: 10px; 
     margin-right: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; /* top and bottom */
     transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
 }
 
-.ticker-container:hover {
+.ticker-down {
+    background: var(--down);
+}
+
+.ticker-container:hover,
+.ticker-down:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    background: #16a34a; /* Slightly darker green */
+    background: var(--ticker-up-hover);
+}
+
+.ticker-down:hover {
+    background: var(--ticker-down-hover);
+}
+
+.stock-name {
+    font-size: var(--fs-lg);
+    font-weight: 600;
 }
 
 .stock-info {
@@ -227,6 +290,7 @@ p {
 
 .ticker-date {
     text-align: start;
+    font-size: var(--fs-xs);
 }
 
 @keyframes scroll {
@@ -239,9 +303,42 @@ p {
 }
 
 .stock-ticker-container:hover .stock-tickers {
-    /* animation-duration: var(--stock-scroll-speed-hover); */
     animation-play-state: paused;
 }
+
+/* Quick Links
+--------------------------------------------- */
+.quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem var(--site-margin);
+    font-size: var(--fs-lg);
+    font-weight: 600;
+}
+
+.quick-link-title {
+    font-size: var(--fs-lg);
+    padding: 0.5rem 1rem;
+}
+
+.quick-link {
+    text-decoration: none;
+    text-align: center;
+    color: var(--accent);
+    background-color: var(--card);
+    border-radius: var(--radius-sm);
+    width: 8rem;
+    padding: 0.5rem 1rem;
+}
+
+.quick-link:hover {
+    background-color: var(--accent);
+    color: var(--text-light);
+}
+
 
 /* Hero
 --------------------------------------------- */
