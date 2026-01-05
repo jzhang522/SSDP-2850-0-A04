@@ -20,27 +20,55 @@
     <body>
         <!-- Header -->
         <header class="site-header">
-            <h1 class="site-name">Site Name</h1>
-            <search>
-                <form action="" method="GET" class="header-search-form">
-                    <input
-                        type="search"
-                        id="header-search"
-                        name="header-search"
-                        placeholder="Search quotes, news & videos"
-                    />
-                    <button type="submit" aria-label="Search" class="header-search-button">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                </form>
-            </search>
-            <nav class="nav">
-                <a href="#">Tech</a>
-                <a href="#">Business</a>
-                <a href="#">Sports</a>
-            </nav>
+            <div class="site-header-first-section">
+                <h1 class="site-name">Site Name</h1>
+                <div class="site-header-first-section-left">
+                    <search>
+                        <form action="" method="GET" class="header-search-form">
+                            <input
+                                type="search"
+                                id="header-search"
+                                name="header-search"
+                                placeholder="Search quotes, news & videos"
+                            />
+                            <button
+                                type="submit"
+                                aria-label="Search"
+                                class="header-search-button"
+                            >
+                                <!-- AI generated svg icon for search -->
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                        </form>
+                    </search>
+                    <a href="#">WATCHLIST 🔔</a>
+                    <span class="separator">|</span>
+                    <a href="#">SIGN IN</a>
+                    <a href="#" id="sign-up-link">CREATE NEW ACCOUNT </a>
+                </div>
+            </div>
+
+            <div class="site-header-second-section">
+                <nav class="nav">
+                    <a href="#">Tech</a>
+                    <a href="#">Business</a>
+                    <a href="#">Sports</a>
+                </nav>
+            </div>
         </header>
 
         <!-- Stock Ticker -->
