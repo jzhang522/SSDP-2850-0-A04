@@ -41,7 +41,7 @@
     --accent-hover: rgb(0, 82, 204);
 
     /* Market colors */
-    --up: rgb(22, 163, 74);
+    --up: rgb(23, 130, 62);
     --down: rgb(220, 38, 38);
     --neutral: rgb(107, 114, 128);
 
@@ -57,8 +57,8 @@
     /* Ticker specific */
     --ticker-bg: rgb(11, 19, 32); /* dark ticker strip */
     --ticker-text: rgb(255, 255, 255);
-    --ticker-up: rgb(34, 197, 94);
-    --ticker-up-hover: rgb(22, 163, 74);
+    --ticker-up: rgb(23, 130, 62);
+    --ticker-up-hover: rgb(8, 92, 39);
     --ticker-down: rgb(239, 68, 68);
     --ticker-down-hover: rgb(185, 28, 28);
 
