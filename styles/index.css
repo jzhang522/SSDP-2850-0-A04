@@ -143,9 +143,6 @@ p {
 /* Header
 --------------------------------------------- */
 .site-header {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
     background: var(--header-bg);
     position: sticky;
     padding: 0 1rem;
@@ -169,7 +166,7 @@ p {
     align-items: center;
 }
 
-.site-header-first-section-left {
+.site-header-first-section-right {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -177,14 +174,16 @@ p {
     font-size: var(--fs-sm);
 }
 
-.site-header-first-section-left a {
+.site-header-first-section-right a,
+.site-header-second-section-right a {
     color: var(--text-light);
     text-decoration: none;
     font-size: var(--fs-sm);
     font-weight: var(--fw-semibold);
 }
 
-.site-header-first-section-left a:hover {
+.site-header-first-section-right a:hover,
+.site-header-second-section-right a:hover {
     color: var(--underline);
     transition: color var(--transition);
 }
@@ -251,20 +250,78 @@ p {
     transition: background-color var(--transition);
 }
 
-.nav {
-    font-size: var(--fs-sm);
-    padding-bottom: 1rem;
-/* margin: 1rem 0; */
+.site-header-second-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
 }
 
-.nav a {
+.site-header-second-section-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hamburger-menu {
     color: var(--text-light);
+}
+
+.hamburger-menu:hover {
+    color: var(--underline);
     transition: color var(--transition);
 }
 
-.nav a:hover {
-    color: var(--accent);
-    padding: 0.5rem 1rem;
+.nav-list {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.nav-list li > a {
+    text-decoration: none;
+    color: var(--text-light);
+}
+
+.nav-list li > a:hover {
+    /* border-bottom: 5px solid var(--underline); */
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--underline);
+    transition: text-decoration var(--transition);
+}
+
+.join-link {
+    text-decoration: none;
+    font-size: 0.6em;
+    color: var(--underline);
+    margin-left: 0.2em;
+    letter-spacing: 0.5px;
+}
+
+#livestream-link {
+    text-decoration: none;
+}
+
+#livestream-link:hover {
+    color: var(--underline);
+    transition: color var(--transition);
+}
+
+#ca-link {
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 /* Stock Ticker
@@ -295,7 +352,7 @@ p {
 
 .ticker-container {
     text-decoration: none;
-    font-size: var(--fs-md);
+    font-size: var(--fs-sm);
     font-weight: var(--fw-semibold);
     min-width: 14rem;
     min-height: 6rem;
@@ -326,7 +383,7 @@ p {
 }
 
 .stock-name {
-    font-size: var(--fs-lg);
+    font-size: var(--fs-md);
     font-weight: var(--fw-semibold);
 }
 
@@ -372,7 +429,7 @@ p {
 .quick-links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 1.5rem;
     margin: 1rem var(--site-margin);
     font-size: var(--fs-md);
     font-weight: var(--fw-semibold);

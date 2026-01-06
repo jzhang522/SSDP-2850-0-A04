@@ -22,7 +22,7 @@
         <header class="site-header">
             <div class="site-header-first-section">
                 <h1 class="site-name">Site Name</h1>
-                <div class="site-header-first-section-left">
+                <div class="site-header-first-section-right">
                     <search>
                         <form action="" method="GET" class="header-search-form">
                             <input
@@ -63,11 +63,80 @@
             </div>
 
             <div class="site-header-second-section">
-                <nav class="nav">
-                    <a href="#">Tech</a>
-                    <a href="#">Business</a>
-                    <a href="#">Sports</a>
-                </nav>
+                <div class="site-header-second-section-left">
+                    <button
+                        class="hamburger-menu"
+                        aria-label="Open navigation"
+                        style="
+                            background: none;
+                            border: none;
+                            cursor: pointer;
+                            padding: 0;
+                            display: inline-flex;
+                            align-items: center;
+                        "
+                    >
+                        <svg
+                            width="30"
+                            height="30"
+                            viewBox="0 0 30 30"
+                            fill="none"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <rect
+                                y="6"
+                                width="25"
+                                height="3"
+                                rx="1.5"
+                                fill="currentColor"
+                            />
+                            <rect
+                                y="13.5"
+                                width="25"
+                                height="3"
+                                rx="1.5"
+                                fill="currentColor"
+                            />
+                            <rect
+                                y="21"
+                                width="25"
+                                height="3"
+                                rx="1.5"
+                                fill="currentColor"
+                            />
+                        </svg>
+                    </button>
+                    <nav id="site-nav" class="site-nav" aria-label="Main">
+                        <ul class="nav-list">
+                            <li><a href="#">TECH</a></li>
+                            <li><a href="#">BUSINESS</a></li>
+                            <li><a href="#">SPORTS</a></li>
+                            <li><a href="#">SCIENCE</a></li>
+                            <li><a href="#">HEALTH</a></li>
+                            <li><a href="#">TRAVEL</a></li>
+                            <li><a href="#">FOOD</a></li>
+                            <li>
+                                <a href="#">INVESTING CLUB</a
+                                ><sup class="join-link">JOIN</sup>
+                            </li>
+                            <li>
+                                <a href="#">PRO</a
+                                ><sup class="join-link">JOIN</sup>
+                            </li>
+                            <li>
+                                <a href="#" id="livestream-link"
+                                    >🔴LIVESTREAM</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="site-header-second-section-right">
+                    <a href="#" id="ca-link">CA</a>
+                    <span class="separator">·</span>
+                    <a href="#">INTL</a>
+                </div>
             </div>
         </header>
 
