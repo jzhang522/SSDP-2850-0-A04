@@ -547,24 +547,20 @@ p {
     display: block;
 }
 
-.mobile-menu-button {
-}
-
 .card-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    height: 30rem;
-    height: clamp(20rem, 24vw, auto);
+    height: clamp(20rem, 24vw, 40rem);
     padding: 1.5rem;
 }
 
 .content-small {
-    height: 20rem;
+    min-height: 25rem;
 }
 
-.card-content p {
+.card-content p {   
     height: 11rem;
     overflow: auto;
 }
