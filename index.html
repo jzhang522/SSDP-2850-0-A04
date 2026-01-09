@@ -628,108 +628,264 @@
         <section class="market-section">
             <div class="site-section-separator"></div>
             <h1 class="site-section-title">Markets</h1>
-            <div class="market-movers">
-                <div class="m-title">
-                    <h3>Market Movers</h3>
-                    <div class="m-title-list">
-                        <ul>
+            <div class="market-section-container">
+                <div class="market-movers">
+                    <div class="m-title">
+                        <h3 class="market-section-subtitle">Market Movers</h3>
+                        <div class="m-title-list">
+                            <ul>
+                                <li>
+                                    <a href="#">S&P </a>
+                                    <a href="#">Nasdaq</a>
+                                    <a href="#">Dow</a>
+                                    <a href="#">EUR</a>
+                                    <a href="#">Asia</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <div class="chart-top">
+                            <h4>Top</h4>
+                            <div class="market-item">
+                                <p>apa <span class="plus">+</span></p>
+                                <p>Apa Corp (US)</p>
+                                <p class="market-green">8.944%</p>
+                                <div class="market-bar">
+                                    <div class="bar"></div>
+                                </div>
+                            </div>
+                            <div class="market-item">
+                                <p>sw <span class="plus">+</span></p>
+                                <p>Sw Corp</p>
+                                <p class="market-green">8.766%</p>
+                                <div class="market-bar">
+                                    <div class="bar"></div>
+                                </div>
+                            </div>
+                            <div class="market-item">
+                                <p>Lyb <span class="plus">+</span></p>
+                                <p>LyondellBasell</p>
+                                <p class="market-green">7.393%</p>
+                                <div class="market-bar">
+                                    <div class="bar"></div>
+                                </div>
+                            </div>
+                            <div class="market-item">
+                                <p>bg <span class="plus">+</span></p>
+                                <p>BG Group</p>
+                                <p class="market-green">7.163%</p>
+                                <div class="market-bar">
+                                    <div class="bar"></div>
+                                </div>
+                            </div>
+                            <div class="market-item">
+                                <p>ip <span class="plus">+</span></p>
+                                <p>International</p>
+                                <p class="market-green">6.8%</p>
+                                <div class="market-bar">
+                                    <div class="bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-bottom">
+                            <h4>Bottom</h4>
+                            <div class="market-item">
+                                <p>apa <span class="plus">+</span></p>
+                                <p>Apa Corp (US)</p>
+                                <p class="market-red">8.944%</p>
+                                <div class="market-bar">
+                                    <div class="red-bar"></div>
+                                </div>
+                            </div>
+                            <div class="market-item">
+                                <p>sw <span class="plus">+</span></p>
+                                <p>Sw Corp</p>
+                                <p class="market-red">8.766%</p>
+                                <div class="market-bar">
+                                    <div class="red-bar"></div>
+                                </div>
+                            </div>
+                            <div class="market-item">
+                                <p>Lyb <span class="plus">+</span></p>
+                                <p>LyondellBasell</p>
+                                <p class="market-red">7.393%</p>
+                                <div class="market-bar">
+                                    <div class="red-bar"></div>
+                                </div>
+                            </div>
+                            <div class="market-item">
+                                <p>bg <span class="plus">+</span></p>
+                                <p>BG Group</p>
+                                <p class="market-red">7.163%</p>
+                                <div class="market-bar">
+                                    <div class="red-bar"></div>
+                                </div>
+                            </div>
+                            <div class="market-item">
+                                <p>ip <span class="plus">+</span></p>
+                                <p>International</p>
+                                <p class="market-red">6.8%</p>
+                                <div class="market-bar">
+                                    <div class="red-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="market-most-active">
+                    <h2 class="market-section-subtitle">Most Active</h2>
+                    <table class="market-table">
+                        <thead>
+                            <tr>
+                                <th>NAME</th>
+                                <th>PRICE</th>
+                                <th>CHG</th>
+                                <th>%CHG</th>
+                                <th>VOL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>AAPL <a href="#" class="plus">+</a></td>
+                                <td>150.75</td>
+                                <td class="market-green">+1.23</td>  
+                                <td class="market-green">+1.25 ▲</td>
+                                <td>100,000</td>
+                            </tr>
+                            <tr>
+                                <td>MSFT <a href="#" class="plus">+</a></td>
+                                <td>210.22</td>
+                                <td class="market-red">-0.34</td>  
+                                <td class="market-red">-0.16 ▼</td>
+                                <td>150,000</td>
+                            </tr>
+                            <tr>
+                                <td>GOOGL <a href="#" class="plus">+</a></td>
+                                <td>2,800.12</td>
+                                <td class="market-green">+12.45</td>  
+                                <td class="market-green">+0.45 ▲</td>
+                                <td>200,000</td>
+                            </tr>
+                            <tr>
+                                <td>AMZN <a href="#" class="plus">+</a></td>
+                                <td>3,500.23</td>
+                                <td class="market-red">-1.23</td>  
+                                <td class="market-red">-0.04 ▼</td>
+                                <td>120,000</td>  
+                            </tr>
+                            <tr>
+                                <td>TSLA <a href="#" class="plus">+</a></td>
+                                <td>1,000.50</td>
+                                <td class="market-green">+5.23</td>  
+                                <td class="market-green">+0.23 ▲</td>
+                                <td>180,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="market-latest-news">
+                    <h2 class="market-section-subtitle">Latest News</h2>
+                    <div class="market-latest-news-list">
+                        <ul class="market-latest-news-list-items">
                             <li>
-                                <a href="#">S&P </a>
-                                <a href="#">Nasdaq</a>
-                                <a href="#">Dow</a>
-                                <a href="#">EUR</a>
-                                <a href="#">Asia</a>
+                                <a href="#">
+                                    <h3 class="news-title"><span class="news-live">live</span>Stock market crashes after CEO forgets to feed his goldfish</h3>
+                                </a>
+                                <div class="news-footer">
+                                    <div class="news-date">2 hours ago</div>
+                                    <div class="news-author">· Penny Stocks</div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h3 class="news-title"><span class="news-club">club</span>Analyst predicts Bitcoin will hit $1 million or $0, definitely one of those</h3>
+                                </a>
+                                <div class="news-footer">
+                                    <div class="news-date">5 hours ago</div>
+                                    <div class="news-author">· Warren Buffet's Cousin</div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h3 class="news-title"><span class="news-pro">pro</span>Fed raises interest rates, millennials still can't afford avocado toast</h3>
+                                </a>
+                                <div class="news-footer">
+                                    <div class="news-date">8 hours ago</div>
+                                    <div class="news-author">· Cash Money</div>
+                                </div>  
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h3 class="news-title"><span class="news-live">live</span>Tech stocks rally after AI learns to make coffee, investors optimistic</h3>
+                                </a>
+                                <div class="news-footer">
+                                    <div class="news-date">12 hours ago</div>
+                                    <div class="news-author">· Bull Market</div>
+                                </div>  
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h3 class="news-title"><span class="news-pro">pro</span>Wall Street in chaos as trader accidentally buys 10,000 shares of "STONKS"</h3>
+                                </a>
+                                <div class="news-footer">
+                                    <div class="news-date">1 day ago</div>
+                                    <div class="news-author">· Diamond Hands</div>
+                                </div>  
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="chart">
-                    <div class="chart-top">
-                        <h4>Top</h4>
-                        <div class="market-item">
-                            <p>apa <span class="plus">+</span></p>
-                            <p>Apa Corp (US)</p>
-                            <p class="market-green">8.944%</p>
-                            <div class="market-bar">
-                                <div class="bar"></div>
-                            </div>
-                        </div>
-                        <div class="market-item">
-                            <p>sw <span class="plus">+</span></p>
-                            <p>Sw Corp</p>
-                            <p class="market-green">8.766%</p>
-                            <div class="market-bar">
-                                <div class="bar"></div>
-                            </div>
-                        </div>
-                        <div class="market-item">
-                            <p>Lyb <span class="plus">+</span></p>
-                            <p>LyondellBasell</p>
-                            <p class="market-green">7.393%</p>
-                            <div class="market-bar">
-                                <div class="bar"></div>
-                            </div>
-                        </div>
-                        <div class="market-item">
-                            <p>bg <span class="plus">+</span></p>
-                            <p>BG Group</p>
-                            <p class="market-green">7.163%</p>
-                            <div class="market-bar">
-                                <div class="bar"></div>
-                            </div>
-                        </div>
-                        <div class="market-item">
-                            <p>ip <span class="plus">+</span></p>
-                            <p>International</p>
-                            <p class="market-green">6.8%</p>
-                            <div class="market-bar">
-                                <div class="bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chart-bottom">
-                        <h4>Bottom</h4>
-                        <div class="market-item">
-                            <p>apa <span class="plus">+</span></p>
-                            <p>Apa Corp (US)</p>
-                            <p class="market-red">8.944%</p>
-                            <div class="market-bar">
-                                <div class="red-bar"></div>
-                            </div>
-                        </div>
-                        <div class="market-item">
-                            <p>sw <span class="plus">+</span></p>
-                            <p>Sw Corp</p>
-                            <p class="market-red">8.766%</p>
-                            <div class="market-bar">
-                                <div class="red-bar"></div>
-                            </div>
-                        </div>
-                        <div class="market-item">
-                            <p>Lyb <span class="plus">+</span></p>
-                            <p>LyondellBasell</p>
-                            <p class="market-red">7.393%</p>
-                            <div class="market-bar">
-                                <div class="red-bar"></div>
-                            </div>
-                        </div>
-                        <div class="market-item">
-                            <p>bg <span class="plus">+</span></p>
-                            <p>BG Group</p>
-                            <p class="market-red">7.163%</p>
-                            <div class="market-bar">
-                                <div class="red-bar"></div>
-                            </div>
-                        </div>
-                        <div class="market-item">
-                            <p>ip <span class="plus">+</span></p>
-                            <p>International</p>
-                            <p class="market-red">6.8%</p>
-                            <div class="market-bar">
-                                <div class="red-bar"></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="market-ususual-volume">
+                    <h2 class="market-section-subtitle">Ususual Volume</h2>
+                    <table class="market-table">
+                        <thead>
+                            <tr>
+                                <th>NAME</th>
+                                <th>PRICE</th>
+                                <th>CHG</th>
+                                <th>%CHG</th>
+                                <th>X10 DAY VOL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>NVDA <a href="#" class="plus">+</a></td>
+                                <td>485.67</td>
+                                <td class="market-green">+8.92</td>  
+                                <td class="market-green">+1.87 ▲</td>
+                                <td>95,000</td>
+                            </tr>
+                            <tr>
+                                <td>META <a href="#" class="plus">+</a></td>
+                                <td>325.44</td>
+                                <td class="market-red">-2.15</td>  
+                                <td class="market-red">-0.66 ▼</td>
+                                <td>125,000</td>
+                            </tr>
+                            <tr>
+                                <td>NFLX <a href="#" class="plus">+</a></td>
+                                <td>425.88</td>
+                                <td class="market-red">-6.34</td>  
+                                <td class="market-red">-1.51 ▼</td>
+                                <td>88,000</td>
+                            </tr>
+                            <tr>
+                                <td>JPM <a href="#" class="plus">+</a></td>
+                                <td>142.33</td>
+                                <td class="market-green">+0.87</td>  
+                                <td class="market-green">+0.61 ▲</td>
+                                <td>165,000</td>  
+                            </tr>
+                            <tr>
+                                <td>AMD <a href="#" class="plus">+</a></td>
+                                <td>128.56</td>
+                                <td class="market-green">+3.21</td>  
+                                <td class="market-green">+2.56 ▲</td>
+                                <td>142,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
