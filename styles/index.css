@@ -557,7 +557,12 @@ p {
 }
 
 .content-small {
-    min-height: 25rem;
+    height: 20rem;
+}
+
+.content-small h3 {
+    height: 5rem;
+    overflow: auto;
 }
 
 .card-content p {   
