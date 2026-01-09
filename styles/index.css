@@ -493,19 +493,19 @@ p {
     justify-content: space-between;
 }
 
-.article-section-category {
+.site-section-title {
     font-size: var(--fs-xxl);
     font-weight: var(--fw-bold);
     color: var(--color-background-header);
     margin: 1rem 0;
 }
 
-.article-section-seperator {
+.site-section-separator {
     position: relative;
-    border-bottom: 1px solid var(--color-market-neutral);
+    border-bottom: 1px solid var(--color-divider);
 }
 
-.article-section-seperator::before {
+.site-section-separator::before {
     content: "";
     position: absolute;
     width: 10%;

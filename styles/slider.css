@@ -257,10 +257,9 @@
 .market-section{
   height: 100%;
   min-height: 0;
-  overflow: hidden;
-  margin: 3rem;
-  border-top: 2px solid #032b90d4;
-  
+  /* overflow: hidden; */
+  margin: 3rem var(--site-margin);
+  /* border-top: 2px solid #032b90d4; */
 }
 .market-title{
   
@@ -416,6 +415,10 @@
    .news-scroll{
     max-height: clamp(300px, 40vh, 500px);
            
+  }
+
+  .market-section{
+    margin: 1rem;
   }
 }
 @media (max-width: 480px) {
