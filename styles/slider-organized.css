@@ -59,15 +59,10 @@
 }
 
 .banner-slide{
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  display: none;
-}
-
-.banner-slide:first-child{
-  display: block;
 }
 
 .auto-slide{
@@ -161,7 +156,6 @@
   margin: clamp(0.5rem, 1vw, 1rem);
   line-height: 1.3;
 }
-
 
 /*--------------------------------------------------------------
 # News Feed Section
@@ -316,7 +310,6 @@
   margin: 0 6px 0 0;
 }
 
-
 /*--------------------------------------------------------------
 # Market Section
 --------------------------------------------------------------*/
@@ -378,7 +371,7 @@
 /* Market Charts & Bars */
 .chart{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   gap: 2rem;
 }
@@ -632,8 +625,9 @@
 # Responsive Design
 --------------------------------------------------------------*/
 
-/* Tablet size */
+/* Tablet size (1064px) */
 @media (max-width: 1064px) {
+  /* Banner */
   .banner{
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -643,14 +637,19 @@
     margin: 0;
     height: auto;
   }
-  /*Auto-track  */
+
   .auto-track{
-    height: clamp(420px, 55vh, 980px);
+    height: clamp(420px, 45vh, 780px);
     min-height: 0;
     display: flex;
     flex-direction: column;
   }
-  /* Center part */
+
+  .banner-slide{
+    position: relative;
+  }
+
+  /* Center Banner */
   .center-banner{
     display: flex;
     flex-direction: row;
@@ -658,219 +657,40 @@
     margin: 1rem;
     height: auto;
   }
+
   .center-img{
-    height: clamp(180px, 40vh, 500px);
-  }
-  .banner-slide{
-    position: relative;
+    height: clamp(180px, 30vh, 400px);
   }
 
-  /* News feed */
+  /* News Feed */
   .news-feed{
     margin: 1rem;
     height: auto;
   }
 
-   .news-scroll{
+  .news-scroll{
     max-height: clamp(300px, 40vh, 500px);
-
   }
 
+  /* Market Section */
   .market-section{
     margin: 1rem;
   }
-  .slider-headlines {
-  padding: 1rem clamp(0.9rem, 1vw, 2rem);
-  
 }
-}
+
+/* Mobile size (480px) */
 @media (max-width: 480px) {
- .center-banner{
+  .center-banner{
     display: flex;
     flex-direction: column;
   }
 }
 
-.main-article{
-  margin: 3rem 0;
-  min-height: 80vh;         
-  max-height: 90vh;
-  overflow: hidden;
-  background: url("../photos/front-view-boy-being-bullied-by-colleague.jpg") center / cover no-repeat;
-  position: relative;
-}
-
-.main-article::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(90deg,
-      rgba(70, 15, 0, 0.75) 0%,
-      rgba(70, 15, 0, 0.55) 55%,
-      rgba(91, 13, 4, 0.25) 100%
-    );
-  pointer-events:none;
-}
-
-
-/* 3) white diagonal “slash” */
-.main-article .hero-article::before{
-  content:"";
-  position:absolute;
-  top:-25%;
-  right:28%;
-  width:18px;         
-  height:160%;
-  background:#fff;
-  transform: rotate(35deg);
-  transform-origin: center;
-  box-shadow: 0 0 0 2px rgba(255,255,255,0.0); /* optional */
-  pointer-events:none;
-
-}
-.article-title{ 
-  font-size: clamp(1.6rem, 2.5vw, 2rem); 
-  font-weight: 700; 
-  color: var(--color-text-inverse); 
-  background-color: var(--color-brand-primary);
-  padding: 1rem 0.7rem; 
-  margin: 0; }
-.hero-article h3{
-  margin:5rem; 
-  font-size: clamp(2.4rem, 3vw, 4.6rem); 
-  line-height: 1.4; 
-  letter-spacing: 0.1em; 
-  font-weight: 800; 
-  color: var(--color-text-inverse); 
-  position: relative; 
-  z-index: 1;
-  
-}
-.hero-article p{
-  margin:5rem;
-  font-size: clamp(1.2rem , 3vw, 1.6rem);
-  letter-spacing: 0.1em;
-  line-height: 1.6;
-  font-weight: 400;
-  color: var(--color-text-inverse);
-  position: relative;
-  z-index: 1;
-}
-
-.science{
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin: 1rem 0;
-}
-
-.science-articles {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
-  align-items: start;
-}
-
-.science-part{
-  display: flex;
-  flex-direction: column;
-  /* gap: 0.5rem; */
-  padding: 1.5rem;
-  border: 1px solid var(--color-border-primary);
-  
-}
-.science-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  cursor: pointer;
-  padding: 1.2rem 0;
-  user-select: none;
-  border-top: 2px solid var(--color-brand-primary);
-  border-bottom: 8px solid var(--color-brand-primary);
-  position: relative;
-  /* margin: 0 var(--site-margin); */
-}
-
-.science-header::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: 0;
-  width: 160px;
-  height: 12px;
-  background: var(--color-brand-accent);
-  z-index: 2;
-}
-
-.science-header h2 {
-  margin: 0;
-  font-size: 1.8rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: var(--color-brand-primary);
-  letter-spacing: 0.05em;
-}
-
-.arrow-icon {
-  display: inline-block;
-  font-size: 3.2rem;
-  transition: transform 0.3s ease;
-}
-
-.arrow-icon.rotated {
-  transform: rotate(180deg);
-}
-
-.science-articles {
-  overflow: hidden;
-  max-height: 2000px;
-  transition: max-height 0.3s ease, opacity 0.3s ease;
-  opacity: 1;
-}
-
-.science-articles.collapsed {
-  max-height: 0;
-  opacity: 0;
-}
-
-.science-part img{
-  width: 100%;
-  height: auto;
-  max-height: 30rem;
-  object-fit: cover;
-  
-}
-.article-lead,
-.article-body{
-  padding: 0 0.5rem;
-}
-.article-lead{
-  font-size: clamp(1.4rem, 2vw, 1.6rem);
-  font-weight: 600;
-  line-height: 1.4;
-}
-.article-body{
-  font-size: clamp(1.2rem, 2vw, 1.4rem);
-}
-
-
-/* Mobile: stack them */
+/* Small screens (700px) */
 @media (max-width: 700px){
   .science{
     display: flex;
     flex-direction: column;
-  }
-
-  .section-science{
-    margin: 1rem;
-  }
-
-  .science-articles {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
   }
 
   .science-part{
