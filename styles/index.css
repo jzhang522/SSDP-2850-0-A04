@@ -616,10 +616,17 @@ p {
     line-height: 1;
     padding: 6px 8px;
     margin: 0 6px 0 0;
-
     vertical-align: baseline;
     position: relative;
     top: -5px;
+}
+
+@media (max-width: 1024px) {
+    .market-section-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
 
 /* Articles
