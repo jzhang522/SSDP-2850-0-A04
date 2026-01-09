@@ -361,7 +361,8 @@
 .market-item p:first-child{
   white-space: nowrap;
 }
-.market-item .plus{
+.market-item .plus,
+.market-table td .plus{
   display: inline-flex;
   border: 1px solid #b0b6b9;
   align-items: center;
