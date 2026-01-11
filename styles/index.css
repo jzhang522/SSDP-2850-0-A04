@@ -352,6 +352,39 @@ p {
     #mobile-menu-button {
         display: block;
     }
+
+    /* Mobile menu visibility */
+    .site-nav {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        background: var(--color-background-navbar);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        z-index: 999;
+    }
+
+    .site-nav.mobile-active {
+        max-height: 500px;
+        overflow-y: auto;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 0;
+        padding: 1rem;
+    }
+
+    .nav-list li {
+        border-bottom: 1px solid var(--color-border-primary);
+        padding: 0.75rem 0;
+    }
+
+    .nav-list li:last-child {
+        border-bottom: none;
+    }
 }
 
 @media (max-width: 480px) {
