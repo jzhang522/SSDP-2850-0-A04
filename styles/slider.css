@@ -422,7 +422,135 @@
   }
 }
 @media (max-width: 480px) {
- .center-banner{
+    .center-banner {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Mobile: stack them */
+@media (max-width: 1024px) {
+    .slider-title h1 {
+        font-size: clamp(1rem, 3vw, 1.6rem);
+    }
+
+    .science {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-science {
+        margin: 1rem;
+    }
+
+    .center-banner {
+        display: flex;
+        flex-direction: column;
+    }
+    .science-articles {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .science-part {
+        padding: 0;
+        border: none;
+    }
+
+    .article-lead,
+    .article-body {
+        padding: 0.5rem 0;
+        margin: 0;
+    }
+
+    .article-lead {
+        font-size: 1.2rem;
+    }
+
+    .article-body {
+        font-size: 1rem;
+    }
+
+    .main-article .hero-article::before {
+        display: none;
+    }
+
+    .hero-article h3 {
+        margin: 4rem;
+        font-size: clamp(1.6rem, 6vw, 2.4rem);
+    }
+
+    .hero-article p {
+        margin: 4rem;
+        font-size: clamp(0.8rem, 6vw, 1.2rem);
+    }
+}
+
+/* Hamburger Menu */
+
+.hamburger-menu {
+    font-size: 24px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+/* Overlay base */
+.nav-overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 9999;
+}
+.nav-overlay.is-open {
+    display: block;
+}
+
+/* Panel (the white “page”) */
+.overlay-panel {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.overlay-title {
+    font-size: 2rem;
+}
+
+/* Top bar */
+.overlay-topbar {
+    height: 72px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: var(--color-background-header);
+    color: var(--color-background-primary);
+}
+.overlay-topbar button {
+    color: var(--color-background-primary);
+}
+.overlay-close {
+    font-size: 22px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+/* Content spacing */
+.overlay-content {
+    padding: 2rem 5rem;
+    flex: 1;
+}
+
+/* Overlay list styling + arrows */
+.overlay-content .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
   }
