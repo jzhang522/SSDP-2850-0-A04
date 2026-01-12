@@ -1331,7 +1331,7 @@ FOOTER RESPONSIVENESS
 #finance,
 #science,
 #stories {
-    scroll-margin-top: 88px;
+    scroll-margin-top: 100px;
 }
 
 @media (max-width: 1080px) {
