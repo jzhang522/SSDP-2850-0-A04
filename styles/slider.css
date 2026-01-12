@@ -1154,3 +1154,14 @@ section + .river-ads {
   content: "📅 ";
   margin-right: 0.4rem;
 }
+
+#education-tag {
+  width: fit-content;
+  margin-top: 1.5rem;
+}
+
+#mental-health-tag {
+  width: fit-content;
+  margin-top: 1rem;
+  margin-bottom: 1.15rem;
+}
