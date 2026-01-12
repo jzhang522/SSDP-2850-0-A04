@@ -100,3 +100,21 @@ overlaySlot.addEventListener("click", (e) => {
     closeMenu();
   }
 });
+
+
+// ads close btn
+const adsBox = document.getElementById("riverAds");
+const adsBannerCloseBtn = adsBox.querySelector(".banner-close");
+const banner = adsBox.querySelector(".banner");
+const DELAY_MS = 3000;
+setTimeout(()=>{
+  adsBox.classList.add("is-visible");
+  adsBox.classList.remove("is-delayed");
+}, DELAY_MS);
+
+
+adsBannerCloseBtn.addEventListener("click", () => {
+  
+  banner.classList.remove("is-pulsing");
+adsBox.style.display = "none";
+});
