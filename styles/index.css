@@ -773,7 +773,6 @@ ADS - RIVER RIGHT
   order: 3;
   text-align: center;
 }
-
 .bordered-full {
   border-top: 1px solid var(--color-text-subtle);
   border-bottom: 1px solid var(--color-text-subtle);
@@ -796,20 +795,38 @@ ADS - RIVER RIGHT
 RIVER RESPONSIVENESS
 ---------------------------------------------- */
 @media (max-width: 1024px) {
-.river-mid-feature-thumbnail img,
-.river-card-thumbnail img {
+.river-mid-feature-thumbnail,
+.river-card-thumbnail {
   display: none;
 }
 .content-river {
   display: flex;
   flex-direction: column;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
 }
 .river-aside {
-  /* flex-direction: row; */
   position: relative;
   margin: 0;
   position:unset;
-  justify-self: flex-start;
+  justify-self: center;
+}
+.river-market-movers-tile,
+.river-aside-quote,
+.river-quote-finder,
+.river-market-movers,
+.tile-top-row,
+.tile-bot-row,
+.aside-quote-right {
+  flex-direction: column;
+  text-align: center;
+}
+.river-market-movers-region-select {
+  justify-content: center;
+}
+.content-river .river-quote-finder {
+  border-top: none;
 }
 }
 
@@ -1286,6 +1303,7 @@ FOOTER RESPONSIVENESS
 
 /* Overlay
 --------------------------------------------- */
+/* UNUSED CLASS - Not referenced in HTML */
 .overlay {
   background: #ffffff59;
 }
