@@ -421,17 +421,17 @@
 
         <section class="quick-links">
             <span class="quick-link-title">Quick Links</span>
-            <a class="quick-link" href="#">Headlines</a>
-            <a class="quick-link" href="#">Quotes</a>
-            <a class="quick-link" href="#">Trivias</a>
-            <a class="quick-link" href="#">Markets</a>
-            <a class="quick-link" href="#">Volumes</a>
-            <a class="quick-link" href="#">Finance</a>
-            <a class="quick-link" href="#">Science</a>
-            <a class="quick-link" href="#">Stories</a>
+            <a class="quick-link" href="#headlines">Headlines</a>
+            <a class="quick-link" href="#quotes">Quotes</a>
+            <a class="quick-link" href="#trivias">Trivias</a>
+            <a class="quick-link" href="#markets">Markets</a>
+            <a class="quick-link" href="#volumes">Volumes</a>
+            <a class="quick-link" href="#finance">Finance</a>
+            <a class="quick-link" href="#science">Science</a>
+            <a class="quick-link" href="#stories">Stories</a>
         </section>
 
-        <section class="banner">
+        <section class="banner" id="headlines" aria-label="Headlines">
             <div class="auto-track">
                 <div class="banner-slide">
                     <img
@@ -668,7 +668,7 @@
         <section class="river-wrapper">
             <div class="content-river">
                 <div class="river-aside">
-                    <section class="river-quote-finder">
+                    <section class="river-quote-finder" id="quotes" aria-label="Quotes">
                         <div class="quote-finder-search">
                             <h4 class="aside-header">Quote Finder</h4>
 
@@ -838,7 +838,7 @@
                     </section>
                 </div>
                 <!-- start card -->
-                <section class="river-stories">
+                <section class="river-stories" id="trivias" aria-label="Trivias">
                     <div class="river-card">
                         <div class="river-card-text">
                             <h4 class="river-card-headline">
@@ -1071,7 +1071,7 @@
         </section>
 
         <!-- <div class="site-section-separator"></div> -->
-        <section class="market-section">
+        <section class="market-section" id="markets" aria-label="Markets">
             <div class="site-section-separator"></div>
             <h1 class="site-section-title">Markets</h1>
             <div class="market-section-container">
@@ -1179,7 +1179,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="market-most-active">
+                <div class="market-most-active" id="active-stocks" aria-label="Active Stocks">
                     <h2 class="market-section-subtitle">Most Active</h2>
                     <table class="market-table">
                         <thead>
@@ -1308,7 +1308,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="market-ususual-volume">
+                <div class="market-ususual-volume" id="volumes" aria-label="Volumes">
                     <h2 class="market-section-subtitle">Ususual Volume</h2>
                     <table class="market-table">
                         <thead>
@@ -1363,7 +1363,7 @@
         </section>
 
         <!-- Articles -->
-        <section class="articles">
+        <section class="articles" id="finance" aria-label="Finance">
             <div class="article-section-container">
                 <div class="site-section-separator"></div>
                 <h1 class="site-section-title">Finance</h1>
@@ -1528,7 +1528,7 @@
             </div>
         </section>
 
-        <section class="section-science">
+        <section class="section-science" id="science" aria-label="Science">
             <div class="site-section-separator"></div>
             <h1 class="site-section-title">Science</h1>
             <section class="main-article">
@@ -1544,7 +1544,7 @@
                 <span class="arrow-icon">▼</span>
                 <h2>Read our Top Stories from Future Minds Journal</h2>
             </div>
-            <section class="science">
+            <section class="science" id="stories" aria-label="Stories">
                 <div id="science-content" class="science-articles">
                     <article class="science-part">
                         <img

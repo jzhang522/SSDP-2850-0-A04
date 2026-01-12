@@ -105,6 +105,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-body);
     font-size: var(--fs-md);
@@ -519,6 +523,10 @@ p {
     border-radius: var(--radius-sm);
     width: 8rem;
     padding: 0.5rem 1rem;
+}
+
+.quick-link:visited {
+  color: var(--color-brand-primary);
 }
 
 .quick-link:hover {
@@ -1310,15 +1318,24 @@ FOOTER RESPONSIVENESS
     }
 }
 /*--------------------------------------------------------------
-# Effects
+# Functions
 --------------------------------------------------------------*/
 
-/* Overlay
+/* Scroll Behavior
 --------------------------------------------- */
-/* UNUSED CLASS - Not referenced in HTML */
-.overlay {
-    background: #ffffff59;
+#headlines,
+#quotes,
+#trivias,
+#markets,
+#volumes,
+#finance,
+#science,
+#stories {
+    scroll-margin-top: 88px;
 }
 
-/* Animation
---------------------------------------------- */
+@media (max-width: 1080px) {
+  #headlines, #quotes, #trivias, #markets, #volumes, #finance, #science, #stories {
+    scroll-margin-top: 60px;
+  }
+}

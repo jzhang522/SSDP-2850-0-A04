@@ -23,6 +23,24 @@ scienceHeader.addEventListener("click", function() {
   arrowIcon.classList.toggle("rotated");
 });
 
+// Expand Stories section when clicking Stories quick link
+const storiesQuickLinks = document.querySelectorAll('a[href="#stories"]');
+
+function expandStoriesSection() {
+  // Check if the section is collapsed
+  if (scienceContent && scienceContent.classList.contains("collapsed")) {
+    scienceContent.classList.remove("collapsed");
+    if (arrowIcon) {
+      arrowIcon.classList.remove("rotated");
+    }
+  }
+}
+
+storiesQuickLinks.forEach(function(link) {
+  link.addEventListener("click", function(e) {
+    expandStoriesSection();
+  });
+});
 
 // Hamburger Menu/ Overlay
 const openBtn = document.getElementById("mobile-menu-button");
