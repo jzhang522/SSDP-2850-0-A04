@@ -910,6 +910,7 @@ RIVER RESPONSIVENESS
     border-collapse: collapse;
     font-size: var(--fs-xs);
     font-weight: var(--fw-bold);
+    min-width: 500px;
 }
 
 .market-table th {
@@ -998,6 +999,18 @@ RIVER RESPONSIVENESS
         display: flex;
         flex-direction: column;
         gap: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .market-most-active,
+    .market-ususual-volume {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .market-table {
+        width: 100%;
     }
 }
 /* ----------------------------------------------

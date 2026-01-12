@@ -390,7 +390,8 @@
 
 .chart-top,
 .chart-bottom {
-    flex: 1;
+    /* flex: 1;   */
+    width: 100%;
     min-width: 0;
     text-align: left;
     padding: 0 2rem;
@@ -401,7 +402,7 @@
 
 .market-item {
     display: grid;
-    grid-template-columns: max-content 1fr max-content 1fr;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
     column-gap: 0.6rem;
     align-items: center;
 }
@@ -476,12 +477,8 @@
 }
 
 @media (max-width: 900px) {
-    .market-movers {
-        min-width: 460px;
-    }
     .chart {
         flex-direction: column;
-        min-width: 460px;
     }
 }
 
@@ -489,6 +486,16 @@
     .m-title-list {
         display: none;
     }
+}
+
+@media (max-width: 480px) {
+  .market-item{
+    grid-template-columns: 1fr 1fr 2fr;
+    column-gap: 0;
+  }
+  .market-item-name{
+    display: none; 
+  }
 }
 /*--------------------------------------------------------------
 # Main Article Section
