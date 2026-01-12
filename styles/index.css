@@ -430,6 +430,7 @@ p {
     --ease: linear;
     animation: scroll 30s var(--ease) infinite;
     transition: --ease 0.5s ease;
+    gap: 2rem;
 }
 
 .tickers {
