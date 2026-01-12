@@ -509,8 +509,8 @@ p {
 }
 
 .quick-link-title {
-  font-size: var(--fs-lg);
   padding: 0.5rem 1rem;
+  width: 8rem;
 }
 
 .quick-link {
@@ -528,6 +528,22 @@ p {
   color: var(--color-brand-accent);
 }
 
+@media (max-width: 1550px) {
+  .quick-link-title {
+    width: 100%;
+  }
+}
+@media (max-width: 1064px) {
+  .quick-links {
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .quick-link {
+    width: 7rem;
+  }
+}
 /*-----------------------------------------------
 River
 -----------------------------------------------*/
