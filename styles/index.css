@@ -520,6 +520,7 @@ ASIDE - RIVER LEFT
   left: 0;
   right: 0;
   z-index: 1;
+  flex-shrink: 1;
 }
 .river-aside section {
   border-top: 6px solid var(--color-background-header);
@@ -544,6 +545,7 @@ ASIDE - RIVER LEFT
   display: flex;
   padding: 0 1rem 0 1rem;
   justify-content: space-between;
+  position: relative;
 }
 .river-aside-quote-search {
   justify-content: space-between;
@@ -747,6 +749,26 @@ ADS - RIVER RIGHT
 .river-stories > :nth-child(even) {
   border-top: 1px solid var(--color-text-subtle);
   border-bottom: 1px solid var(--color-text-subtle);
+}
+/* ----------------------------------------------
+RIVER RESPONSIVENESS
+---------------------------------------------- */
+@media (max-width: 1024px) {
+.river-mid-feature-thumbnail img,
+.river-card-thumbnail img {
+  display: none;
+}
+.content-river {
+  display: flex;
+  flex-direction: column;
+}
+.river-aside {
+  /* flex-direction: row; */
+  position: relative;
+  margin: 0;
+  position:unset;
+  justify-self: flex-start;
+}
 }
 /* ----------------------------------------------
 Articles
