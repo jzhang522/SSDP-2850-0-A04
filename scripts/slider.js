@@ -93,3 +93,10 @@ document.addEventListener("keydown", (e) => {
 overlay.addEventListener("click", (e) => {
   if (e.target === overlay) closeMenu();
 });
+
+// Close menu when clicking on any link in the overlay menu
+overlaySlot.addEventListener("click", (e) => {
+  if (e.target.tagName === "A") {
+    closeMenu();
+  }
+});
