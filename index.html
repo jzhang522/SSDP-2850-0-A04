@@ -1,2017 +1,1791 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Site Title</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Title</title>
 
-        <!-- styles -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="styles/index.css" />
-        <link rel="stylesheet" href="styles/slider.css" />
+    <!-- styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/slider.css" />
 
-        <!-- script -->
-        <script src="scripts/index.js" defer></script>
-        <script src="scripts/slider.js" defer></script>
-    </head>
-    <body>
-        <!-- Header -->
-        <header class="site-header">
-            <div class="site-header-first-section">
-                <h1 class="site-name">SSDC</h1>
-                <div class="site-header-first-section-right">
-                    <search>
-                        <form action="" method="GET" class="header-search-form" id="header-search-form">
-                            <input
-                                type="search"
-                                id="header-search"
-                                name="header-search"
-                                placeholder="Search quotes, news & videos"
-                            />
-                            <button
-                                type="submit"
-                                aria-label="Search"
-                                class="header-search-button"
-                            >
-                                <!-- AI generated svg icon for search -->
-                                <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </button>
-                        </form>
-                    </search>
-                    <a href="#" id="watchlist-link">WATCHLIST 🔔</a>
-                    <span class="separator">|</span>
-                    <a href="#" id="sign-in-link">SIGN IN</a>
-                    <a href="#" id="sign-up-link">CREATE NEW ACCOUNT </a>
-                    <button
-                        class="hamburger-menu"
-                        id="mobile-menu-button"
-                        aria-label="Open mobile navigation"
-                        aria-controls="nav-overlay-mobile"
-                        aria-expanded="false"
-                    >
-                        <svg
-                            width="30"
-                            height="30"
-                            viewBox="0 0 30 30"
-                            fill="none"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <rect
-                                y="6"
-                                width="25"
-                                height="3"
-                                rx="1.5"
-                                fill="currentColor"
-                            />
-                            <rect
-                                y="13.5"
-                                width="25"
-                                height="3"
-                                rx="1.5"
-                                fill="currentColor"
-                            />
-                            <rect
-                                y="21"
-                                width="25"
-                                height="3"
-                                rx="1.5"
-                                fill="currentColor"
-                            />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <div class="site-header-second-section">
-                <div class="site-header-second-section-left">
-                    <button
-                        class="hamburger-menu"
-                        aria-label="Open desktop navigation"
-                        id="desktop-menu-button"
-                        aria-controls="nav-overlay-desktop"
-                        aria-expanded="false"
-                    >
-                        <svg
-                            width="30"
-                            height="30"
-                            viewBox="0 0 30 30"
-                            fill="none"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <rect
-                                y="6"
-                                width="25"
-                                height="3"
-                                rx="1.5"
-                                fill="currentColor"
-                            />
-                            <rect
-                                y="13.5"
-                                width="25"
-                                height="3"
-                                rx="1.5"
-                                fill="currentColor"
-                            />
-                            <rect
-                                y="21"
-                                width="25"
-                                height="3"
-                                rx="1.5"
-                                fill="currentColor"
-                            />
-                        </svg>
-                    </button>
-                    <nav
-                        id="site-nav"
-                        class="site-nav"
-                        aria-label="Main-navigation"
-                    >
-                        <ul class="nav-list">
-                            <li><a href="#headlines">HEADLINES</a></li>
-                            <li><a href="#quotes">QUOTES</a></li>
-                            <li><a href="#trivias">TRIVIAS</a></li>
-                            <li><a href="#markets">MARKETS</a></li>
-                            <li><a href="#volumes">VOLUMES</a></li>
-                            <li><a href="#finance">FINANCE</a></li>
-                            <li><a href="#science">SCIENCE</a></li>
-                            <li><a href="#stories">STORIES</a></li>
-                            <li>
-                                <a href="#">PRO</a
-                                ><sup class="join-link">JOIN</sup>
-                            </li>
-                            <li>
-                                <a href="#" id="livestream-link"
-                                    >🔴LIVESTREAM</a
-                                >
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="site-header-second-section-right">
-                    <a href="#" id="ca-link">CA</a>
-                    <span class="separator">·</span>
-                    <a href="#">INTL</a>
-                </div>
-            </div>
-
-            <div id="nav-overlay" class="nav-overlay" aria-hidden="true">
-                <div
-                    class="overlay-panel"
-                    role="dialog"
-                    aria-modal="true"
-                    aria-label="navigation menu"
+    <!-- script -->
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/slider.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="site-header-first-section">
+        <h1 class="site-name">SSDC</h1>
+        <div class="site-header-first-section-right">
+          <search>
+            <form
+              action=""
+              method="GET"
+              class="header-search-form"
+              id="header-search-form"
+            >
+              <input
+                type="search"
+                id="header-search"
+                name="header-search"
+                placeholder="Search quotes, news & videos"
+              />
+              <button
+                type="submit"
+                aria-label="Search"
+                class="header-search-button"
+              >
+                <!-- AI generated svg icon for search -->
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                    <div class="overlay-topbar">
-                        <h1 class="site-name">SSDC</h1>
-                        <button
-                            class="overlay-close"
-                            type="button"
-                            aria-label="Close navigation"
-                        >
-                            X
-                        </button>
-                    </div>
-                    <div class="overlay-content" id="overlay-nav-slot"></div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Stock Ticker -->
-        <section class="stock-ticker-section">
-            <div class="stock-ticker-container">
-                <div class="stock-tickers">
-                    <div class="tickers">
-                        <a href="#" class="ticker-container">
-                            <div class="stock-info">
-                                <div class="stock-name">Apple</div>
-                                <div class="stock-price">$172.45</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▲</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">
-                                        +10.00
-                                    </div>
-                                    <div class="stock-change-percentage">
-                                        1.25%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container ticker-down">
-                            <div class="stock-info">
-                                <div class="stock-name">Microsoft</div>
-                                <div class="stock-price">$310.20</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▼</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">-1.40</div>
-                                    <div class="stock-change-percentage">
-                                        0.45%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container">
-                            <div class="stock-info">
-                                <div class="stock-name">Amazon</div>
-                                <div class="stock-price">$145.30</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▲</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">+0.73</div>
-                                    <div class="stock-change-percentage">
-                                        0.50%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container">
-                            <div class="stock-info">
-                                <div class="stock-name">Google</div>
-                                <div class="stock-price">$2800.50</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▲</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">
-                                        +58.81
-                                    </div>
-                                    <div class="stock-change-percentage">
-                                        2.10%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container ticker-down">
-                            <div class="stock-info">
-                                <div class="stock-name">Tesla</div>
-                                <div class="stock-price">$1020.00</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▼</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">
-                                        -17.85
-                                    </div>
-                                    <div class="stock-change-percentage">
-                                        1.75%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container">
-                            <div class="stock-info">
-                                <div class="stock-name">Meta</div>
-                                <div class="stock-price">$485.20</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▲</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">
-                                        +12.50
-                                    </div>
-                                    <div class="stock-change-percentage">
-                                        2.65%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container">
-                            <div class="stock-info">
-                                <div class="stock-name">NVIDIA</div>
-                                <div class="stock-price">$520.75</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▲</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">
-                                        +25.30
-                                    </div>
-                                    <div class="stock-change-percentage">
-                                        5.10%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container ticker-down">
-                            <div class="stock-info">
-                                <div class="stock-name">Netflix</div>
-                                <div class="stock-price">$425.60</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▼</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">
-                                        -8.20
-                                    </div>
-                                    <div class="stock-change-percentage">
-                                        1.89%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container">
-                            <div class="stock-info">
-                                <div class="stock-name">JPMorgan</div>
-                                <div class="stock-price">$165.40</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▲</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">
-                                        +2.15
-                                    </div>
-                                    <div class="stock-change-percentage">
-                                        1.32%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container ticker-down">
-                            <div class="stock-info">
-                                <div class="stock-name">Bank of America</div>
-                                <div class="stock-price">$38.90</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▼</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">
-                                        -0.45
-                                    </div>
-                                    <div class="stock-change-percentage">
-                                        1.14%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container">
-                            <div class="stock-info">
-                                <div class="stock-name">Visa</div>
-                                <div class="stock-price">$275.80</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▲</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">
-                                        +4.20
-                                    </div>
-                                    <div class="stock-change-percentage">
-                                        1.55%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container">
-                            <div class="stock-info">
-                                <div class="stock-name">Walmart</div>
-                                <div class="stock-price">$162.30</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▲</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">
-                                        +1.85
-                                    </div>
-                                    <div class="stock-change-percentage">
-                                        1.15%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                    </div>
-                    <!-- Duplicate tickers for seamless loop -->
-                    <div class="tickers">
-                        <a href="#" class="ticker-container">
-                            <div class="stock-info">
-                                <div class="stock-name">Apple</div>
-                                <div class="stock-price">$172.45</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▲</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">
-                                        +10.00
-                                    </div>
-                                    <div class="stock-change-percentage">
-                                        1.25%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container ticker-down">
-                            <div class="stock-info">
-                                <div class="stock-name">Microsoft</div>
-                                <div class="stock-price">$310.20</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▼</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">-1.40</div>
-                                    <div class="stock-change-percentage">
-                                        0.45%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container">
-                            <div class="stock-info">
-                                <div class="stock-name">Amazon</div>
-                                <div class="stock-price">$145.30</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▲</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">+0.73</div>
-                                    <div class="stock-change-percentage">
-                                        0.50%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container">
-                            <div class="stock-info">
-                                <div class="stock-name">Google</div>
-                                <div class="stock-price">$2800.50</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▲</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">
-                                        +58.81
-                                    </div>
-                                    <div class="stock-change-percentage">
-                                        2.10%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container ticker-down">
-                            <div class="stock-info">
-                                <div class="stock-name">Tesla</div>
-                                <div class="stock-price">$1020.00</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▼</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">
-                                        -17.85
-                                    </div>
-                                    <div class="stock-change-percentage">
-                                        1.75%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container">
-                            <div class="stock-info">
-                                <div class="stock-name">Meta</div>
-                                <div class="stock-price">$485.20</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▲</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">
-                                        +12.50
-                                    </div>
-                                    <div class="stock-change-percentage">
-                                        2.65%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container">
-                            <div class="stock-info">
-                                <div class="stock-name">NVIDIA</div>
-                                <div class="stock-price">$520.75</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▲</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">
-                                        +25.30
-                                    </div>
-                                    <div class="stock-change-percentage">
-                                        5.10%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container ticker-down">
-                            <div class="stock-info">
-                                <div class="stock-name">Netflix</div>
-                                <div class="stock-price">$425.60</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▼</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">
-                                        -8.20
-                                    </div>
-                                    <div class="stock-change-percentage">
-                                        1.89%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container">
-                            <div class="stock-info">
-                                <div class="stock-name">JPMorgan</div>
-                                <div class="stock-price">$165.40</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▲</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">
-                                        +2.15
-                                    </div>
-                                    <div class="stock-change-percentage">
-                                        1.32%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container ticker-down">
-                            <div class="stock-info">
-                                <div class="stock-name">Bank of America</div>
-                                <div class="stock-price">$38.90</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▼</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">
-                                        -0.45
-                                    </div>
-                                    <div class="stock-change-percentage">
-                                        1.14%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container">
-                            <div class="stock-info">
-                                <div class="stock-name">Visa</div>
-                                <div class="stock-price">$275.80</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▲</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">
-                                        +4.20
-                                    </div>
-                                    <div class="stock-change-percentage">
-                                        1.55%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                        <a href="#" class="ticker-container">
-                            <div class="stock-info">
-                                <div class="stock-name">Walmart</div>
-                                <div class="stock-price">$162.30</div>
-                            </div>
-                            <div class="stock-stats">
-                                <div class="stock-change">▲</div>
-                                <div class="stock-change-value">
-                                    <div class="stock-change-amount">
-                                        +1.85
-                                    </div>
-                                    <div class="stock-change-percentage">
-                                        1.15%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticker-date">LAST | 12/24/2025</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="quick-links">
-            <span class="quick-link-title">Quick Links</span>
-            <a class="quick-link" href="#headlines">Headlines</a>
-            <a class="quick-link" href="#quotes">Quotes</a>
-            <a class="quick-link" href="#trivias">Trivias</a>
-            <a class="quick-link" href="#markets">Markets</a>
-            <a class="quick-link" href="#volumes">Volumes</a>
-            <a class="quick-link" href="#finance">Finance</a>
-            <a class="quick-link" href="#science">Science</a>
-            <a class="quick-link" href="#stories">Stories</a>
-        </section>
-
-        <section class="banner" id="headlines" aria-label="Headlines">
-            <div class="auto-track">
-                <div class="banner-slide">
-                    <img
-                        class="auto-slide"
-                        src="../photos/img4.jpg"
-                        alt="Family in front of the house"
-                    />
-                    <div class="slider-headlines">
-                        <h1 class="slider-title">
-                            AI startup Mistral raises $113 million to take on
-                            OpenAI and Anthropic
-                        </h1>
-                        <p class="slider-par">
-                            French company aims to develop open-source AI models
-                        </p>
-                    </div>
-                </div>
-                <div class="banner-slide">
-                    <img
-                        class="auto-slide"
-                        src="../photos/img1.jpg"
-                        alt="Mountain view"
-                    />
-                    <div class="slider-headlines">
-                        <h1 class="slider-title">
-                            US stocks rise on optimism over economic data
-                        </h1>
-                        <p class="slider-par">
-                            Investors hopeful about upcoming earnings reports
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <section class="center-banner">
-                <div class="center-section">
-                    <div class="center-img">
-                        <img
-                            class="center-section-img"
-                            src="../photos/img5.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <h2 class="dek">
-                        One year on from the UK’s grand AI plan: Has its
-                        infrastructure buildout been a success?
-                    </h2>
-                </div>
-                <div class="center-section">
-                    <div class="center-img">
-                        <img
-                            class="center-section-img"
-                            src="../photos/img2.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <h2 class="dek">
-                        Nvidia-Groq deal is structured to keep ‘fiction of
-                        competition alive,’ analyst says
-                    </h2>
-                </div>
-            </section>
-
-            <section class="news-feed" aria-label="Latest news">
-                <h2 class="news">Latest News</h2>
-                <div class="news-scroll">
-                    <ol class="news-list">
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">18 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        ><span class="news-pro">pro</span> Oil
-                                        edges higher as traders watch Middle
-                                        East shipping lanes</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">16 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        >Tech shares rebound after a volatile
-                                        premarket session</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">14 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        ><span class="news-pro">pro</span>
-                                        Treasury yields dip as investors price
-                                        in softer growth</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">12 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        >Retailers report strong holiday traffic
-                                        — but margins stay tight</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">10 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        ><span class="news-club">club</span>
-                                        Analysts raise price targets on
-                                        chipmakers after upbeat guidance</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">9 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        >European markets open mixed as traders
-                                        digest inflation data</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">7 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#">
-                                        <span class="news-club">club</span> Big
-                                        banks set aside more reserves;
-                                        executives talk 2026 outlook</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">6 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        >Shipping stocks jump after freight
-                                        rates tick higher</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">5 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        ><span class="news-pro">pro</span>
-                                        Crypto prices swing as traders react to
-                                        risk-on sentiment</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">3 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        ><span class="news-pro">pro</span>
-                                        Airlines add routes for spring — demand
-                                        looks strong</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">2 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        >Futures inch up as investors look ahead
-                                        to earnings season</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">1h ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        >Market recap: stocks end higher after
-                                        late-day rally</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-                    </ol>
-                </div>
-            </section>
-        </section>
-
-        <!-- Content River -->
-        <section class="river-wrapper">
-            <div class="content-river">
-                <div class="river-aside">
-                    <section
-                        class="river-quote-finder"
-                        id="quotes"
-                        aria-label="Quotes"
-                    >
-                        <div class="quote-finder-search">
-                            <h4 class="aside-header">Quote Finder</h4>
-
-                            <div class="river-aside-quote-search-container">
-                                <div class="river-aside-quote-search">
-                                    <input
-                                        type="text"
-                                        name="quote-search"
-                                        id="quote-search"
-                                        placeholder="SEARCH"
-                                    />
-                                </div>
-                                <button
-                                    type="submit"
-                                    class="river-aside-search-btn"
-                                >
-                                    <!-- AI generated svg icon for search -->
-                                    <svg
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </button>
-                            </div>
-                            <!-- end quote search -->
-                            <div class="river-aside-popular-quotes">
-                                <h4 class="aside-header" id="pop-quotes">
-                                    Popular quotes
-                                </h4>
-                                <div class="river-aside-quote">
-                                    <div class="aside-quote-left">US10Y</div>
-                                    <div class="aside-quote-right">
-                                        <div class="aside-quote-right-top">
-                                            4.17
-                                        </div>
-                                        <div class="neg">-0.02 (-0.38%)</div>
-                                    </div>
-                                </div>
-                                <div class="river-aside-quote highlight">
-                                    <div class="aside-quote-left">BTC.CM-</div>
-                                    <div class="aside-quote-right">
-                                        <div class="aside-quote-right-top">
-                                            90497.21
-                                        </div>
-                                        <div class="pos">+23.15(0.03%)</div>
-                                    </div>
-                                </div>
-                                <div class="river-aside-quote">
-                                    <div class="aside-quote-left">SHW</div>
-                                    <div class="aside-quote-right">
-                                        <div class="aside-quote-right-top">
-                                            353.28
-                                        </div>
-                                        <div class="pos">+12.25(3.59%)</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="river-market-movers">
-                        <h4 class="aside-header">Market Movers</h4>
-                        <div class="river-market-movers-region-select">
-                            <div><a href="#">US</a></div>
-                            <div><a href="#">EUR</a></div>
-                            <div><a href="#">ASIA</a></div>
-                        </div>
-                        <div class="river-market-movers-top">
-                            <div class="aside-subheader">TOP</div>
-
-                            <div class="river-market-movers-tile highlight">
-                                <div class="tile-top-row">
-                                    <div class="top-row-company">SNDK</div>
-                                    <div class="top-row-value">377.41</div>
-                                </div>
-                                <div class="tile-bot-row">
-                                    <div class="bot-row-full-name">
-                                        Sandisk Corp
-                                    </div>
-                                    <div class="pos aside-quote-right">
-                                        +42.87 (+12.81%)
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="river-market-movers-tile">
-                                <div class="tile-top-row">
-                                    <div class="top-row-company">BLDR</div>
-                                    <div class="top-row-value">124.66</div>
-                                </div>
-                                <div class="tile-bot-row">
-                                    <div class="bot-row-full-name">
-                                        Builders Firstsource Inc
-                                    </div>
-                                    <div class="pos aside-quote-right">
-                                        +13.37 (+12.01%)
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="river-market-movers-tile highlight">
-                                <div class="tile-top-row">
-                                    <div class="top-row-company">INTC</div>
-                                    <div class="top-row-value">45.55</div>
-                                </div>
-                                <div class="tile-bot-row">
-                                    <div class="bot-row-full-name">
-                                        Intel Corp
-                                    </div>
-                                    <div class="pos">+4.44 (+10.8%)</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="river-market-movers-bot">
-                            <div class="aside-subheader">BOTTOM</div>
-                            <div class="river-market-movers-tile highlight">
-                                <div class="tile-top-row">
-                                    <div class="top-row-company">MSTR</div>
-                                    <div class="top-row-value">157.33</div>
-                                </div>
-                                <div class="tile-bot-row">
-                                    <div class="bot-row-full-name">
-                                        Strategy
-                                    </div>
-                                    <div class="neg aside-quote-right">
-                                        -9.64 (-5.77%)
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="river-market-movers-tile">
-                                <div class="tile-top-row">
-                                    <div class="top-row-company">LVS</div>
-                                    <div class="top-row-value">58.95</div>
-                                </div>
-                                <div class="tile-bot-row">
-                                    <div class="bot-row-full-name">
-                                        Las Vegas Sands Corp
-                                    </div>
-                                    <div class="neg aside-quote-right">
-                                        -2.95 (-4.77%)
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="river-market-movers-tile highlight">
-                                <div class="tile-top-row">
-                                    <div class="top-row-company">CSGP</div>
-                                    <div class="top-row-value">58.49</div>
-                                </div>
-                                <div class="tile-bot-row">
-                                    <div class="bot-row-full-name">
-                                        CoStar Group Inc
-                                    </div>
-                                    <div class="neg aside-quote-right">
-                                        -2.87 (-4.68%)
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <!-- start card -->
-                <section
-                    class="river-stories"
-                    id="trivias"
-                    aria-label="Trivias"
-                >
-                    <div class="river-card">
-                        <div class="river-card-text">
-                            <h4 class="river-card-headline">
-                                How long until this resort is under water? What
-                                to do when your beachfront home becomes a
-                                houseboat
-                            </h4>
-                            <a href="#">Alexis Presa</a>
-                        </div>
-                        <div class="river-card-thumbnail">
-                            <img
-                                src="./river-images/alexis-presa-OCvXQfLHHx0-unsplash.jpg"
-                                alt="Beach Resort"
-                            />
-                        </div>
-                    </div>
-                    <!-- end card -->
-                    <!-- start card -->
-                    <div class="river-card">
-                        <div class="river-card-text">
-                            <h4 class="river-card-headline">
-                                Vacationing family dies waiting for isolated
-                                gate to open. Officials say only AI can solve
-                                this problem
-                            </h4>
-                            <a href="#">Dan Begel</a>
-                        </div>
-                        <div class="river-card-thumbnail">
-                            <img
-                                src="./river-images/dan-begel-oyT-3_6wqNQ-unsplash.jpg"
-                                alt="Desert Road"
-                            />
-                        </div>
-                    </div>
-                    <!-- end card -->
-                    <!-- start card -->
-                    <div class="river-card">
-                        <div class="river-card-text">
-                            <h4 class="river-card-headline">
-                                Man insists he isn't responsible for greenhouse
-                                gas - at least not all of it
-                            </h4>
-                            <a href="#">Lando Lakes</a>
-                        </div>
-                        <div class="river-card-thumbnail">
-                            <img
-                                src="./river-images/land-o-lakes-inc-9cmbLTARQMA-unsplash.jpg"
-                                alt="Greenhouse"
-                            />
-                        </div>
-                    </div>
-                    <!-- end card -->
-                    <!-- start card -->
-                    <div class="river-card">
-                        <div class="river-card-text">
-                            <h4 class="river-card-headline">
-                                Examining the delusions of people who wish for
-                                the return of 'the good old days'
-                            </h4>
-                            <a href="#">Will Shelley</a>
-                        </div>
-                        <div class="river-card-thumbnail">
-                            <img
-                                src="./river-images/will-shelley-_BAmtyGBbZU-unsplash.jpg"
-                                alt="Aquaduct"
-                            />
-                        </div>
-                    </div>
-                    <!-- end card -->
-                    <!-- start card -->
-                    <div class="river-card">
-                        <div class="river-card-text">
-                            <h4 class="river-card-headline">
-                                Keying classic cars to fight 'the establishment'
-                            </h4>
-                            <a href="#">Zhen Yao</a>
-                        </div>
-                        <div class="river-card-thumbnail">
-                            <img
-                                src="./river-images/zhen-yao-TQjQ9DTr4vs-unsplash.jpg"
-                                alt="Yellow Car"
-                            />
-                        </div>
-                    </div>
-                    <!-- end card -->
-                    <!-- start card -->
-                    <div class="river-card">
-                        <div class="river-card-text">
-                            <h4 class="river-card-headline">
-                                Officials insist they can't predict knee
-                                injuries
-                            </h4>
-                            <a href="#">Natalia Grela</a>
-                        </div>
-                        <div class="river-card-thumbnail">
-                            <img
-                                src="./river-images/natalia-grela-6MM7l0QRBdk-unsplash.jpg"
-                                alt="Ski Resort"
-                            />
-                        </div>
-                    </div>
-                    <!-- end card -->
-                    <!-- start card -->
-                    <div class="river-card">
-                        <div class="river-card-text">
-                            <h4 class="river-card-headline">
-                                Colourful flags have never been so popular - but
-                                does anyone know why we tie them to strings in
-                                the middle of a field?
-                            </h4>
-                            <a href="#">Lu Wen</a>
-                        </div>
-                        <div class="river-card-thumbnail">
-                            <img
-                                src="./river-images/wwwwww-lu-kYqe1UpbZq4-unsplash.jpg"
-                                alt=""
-                            />
-                        </div>
-                    </div>
-                    <!-- end card -->
-                    <!-- MID RIVER FEATURE ARTICLES -->
-                    <section class="river-stories-mid-features">
-                        <div class="river-mid-feature left">
-                            <div class="river-mid-feature-thumbnail">
-                                <img
-                                    src="./river-images/land-o-lakes-inc-iFx1WMvjvpw-unsplash.jpg"
-                                    alt="Man harvests oranges"
-                                />
-                            </div>
-                            <div class="river-mid-feature-headline">
-                                <h4>
-                                    Man harvesting oranges increasingly
-                                    concerned by the sound of approaching
-                                    helicopters
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="river-mid-feature right">
-                            <div class="river-mid-feature-thumbnail">
-                                <img
-                                    src="./river-images/oleksandr-voloshchenko-6CA6iArzYEE-unsplash.jpg"
-                                    alt="Low-flying bird"
-                                />
-                            </div>
-                            <div class="river-mid-feature-headline">
-                                <h4>
-                                    Pelican narrowly avoids Border Patrol -
-                                    insists that birds can't carry proof of
-                                    citizenship
-                                </h4>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- END FEATURES -->
-                    <!-- start card -->
-                    <div class="river-card">
-                        <div class="river-card-text">
-                            <h4 class="river-card-headline">
-                                If global warming is real, why is this place so
-                                cold? Checkmate, science!
-                            </h4>
-                            <a href="#">Maeva Vigier</a>
-                        </div>
-                        <div class="river-card-thumbnail">
-                            <img
-                                src="./river-images/maeva-vigier-ZV8Ikhksk1M-unsplash.jpg"
-                                alt="City in winter"
-                            />
-                        </div>
-                    </div>
-                    <!-- end card -->
-                    <!-- start card -->
-                    <div class="river-card">
-                        <div class="river-card-text">
-                            <h4 class="river-card-headline">
-                                We've finally found a place where you won't be
-                                judged while learning Smoke on the Water
-                            </h4>
-                            <a href="#">Spenser Sembrat</a>
-                        </div>
-                        <div class="river-card-thumbnail">
-                            <img
-                                src="./river-images/spenser-sembrat-WlRDNUJ06fc-unsplash.jpg"
-                                alt="Lute player on the Steppes"
-                            />
-                        </div>
-                    </div>
-                    <!-- end card -->
-                    <!-- start card -->
-                    <div class="river-card">
-                        <div class="river-card-text">
-                            <h4 class="river-card-headline">
-                                Examining the effects of the drug epidemic on
-                                the flamingos of Ansenuza National Park,
-                                Argentina
-                            </h4>
-                            <a href="#">Philippe Bontemps</a>
-                        </div>
-                        <div class="river-card-thumbnail">
-                            <img
-                                src="./river-images/philippe-bontemps-SC6CSaaibio-unsplash.jpg"
-                                alt="Flamingos doing flamingo things"
-                            />
-                        </div>
-                    </div>
-                    <!-- end card -->
-                    <!-- start card -->
-                    <div class="river-card">
-                        <div class="river-card-text">
-                            <h4 class="river-card-headline">
-                                Showing your worth by living in the tallest
-                                building in the city. Yes, a spire is absolutely
-                                legitimate height
-                            </h4>
-                            <a href="#">Zhenyu Luo</a>
-                        </div>
-                        <div class="river-card-thumbnail">
-                            <img
-                                src="./river-images/zhenyu-luo--kyIjCKZdfg-unsplash.jpg"
-                                alt="Yet another cityscape at dusk"
-                            />
-                        </div>
-                    </div>
-                    <!-- end card -->
-                </section>
-                <div class="river-ads">
-                    This is a placeholder for advertising
-                </div>
-            </div>
-        </section>
-
-        <!-- <div class="site-section-separator"></div> -->
-        <section class="market-section" id="markets" aria-label="Markets">
-            <div class="site-section-separator"></div>
-            <h1 class="site-section-title">Markets</h1>
-            <div class="market-section-container">
-                <div class="market-movers">
-                    <div class="m-title">
-                        <h3 class="market-section-subtitle">Market Movers</h3>
-                        <div class="m-title-list">
-                            <ul>
-                                <li>
-                                    <a href="#">S&P </a>
-                                    <a href="#">Nasdaq</a>
-                                    <a href="#">Dow</a>
-                                    <a href="#">EUR</a>
-                                    <a href="#">Asia</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="chart">
-                        <div class="chart-top">
-                            <h4>Top</h4>
-                            <div class="market-item">
-                                <p>apa <span class="plus">+</span></p>
-                                <p class="market-item-name">Apa Corp (US)</p>
-                                <p class="market-green">8.944%</p>
-                                <div class="market-bar">
-                                    <div class="bar"></div>
-                                </div>
-                            </div>
-                            <div class="market-item">
-                                <p>sw <span class="plus">+</span></p>
-                                <p class="market-item-name">Sw Corp</p>
-                                <p class="market-green">8.766%</p>
-                                <div class="market-bar">
-                                    <div class="bar"></div>
-                                </div>
-                            </div>
-                            <div class="market-item">
-                                <p>Lyb <span class="plus">+</span></p>
-                                <p class="market-item-name">LyondellBasell</p>
-                                <p class="market-green">7.393%</p>
-                                <div class="market-bar">
-                                    <div class="bar"></div>
-                                </div>
-                            </div>
-                            <div class="market-item">
-                                <p>bg <span class="plus">+</span></p>
-                                <p class="market-item-name">BG Group</p>
-                                <p class="market-green">7.163%</p>
-                                <div class="market-bar">
-                                    <div class="bar"></div>
-                                </div>
-                            </div>
-                            <div class="market-item">
-                                <p>ip <span class="plus">+</span></p>
-                                <p class="market-item-name">International</p>
-                                <p class="market-green">6.8%</p>
-                                <div class="market-bar">
-                                    <div class="bar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="chart-bottom">
-                            <h4>Bottom</h4>
-                            <div class="market-item">
-                                <p>apa <span class="plus">+</span></p>
-                                <p class="market-item-name">Apa Corp (US)</p>
-                                <p class="market-red">8.944%</p>
-                                <div class="market-bar">
-                                    <div class="red-bar"></div>
-                                </div>
-                            </div>
-                            <div class="market-item">
-                                <p>sw <span class="plus">+</span></p>
-                                <p class="market-item-name">Sw Corp</p>
-                                <p class="market-red">8.766%</p>
-                                <div class="market-bar">
-                                    <div class="red-bar"></div>
-                                </div>
-                            </div>
-                            <div class="market-item">
-                                <p>Lyb <span class="plus">+</span></p>
-                                <p class="market-item-name">LyondellBasell</p>
-                                <p class="market-red">7.393%</p>
-                                <div class="market-bar">
-                                    <div class="red-bar"></div>
-                                </div>
-                            </div>
-                            <div class="market-item">
-                                <p>bg <span class="plus">+</span></p>
-                                <p class="market-item-name">BG Group</p>
-                                <p class="market-red">7.163%</p>
-                                <div class="market-bar">
-                                    <div class="red-bar"></div>
-                                </div>
-                            </div>
-                            <div class="market-item">
-                                <p>ip <span class="plus">+</span></p>
-                                <p class="market-item-name">International</p>
-                                <p class="market-red">6.8%</p>
-                                <div class="market-bar">
-                                    <div class="red-bar"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="market-most-active"
-                    id="active-stocks"
-                    aria-label="Active Stocks"
-                >
-                    <h2 class="market-section-subtitle">Most Active</h2>
-                    <table class="market-table">
-                        <thead>
-                            <tr>
-                                <th>NAME</th>
-                                <th>PRICE</th>
-                                <th>CHG</th>
-                                <th>%CHG</th>
-                                <th>VOL</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>AAPL <a href="#" class="plus">+</a></td>
-                                <td>150.75</td>
-                                <td class="market-green">+1.23</td>
-                                <td class="market-green">+1.25 ▲</td>
-                                <td>100,000</td>
-                            </tr>
-                            <tr>
-                                <td>MSFT <a href="#" class="plus">+</a></td>
-                                <td>210.22</td>
-                                <td class="market-red">-0.34</td>
-                                <td class="market-red">-0.16 ▼</td>
-                                <td>150,000</td>
-                            </tr>
-                            <tr>
-                                <td>GOOGL <a href="#" class="plus">+</a></td>
-                                <td>2,800.12</td>
-                                <td class="market-green">+12.45</td>
-                                <td class="market-green">+0.45 ▲</td>
-                                <td>200,000</td>
-                            </tr>
-                            <tr>
-                                <td>AMZN <a href="#" class="plus">+</a></td>
-                                <td>3,500.23</td>
-                                <td class="market-red">-1.23</td>
-                                <td class="market-red">-0.04 ▼</td>
-                                <td>120,000</td>
-                            </tr>
-                            <tr>
-                                <td>TSLA <a href="#" class="plus">+</a></td>
-                                <td>1,000.50</td>
-                                <td class="market-green">+5.23</td>
-                                <td class="market-green">+0.23 ▲</td>
-                                <td>180,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="market-latest-news">
-                    <h2 class="market-section-subtitle">Latest News</h2>
-                    <div class="market-latest-news-list">
-                        <ul class="market-latest-news-list-items">
-                            <li>
-                                <a href="#">
-                                    <h3 class="news-title">
-                                        <span class="news-live">live</span>Stock
-                                        market crashes after CEO forgets to feed
-                                        his goldfish
-                                    </h3>
-                                </a>
-                                <div class="news-footer">
-                                    <div class="news-date">2 hours ago</div>
-                                    <div class="news-author">
-                                        · Penny Stocks
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <h3 class="news-title">
-                                        <span class="news-club">club</span
-                                        >Analyst predicts Bitcoin will hit $1
-                                        million or $0, definitely one of those
-                                    </h3>
-                                </a>
-                                <div class="news-footer">
-                                    <div class="news-date">5 hours ago</div>
-                                    <div class="news-author">
-                                        · Warren Buffet's Cousin
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <h3 class="news-title">
-                                        <span class="news-pro">pro</span>Fed
-                                        raises interest rates, millennials still
-                                        can't afford avocado toast
-                                    </h3>
-                                </a>
-                                <div class="news-footer">
-                                    <div class="news-date">8 hours ago</div>
-                                    <div class="news-author">· Cash Money</div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <h3 class="news-title">
-                                        <span class="news-live">live</span>Tech
-                                        stocks rally after AI learns to make
-                                        coffee, investors optimistic
-                                    </h3>
-                                </a>
-                                <div class="news-footer">
-                                    <div class="news-date">12 hours ago</div>
-                                    <div class="news-author">· Bull Market</div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <h3 class="news-title">
-                                        <span class="news-pro">pro</span>Wall
-                                        Street in chaos as trader accidentally
-                                        buys 10,000 shares of "STONKS"
-                                    </h3>
-                                </a>
-                                <div class="news-footer">
-                                    <div class="news-date">1 day ago</div>
-                                    <div class="news-author">
-                                        · Diamond Hands
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div
-                    class="market-ususual-volume"
-                    id="volumes"
-                    aria-label="Volumes"
-                >
-                    <h2 class="market-section-subtitle">Ususual Volume</h2>
-                    <table class="market-table">
-                        <thead>
-                            <tr>
-                                <th>NAME</th>
-                                <th>PRICE</th>
-                                <th>CHG</th>
-                                <th>%CHG</th>
-                                <th>X10 DAY VOL</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>NVDA <a href="#" class="plus">+</a></td>
-                                <td>485.67</td>
-                                <td class="market-green">+8.92</td>
-                                <td class="market-green">+1.87 ▲</td>
-                                <td>95,000</td>
-                            </tr>
-                            <tr>
-                                <td>META <a href="#" class="plus">+</a></td>
-                                <td>325.44</td>
-                                <td class="market-red">-2.15</td>
-                                <td class="market-red">-0.66 ▼</td>
-                                <td>125,000</td>
-                            </tr>
-                            <tr>
-                                <td>NFLX <a href="#" class="plus">+</a></td>
-                                <td>425.88</td>
-                                <td class="market-red">-6.34</td>
-                                <td class="market-red">-1.51 ▼</td>
-                                <td>88,000</td>
-                            </tr>
-                            <tr>
-                                <td>JPM <a href="#" class="plus">+</a></td>
-                                <td>142.33</td>
-                                <td class="market-green">+0.87</td>
-                                <td class="market-green">+0.61 ▲</td>
-                                <td>165,000</td>
-                            </tr>
-                            <tr>
-                                <td>AMD <a href="#" class="plus">+</a></td>
-                                <td>128.56</td>
-                                <td class="market-green">+3.21</td>
-                                <td class="market-green">+2.56 ▲</td>
-                                <td>142,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-        <!-- Articles -->
-        <section class="articles" id="finance" aria-label="Finance">
-            <div class="article-section-container">
-                <div class="site-section-separator"></div>
-                <h1 class="site-section-title">Finance</h1>
-                <div class="articles-container">
-                    <article class="news-card primary-article">
-                        <img
-                            src="../images/finance_article_1.png"
-                            alt="A stressed man staring at three monitors showing red stock charts, holding a coffee mug labeled 'Buy the Dip'"
-                        />
-                        <div class="card-content">
-                            <h2 class="article-headline">
-                                <span class="news-pro">Meme Stocks</span>
-                                Local Investor Declares Himself “Long-Term
-                                Holder” After Portfolio Drops 73% Overnight
-                            </h2>
-                            <h3 class="article-excerpt">
-                                After confidently announcing his commitment to
-                                long-term investing last night, a local retail
-                                investor clarified this morning that the
-                                decision was made entirely because selling now
-                                would “lock in the pain.”
-                            </h3>
-                            <p class="article-body">
-                                Local retail investor Jason M. officially
-                                rebranded himself as a “long-term holder”
-                                Tuesday night after watching his portfolio lose
-                                73% of its value in a single session. “I believe
-                                in the fundamentals now,” Jason said, clarifying
-                                that this belief formed immediately after
-                                selling would have required him to emotionally
-                                process the loss. “It’s only unrealized if I
-                                don’t look at it.” The portfolio—once labeled
-                                “high conviction”—includes meme stocks,
-                                speculative AI plays, and a cryptocurrency Jason
-                                admits he bought “because the logo was cool.” At
-                                press time, Jason confirmed plans to average
-                                down with his remaining $42, confidently
-                                stating, “This is definitely the bottom.”
-                            </p>
-                            <div class="news-footer">
-                                <span class="news-author"
-                                    >Maxwell "Bull Trap" Ledger</span
-                                >
-                                <span class="news-date">January 8, 2026</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="news-card secondary-article">
-                        <img
-                            src="../images/finance_article_2.jpg"
-                            alt="A blurred photo of a suited official staring thoughtfully at charts"
-                        />
-                        <div class="card-content">
-                            <h2 class="article-headline">
-                                Federal Reserve Confirms Rate Decision Based on
-                                “Vibes, Gut Feelings, and One Very Strong
-                                Coffee”
-                            </h2>
-                            <span class="news-club">Investor Confusion</span>
-                            <p class="article-body">
-                                The Federal Reserve confirmed Wednesday that its
-                                most recent interest rate decision was reached
-                                after extensive analysis of economic indicators,
-                                followed by a quick check of market vibes. “We
-                                reviewed inflation data, employment numbers, and
-                                then asked ourselves how we felt about it,” said
-                                one official, speaking on condition of anonymity
-                                while aggressively stirring a latte. “It just
-                                didn’t feel like a cut kind of day.” Markets
-                                initially rallied on hopes of clarity before
-                                reversing sharply when investors realized no one
-                                was entirely sure what the statement meant.
-                                Analysts described the guidance as “cautiously
-                                optimistic, but emotionally noncommittal.” At
-                                press time, the Fed reiterated that future
-                                decisions will remain “data-dependent,”
-                                clarifying that the data includes charts,
-                                forecasts, and “whatever everyone’s talking
-                                about that week.”
-                            </p>
-                            <div class="news-footer">
-                                <span class="news-author"
-                                    >Olivia Margin-Call</span
-                                >
-                                <span class="news-date">January 7, 2026</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="news-card">
-                        <img
-                            src="../images/finance_article_3.jpg"
-                            alt="A trader staring blankly at a screen filled with red charts while a phone notification reads: “Your alert has triggered again.”"
-                        />
-                        <div class="card-content content-small">
-                            <h2 class="article-headline headline-small">
-                                Markets React Poorly
-                            </h2>
-                            <span class="news-club">Stock Sell-Off</span>
-                            <h3 class="article-excerpt">
-                                Global markets moved sharply today after
-                                investors collectively decided they did not like
-                                what they were seeing.
-                            </h3>
-                            <div class="news-footer">
-                                <span class="news-author">Evan Stop-Loss</span>
-                                <span class="news-date">January 6, 2026</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="news-card">
-                        <img
-                            src="../images/finance_article_4.jpg"
-                            alt="A digital display of plummeting cryptocurrency prices, with a person facepalming in front of multiple monitors."
-                        />
-                        <div class="card-content content-small">
-                            <h2 class="article-headline headline-small">
-                                Crypto Melts Again
-                            </h2>
-                            <span class="news-pro">Cryptocurrency</span>
-                            <h3 class="article-excerpt">
-                                After a brief rally, cryptocurrency prices
-                                plunged again, leaving investors questioning
-                                both the market and their life choices.
-                            </h3>
-                            <div class="news-footer">
-                                <span class="news-author"
-                                    >Samantha Cashflow</span
-                                >
-                                <span class="news-date">January 8, 2026</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="news-card">
-                        <img
-                            src="../images/finance_article_5.jpg"
-                            alt="An office desk cluttered with financial reports literally piled high, with a stressed trader holding one in their hands and looking overwhelmed."
-                        />
-                        <div class="card-content content-small">
-                            <h2 class="article-headline headline-small">
-                                Wall Street Eats Its Own Reports
-                            </h2>
-                            <span class="news-club">Investor Confusion</span>
-                            <h3 class="article-excerpt">
-                                After a week of confusing guidance and
-                                conflicting data, Wall Street analysts have
-                                reportedly started ignoring their own
-                                reports—literally.
-                            </h3>
-                            <div class="news-footer">
-                                <span class="news-author"
-                                    >Derek Margincall</span
-                                >
-                                <span class="news-date">January 8, 2026</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-science" id="science" aria-label="Science">
-            <div class="site-section-separator"></div>
-            <h1 class="site-section-title">Science</h1>
-            <section class="main-article">
-                <div class="hero-article">
-                    <h3>
-                        YOUTH AND AI<br />SEARCHING FOR HOPE<br />IN A LOUD
-                        WORLD
-                    </h3>
-                    <p>By Future Minds Journal</p>
-                </div>
-            </section>
-            <div class="science-header">
-                <span class="arrow-icon">▼</span>
-                <h2>Read our Top Stories from Future Minds Journal</h2>
-            </div>
-            <section class="science" id="stories" aria-label="Stories">
-                <div id="science-content" class="science-articles">
-                    <article class="science-part">
-                        <img
-                            src="/photos/pexels-vantik93-12197326.jpg"
-                            alt=""
-                        />
-                        <h2 class="article-title">
-                            How AI is reshaping education for the next
-                            generation
-                        </h2>
-                        <p class="article-lead">
-                            Exploring the transformative impact of artificial
-                            intelligence on learning experiences worldwide.
-                        </p>
-                        <p class="article-body">
-                            In recent years, artificial intelligence (AI) has
-                            emerged as a powerful tool in various sectors, and
-                            education is no exception. The integration of AI
-                            technologies into educational settings is
-                            revolutionizing the way students learn and teachers
-                            instruct. From personalized learning experiences to
-                            intelligent tutoring systems, AI is reshaping the
-                            educational landscape in profound ways.
-                        </p>
-                    </article>
-                    <article class="science-part">
-                        <img
-                            src="/photos/sad-boy-being-bullied-stairs-low-angle.jpg"
-                            alt=""
-                        />
-                        <h2 class="article-title">
-                            How AI is reshaping education for the next
-                            generation
-                        </h2>
-                        <p class="article-lead">
-                            Exploring the transformative impact of artificial
-                            intelligence on learning experiences worldwide.
-                        </p>
-                        <p class="article-body">
-                            In recent years, artificial intelligence (AI) has
-                            emerged as a powerful tool in various sectors, and
-                            education is no exception. The integration of AI
-                            technologies into educational settings is
-                            revolutionizing the way students learn and teachers
-                            instruct. From personalized learning experiences to
-                            intelligent tutoring systems, AI is reshaping the
-                            educational landscape in profound ways.
-                        </p>
-                    </article>
-                </div>
-            </section>
-        </section>
-    </body>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-wrapper">
-            <section class="footer-head">
-                <span class="footer-logo">SSDC</span>
-                <div class="footer-social-links">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="32"
-                                    height="32"
-                                    viewBox="0 0 32 32"
-                                >
-                                    <path
-                                        d="M16,2c-7.732,0-14,6.268-14,14,0,6.566,4.52,12.075,10.618,13.588v-9.31h-2.887v-4.278h2.887v-1.843c0-4.765,2.156-6.974,6.835-6.974,.887,0,2.417,.174,3.043,.348v3.878c-.33-.035-.904-.052-1.617-.052-2.296,0-3.183,.87-3.183,3.13v1.513h4.573l-.786,4.278h-3.787v9.619c6.932-.837,12.304-6.74,12.304-13.897,0-7.732-6.268-14-14-14Z"
-                                    ></path>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="32"
-                                    height="32"
-                                    viewBox="0 0 32 32"
-                                >
-                                    <path
-                                        d="M18.42,14.009L27.891,3h-2.244l-8.224,9.559L10.855,3H3.28l9.932,14.455L3.28,29h2.244l8.684-10.095,6.936,10.095h7.576l-10.301-14.991h0Zm-3.074,3.573l-1.006-1.439L6.333,4.69h3.447l6.462,9.243,1.006,1.439,8.4,12.015h-3.447l-6.854-9.804h0Z"
-                                    ></path>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="32"
-                                    height="32"
-                                    viewBox="0 0 32 32"
-                                >
-                                    <path
-                                        d="M26.111,3H5.889c-1.595,0-2.889,1.293-2.889,2.889V26.111c0,1.595,1.293,2.889,2.889,2.889H26.111c1.595,0,2.889-1.293,2.889-2.889V5.889c0-1.595-1.293-2.889-2.889-2.889ZM10.861,25.389h-3.877V12.87h3.877v12.519Zm-1.957-14.158c-1.267,0-2.293-1.034-2.293-2.31s1.026-2.31,2.293-2.31,2.292,1.034,2.292,2.31-1.026,2.31-2.292,2.31Zm16.485,14.158h-3.858v-6.571c0-1.802-.685-2.809-2.111-2.809-1.551,0-2.362,1.048-2.362,2.809v6.571h-3.718V12.87h3.718v1.686s1.118-2.069,3.775-2.069,4.556,1.621,4.556,4.975v7.926Z"
-                                        fill-rule="evenodd"
-                                    ></path>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="32"
-                                height="32"
-                                viewBox="0 0 32 32"
-                            >
-                                <path
-                                    d="M10.202,2.098c-1.49,.07-2.507,.308-3.396,.657-.92,.359-1.7,.84-2.477,1.619-.776,.779-1.254,1.56-1.61,2.481-.345,.891-.578,1.909-.644,3.4-.066,1.49-.08,1.97-.073,5.771s.024,4.278,.096,5.772c.071,1.489,.308,2.506,.657,3.396,.359,.92,.84,1.7,1.619,2.477,.779,.776,1.559,1.253,2.483,1.61,.89,.344,1.909,.579,3.399,.644,1.49,.065,1.97,.08,5.771,.073,3.801-.007,4.279-.024,5.773-.095s2.505-.309,3.395-.657c.92-.36,1.701-.84,2.477-1.62s1.254-1.561,1.609-2.483c.345-.89,.579-1.909,.644-3.398,.065-1.494,.081-1.971,.073-5.773s-.024-4.278-.095-5.771-.308-2.507-.657-3.397c-.36-.92-.84-1.7-1.619-2.477s-1.561-1.254-2.483-1.609c-.891-.345-1.909-.58-3.399-.644s-1.97-.081-5.772-.074-4.278,.024-5.771,.096m.164,25.309c-1.365-.059-2.106-.286-2.6-.476-.654-.252-1.12-.557-1.612-1.044s-.795-.955-1.05-1.608c-.192-.494-.423-1.234-.487-2.599-.069-1.475-.084-1.918-.092-5.656s.006-4.18,.071-5.656c.058-1.364,.286-2.106,.476-2.6,.252-.655,.556-1.12,1.044-1.612s.955-.795,1.608-1.05c.493-.193,1.234-.422,2.598-.487,1.476-.07,1.919-.084,5.656-.092,3.737-.008,4.181,.006,5.658,.071,1.364,.059,2.106,.285,2.599,.476,.654,.252,1.12,.555,1.612,1.044s.795,.954,1.051,1.609c.193,.492,.422,1.232,.486,2.597,.07,1.476,.086,1.919,.093,5.656,.007,3.737-.006,4.181-.071,5.656-.06,1.365-.286,2.106-.476,2.601-.252,.654-.556,1.12-1.045,1.612s-.955,.795-1.608,1.05c-.493,.192-1.234,.422-2.597,.487-1.476,.069-1.919,.084-5.657,.092s-4.18-.007-5.656-.071M21.779,8.517c.002,.928,.755,1.679,1.683,1.677s1.679-.755,1.677-1.683c-.002-.928-.755-1.679-1.683-1.677,0,0,0,0,0,0-.928,.002-1.678,.755-1.677,1.683m-12.967,7.496c.008,3.97,3.232,7.182,7.202,7.174s7.183-3.232,7.176-7.202c-.008-3.97-3.233-7.183-7.203-7.175s-7.182,3.233-7.174,7.203m2.522-.005c-.005-2.577,2.08-4.671,4.658-4.676,2.577-.005,4.671,2.08,4.676,4.658,.005,2.577-2.08,4.671-4.658,4.676-2.577,.005-4.671-2.079-4.676-4.656h0"
-                                ></path>
-                            </svg>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="32"
-                                    height="32"
-                                    viewBox="0 0 32 32"
-                                >
-                                    <path
-                                        d="M31.331,8.248c-.368-1.386-1.452-2.477-2.829-2.848-2.496-.673-12.502-.673-12.502-.673,0,0-10.007,0-12.502,.673-1.377,.37-2.461,1.462-2.829,2.848-.669,2.512-.669,7.752-.669,7.752,0,0,0,5.241,.669,7.752,.368,1.386,1.452,2.477,2.829,2.847,2.496,.673,12.502,.673,12.502,.673,0,0,10.007,0,12.502-.673,1.377-.37,2.461-1.462,2.829-2.847,.669-2.512,.669-7.752,.669-7.752,0,0,0-5.24-.669-7.752ZM12.727,20.758V11.242l8.364,4.758-8.364,4.758Z"
-                                    ></path>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="32"
-                                    height="32"
-                                    viewBox="0 0 32 32"
-                                >
-                                    <path
-                                        d="M30.116,7.642c-.438-3.223-3.278-5.764-6.645-6.256-.568-.083-2.72-.386-7.705-.386h-.037c-4.987,0-6.056,.303-6.624,.386-3.273,.479-6.262,2.761-6.987,6.023-.349,1.606-.386,3.387-.321,5.02,.092,2.343,.11,4.681,.325,7.014,.149,1.55,.408,3.087,.776,4.601,.689,2.795,3.48,5.121,6.214,6.07,2.927,.99,6.075,1.154,9.091,.474,.332-.076,.66-.165,.984-.266,.732-.23,1.591-.488,2.222-.941,.009-.006,.016-.015,.021-.024,.005-.009,.008-.02,.008-.031v-2.261c0-.01-.003-.02-.007-.029-.004-.009-.011-.017-.019-.023-.008-.006-.017-.01-.027-.013-.01-.002-.02-.002-.03,0-1.932,.457-3.913,.685-5.899,.682-3.419,0-4.339-1.605-4.602-2.273-.212-.577-.346-1.18-.4-1.792,0-.01,.001-.021,.006-.03,.004-.009,.011-.018,.019-.024,.008-.006,.018-.011,.028-.013,.01-.002,.021-.002,.031,0,1.9,.453,3.848,.682,5.803,.682,.47,0,.939,0,1.409-.012,1.966-.055,4.038-.154,5.972-.528,.048-.01,.097-.018,.138-.03,3.051-.579,5.954-2.398,6.249-7.004,.011-.181,.039-1.899,.039-2.088,.001-.64,.208-4.536-.03-6.931Zm-4.696,11.493h-3.208v-7.772c0-1.636-.689-2.471-2.091-2.471-1.541,0-2.313,.987-2.313,2.937v4.254h-3.189v-4.254c0-1.95-.773-2.937-2.315-2.937-1.394,0-2.09,.834-2.091,2.471v7.772h-3.205V11.127c0-1.636,.422-2.936,1.267-3.9,.871-.961,2.014-1.455,3.433-1.455,1.642,0,2.883,.624,3.71,1.872l.798,1.325,.8-1.325c.827-1.248,2.068-1.872,3.707-1.872,1.417,0,2.56,.494,3.434,1.455,.845,.963,1.267,2.263,1.267,3.9l-.003,8.008Z"
-                                    ></path>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="32"
-                                    height="32"
-                                    viewBox="0 0 32 32"
-                                >
-                                    <circle
-                                        cx="6.566"
-                                        cy="25.434"
-                                        r="3.566"
-                                    ></circle>
-                                    <path
-                                        d="M20.234,29h-5.051c0-6.728-5.454-12.183-12.183-12.183h0v-5.051c9.518,0,17.234,7.716,17.234,17.234Z"
-                                    ></path>
-                                    <path
-                                        d="M23.8,29c0-11.488-9.312-20.8-20.8-20.8V3c14.359,0,26,11.641,26,26h-5.2Z"
-                                    ></path>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <ul class="footer-links">
-                <li><a href="#">Subscribe to CNBC PRO</a></li>
-                <li><a href="#">Subscribe to Investing Club</a></li>
-                <li><a href="#">Licensing & Reprints</a></li>
-                <li><a href="#">CNBC Councils</a></li>
-                <li><a href="#">Select Personal Finance</a></li>
-                <li><a href="#">Join the CNBC Panel</a></li>
-                <li><a href="#">Closed Captioning</a></li>
-                <li><a href="#">Digital Products</a></li>
-                <li><a href="#">News Releases</a></li>
-                <li><a href="#">Internships</a></li>
-                <li><a href="#">Corrections</a></li>
-                <li><a href="#">About CNBC</a></li>
-                <li><a href="#">Site Map</a></li>
-                <li><a href="#">Podcasts</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-
-            <section class="footer-cta">
-                <div class="footer-news-tips">
-                    <h2>News Tips</h2>
-                    <p>
-                        Got a confidential news tip? We want to hear from you.
-                    </p>
-                    <button class="footer-btn">Get In Touch</button>
-                </div>
-                <div class="footer-advertise">
-                    <h2>Advertise With Us</h2>
-                    <button class="footer-btn">Please Contact Us</button>
-                </div>
-                <div class="footer-newsletters">
-                    <h2>CNBC Newsletters</h2>
-                    <p>
-                        Sign up for free newsletters and get more CNBC delivered
-                        to your inbox
-                    </p>
-                    <button class="footer-btn">Sign Up Now</button>
-                    <p class="subtle" style="margin-top: 1rem">
-                        Get this delivered to your inbox, and more info about
-                        our products and services.
-                    </p>
-                </div>
-            </section>
-            <section class="legal">
-                <ul class="footer-legal-links">
-                    <li><a href="#">Ad Choices</a></li>
-                    <li>|</li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li>|</li>
-                    <li><a href="#">Cookie Notice</a></li>
-                    <li>|</li>
-                    <li><a href="#">CA Notice</a></li>
-                    <li>|</li>
-                    <li><a href="#">Terms of Service</a></li>
-                </ul>
-                <p class="copy">
-                    © <span id="year"></span> SSDC. All rights reduced.
-                </p>
-                <p class="disclaimer">
-                    Data not grounded in reality. Time is a flat circle. Please
-                    don't base your investments on this absurdity
-                </p>
-                <a href="#">Market Data Terms of Use and Disclaimers</a>
-            </section>
+                  <path
+                    d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </form>
+          </search>
+          <a href="#" id="watchlist-link">WATCHLIST 🔔</a>
+          <span class="separator">|</span>
+          <a href="#" id="sign-in-link">SIGN IN</a>
+          <a href="#" id="sign-up-link">CREATE NEW ACCOUNT </a>
+          <button
+            class="hamburger-menu"
+            id="mobile-menu-button"
+            aria-label="Open mobile navigation"
+            aria-controls="nav-overlay-mobile"
+            aria-expanded="false"
+          >
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect y="6" width="25" height="3" rx="1.5" fill="currentColor" />
+              <rect
+                y="13.5"
+                width="25"
+                height="3"
+                rx="1.5"
+                fill="currentColor"
+              />
+              <rect y="21" width="25" height="3" rx="1.5" fill="currentColor" />
+            </svg>
+          </button>
         </div>
-    </footer>
+      </div>
+
+      <div class="site-header-second-section">
+        <div class="site-header-second-section-left">
+          <button
+            class="hamburger-menu"
+            aria-label="Open desktop navigation"
+            id="desktop-menu-button"
+            aria-controls="nav-overlay-desktop"
+            aria-expanded="false"
+          >
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect y="6" width="25" height="3" rx="1.5" fill="currentColor" />
+              <rect
+                y="13.5"
+                width="25"
+                height="3"
+                rx="1.5"
+                fill="currentColor"
+              />
+              <rect y="21" width="25" height="3" rx="1.5" fill="currentColor" />
+            </svg>
+          </button>
+          <nav id="site-nav" class="site-nav" aria-label="Main-navigation">
+            <ul class="nav-list">
+              <li><a href="#headlines">HEADLINES</a></li>
+              <li><a href="#quotes">QUOTES</a></li>
+              <li><a href="#trivias">TRIVIAS</a></li>
+              <li><a href="#markets">MARKETS</a></li>
+              <li><a href="#volumes">VOLUMES</a></li>
+              <li><a href="#finance">FINANCE</a></li>
+              <li><a href="#science">SCIENCE</a></li>
+              <li><a href="#stories">STORIES</a></li>
+              <li><a href="#">PRO</a><sup class="join-link">JOIN</sup></li>
+              <li>
+                <a href="#" id="livestream-link">🔴LIVESTREAM</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="site-header-second-section-right">
+          <a href="#" id="ca-link">CA</a>
+          <span class="separator">·</span>
+          <a href="#">INTL</a>
+        </div>
+      </div>
+
+      <div id="nav-overlay" class="nav-overlay" aria-hidden="true">
+        <div
+          class="overlay-panel"
+          role="dialog"
+          aria-modal="true"
+          aria-label="navigation menu"
+        >
+          <div class="overlay-topbar">
+            <h1 class="site-name">SSDC</h1>
+            <button
+              class="overlay-close"
+              type="button"
+              aria-label="Close navigation"
+            >
+              X
+            </button>
+          </div>
+          <div class="overlay-content" id="overlay-nav-slot"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Stock Ticker -->
+    <section class="stock-ticker-section">
+      <div class="stock-ticker-container">
+        <div class="stock-tickers">
+          <div class="tickers">
+            <a href="#" class="ticker-container">
+              <div class="stock-info">
+                <div class="stock-name">Apple</div>
+                <div class="stock-price">$172.45</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▲</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">+10.00</div>
+                  <div class="stock-change-percentage">1.25%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container ticker-down">
+              <div class="stock-info">
+                <div class="stock-name">Microsoft</div>
+                <div class="stock-price">$310.20</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▼</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">-1.40</div>
+                  <div class="stock-change-percentage">0.45%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container">
+              <div class="stock-info">
+                <div class="stock-name">Amazon</div>
+                <div class="stock-price">$145.30</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▲</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">+0.73</div>
+                  <div class="stock-change-percentage">0.50%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container">
+              <div class="stock-info">
+                <div class="stock-name">Google</div>
+                <div class="stock-price">$2800.50</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▲</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">+58.81</div>
+                  <div class="stock-change-percentage">2.10%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container ticker-down">
+              <div class="stock-info">
+                <div class="stock-name">Tesla</div>
+                <div class="stock-price">$1020.00</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▼</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">-17.85</div>
+                  <div class="stock-change-percentage">1.75%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container">
+              <div class="stock-info">
+                <div class="stock-name">Meta</div>
+                <div class="stock-price">$485.20</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▲</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">+12.50</div>
+                  <div class="stock-change-percentage">2.65%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container">
+              <div class="stock-info">
+                <div class="stock-name">NVIDIA</div>
+                <div class="stock-price">$520.75</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▲</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">+25.30</div>
+                  <div class="stock-change-percentage">5.10%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container ticker-down">
+              <div class="stock-info">
+                <div class="stock-name">Netflix</div>
+                <div class="stock-price">$425.60</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▼</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">-8.20</div>
+                  <div class="stock-change-percentage">1.89%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container">
+              <div class="stock-info">
+                <div class="stock-name">JPMorgan</div>
+                <div class="stock-price">$165.40</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▲</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">+2.15</div>
+                  <div class="stock-change-percentage">1.32%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container ticker-down">
+              <div class="stock-info">
+                <div class="stock-name">Bank of America</div>
+                <div class="stock-price">$38.90</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▼</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">-0.45</div>
+                  <div class="stock-change-percentage">1.14%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container">
+              <div class="stock-info">
+                <div class="stock-name">Visa</div>
+                <div class="stock-price">$275.80</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▲</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">+4.20</div>
+                  <div class="stock-change-percentage">1.55%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container">
+              <div class="stock-info">
+                <div class="stock-name">Walmart</div>
+                <div class="stock-price">$162.30</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▲</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">+1.85</div>
+                  <div class="stock-change-percentage">1.15%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+          </div>
+          <!-- Duplicate tickers for seamless loop -->
+          <div class="tickers">
+            <a href="#" class="ticker-container">
+              <div class="stock-info">
+                <div class="stock-name">Apple</div>
+                <div class="stock-price">$172.45</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▲</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">+10.00</div>
+                  <div class="stock-change-percentage">1.25%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container ticker-down">
+              <div class="stock-info">
+                <div class="stock-name">Microsoft</div>
+                <div class="stock-price">$310.20</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▼</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">-1.40</div>
+                  <div class="stock-change-percentage">0.45%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container">
+              <div class="stock-info">
+                <div class="stock-name">Amazon</div>
+                <div class="stock-price">$145.30</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▲</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">+0.73</div>
+                  <div class="stock-change-percentage">0.50%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container">
+              <div class="stock-info">
+                <div class="stock-name">Google</div>
+                <div class="stock-price">$2800.50</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▲</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">+58.81</div>
+                  <div class="stock-change-percentage">2.10%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container ticker-down">
+              <div class="stock-info">
+                <div class="stock-name">Tesla</div>
+                <div class="stock-price">$1020.00</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▼</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">-17.85</div>
+                  <div class="stock-change-percentage">1.75%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container">
+              <div class="stock-info">
+                <div class="stock-name">Meta</div>
+                <div class="stock-price">$485.20</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▲</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">+12.50</div>
+                  <div class="stock-change-percentage">2.65%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container">
+              <div class="stock-info">
+                <div class="stock-name">NVIDIA</div>
+                <div class="stock-price">$520.75</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▲</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">+25.30</div>
+                  <div class="stock-change-percentage">5.10%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container ticker-down">
+              <div class="stock-info">
+                <div class="stock-name">Netflix</div>
+                <div class="stock-price">$425.60</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▼</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">-8.20</div>
+                  <div class="stock-change-percentage">1.89%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container">
+              <div class="stock-info">
+                <div class="stock-name">JPMorgan</div>
+                <div class="stock-price">$165.40</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▲</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">+2.15</div>
+                  <div class="stock-change-percentage">1.32%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container ticker-down">
+              <div class="stock-info">
+                <div class="stock-name">Bank of America</div>
+                <div class="stock-price">$38.90</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▼</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">-0.45</div>
+                  <div class="stock-change-percentage">1.14%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container">
+              <div class="stock-info">
+                <div class="stock-name">Visa</div>
+                <div class="stock-price">$275.80</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▲</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">+4.20</div>
+                  <div class="stock-change-percentage">1.55%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <a href="#" class="ticker-container">
+              <div class="stock-info">
+                <div class="stock-name">Walmart</div>
+                <div class="stock-price">$162.30</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▲</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">+1.85</div>
+                  <div class="stock-change-percentage">1.15%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-links">
+      <span class="quick-link-title">Quick Links</span>
+      <a class="quick-link" href="#headlines">Headlines</a>
+      <a class="quick-link" href="#quotes">Quotes</a>
+      <a class="quick-link" href="#trivias">Trivias</a>
+      <a class="quick-link" href="#markets">Markets</a>
+      <a class="quick-link" href="#volumes">Volumes</a>
+      <a class="quick-link" href="#finance">Finance</a>
+      <a class="quick-link" href="#science">Science</a>
+      <a class="quick-link" href="#stories">Stories</a>
+    </section>
+
+    <section class="banner" id="headlines" aria-label="Headlines">
+      <div class="auto-track">
+        <div class="banner-slide">
+          <img
+            class="auto-slide"
+            src="../photos/img4.jpg"
+            alt="Family in front of the house"
+          />
+          <div class="slider-headlines">
+            <h1 class="slider-title">
+              AI startup Mistral raises $113 million to take on OpenAI and
+              Anthropic
+            </h1>
+            <p class="slider-par">
+              French company aims to develop open-source AI models
+            </p>
+          </div>
+        </div>
+        <div class="banner-slide">
+          <img
+            class="auto-slide"
+            src="../photos/img1.jpg"
+            alt="Mountain view"
+          />
+          <div class="slider-headlines">
+            <h1 class="slider-title">
+              US stocks rise on optimism over economic data
+            </h1>
+            <p class="slider-par">
+              Investors hopeful about upcoming earnings reports
+            </p>
+          </div>
+        </div>
+      </div>
+      <section class="center-banner">
+        <div class="center-section">
+          <div class="center-img">
+            <img class="center-section-img" src="../photos/img5.jpg" alt="" />
+          </div>
+          <h2 class="dek">
+            One year on from the UK’s grand AI plan: Has its infrastructure
+            buildout been a success?
+          </h2>
+        </div>
+        <div class="center-section">
+          <div class="center-img">
+            <img class="center-section-img" src="../photos/img2.jpg" alt="" />
+          </div>
+          <h2 class="dek">
+            Nvidia-Groq deal is structured to keep ‘fiction of competition
+            alive,’ analyst says
+          </h2>
+        </div>
+      </section>
+
+      <section class="news-feed" aria-label="Latest news">
+        <h2 class="news">Latest News</h2>
+        <div class="news-scroll">
+          <ol class="news-list">
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">18 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    ><span class="news-pro">pro</span> Oil edges higher as
+                    traders watch Middle East shipping lanes</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">16 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    >Tech shares rebound after a volatile premarket session</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">14 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    ><span class="news-pro">pro</span> Treasury yields dip as
+                    investors price in softer growth</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">12 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    >Retailers report strong holiday traffic — but margins stay
+                    tight</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">10 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    ><span class="news-club">club</span> Analysts raise price
+                    targets on chipmakers after upbeat guidance</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">9 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    >European markets open mixed as traders digest inflation
+                    data</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">7 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#">
+                    <span class="news-club">club</span> Big banks set aside more
+                    reserves; executives talk 2026 outlook</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">6 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    >Shipping stocks jump after freight rates tick higher</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">5 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    ><span class="news-pro">pro</span> Crypto prices swing as
+                    traders react to risk-on sentiment</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">3 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    ><span class="news-pro">pro</span> Airlines add routes for
+                    spring — demand looks strong</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">2 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    >Futures inch up as investors look ahead to earnings
+                    season</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">1h ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    >Market recap: stocks end higher after late-day rally</a
+                  >
+                </h3>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </section>
+
+    <!-- Content River -->
+    <section class="river-wrapper">
+      <div class="content-river">
+        <div class="river-aside">
+          <section class="river-quote-finder" id="quotes" aria-label="Quotes">
+            <div class="quote-finder-search">
+              <h4 class="aside-header">Quote Finder</h4>
+
+              <div class="river-aside-quote-search-container">
+                <div class="river-aside-quote-search">
+                  <input
+                    type="text"
+                    name="quote-search"
+                    id="quote-search"
+                    placeholder="SEARCH"
+                  />
+                </div>
+                <button type="submit" class="river-aside-search-btn">
+                  <!-- AI generated svg icon for search -->
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <!-- end quote search -->
+              <div class="river-aside-popular-quotes">
+                <h4 class="aside-header" id="pop-quotes">Popular quotes</h4>
+                <div class="river-aside-quote">
+                  <div class="aside-quote-left">US10Y</div>
+                  <div class="aside-quote-right">
+                    <div class="aside-quote-right-top">4.17</div>
+                    <div class="neg">-0.02 (-0.38%)</div>
+                  </div>
+                </div>
+                <div class="river-aside-quote highlight">
+                  <div class="aside-quote-left">BTC.CM-</div>
+                  <div class="aside-quote-right">
+                    <div class="aside-quote-right-top">90497.21</div>
+                    <div class="pos">+23.15(0.03%)</div>
+                  </div>
+                </div>
+                <div class="river-aside-quote">
+                  <div class="aside-quote-left">SHW</div>
+                  <div class="aside-quote-right">
+                    <div class="aside-quote-right-top">353.28</div>
+                    <div class="pos">+12.25(3.59%)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="river-market-movers">
+            <h4 class="aside-header">Market Movers</h4>
+            <div class="river-market-movers-region-select">
+              <div><a href="#">US</a></div>
+              <div><a href="#">EUR</a></div>
+              <div><a href="#">ASIA</a></div>
+            </div>
+            <div class="river-market-movers-top">
+              <div class="aside-subheader">TOP</div>
+
+              <div class="river-market-movers-tile highlight">
+                <div class="tile-top-row">
+                  <div class="top-row-company">SNDK</div>
+                  <div class="top-row-value">377.41</div>
+                </div>
+                <div class="tile-bot-row">
+                  <div class="bot-row-full-name">Sandisk Corp</div>
+                  <div class="pos aside-quote-right">+42.87 (+12.81%)</div>
+                </div>
+              </div>
+              <div class="river-market-movers-tile">
+                <div class="tile-top-row">
+                  <div class="top-row-company">BLDR</div>
+                  <div class="top-row-value">124.66</div>
+                </div>
+                <div class="tile-bot-row">
+                  <div class="bot-row-full-name">Builders Firstsource Inc</div>
+                  <div class="pos aside-quote-right">+13.37 (+12.01%)</div>
+                </div>
+              </div>
+              <div class="river-market-movers-tile highlight">
+                <div class="tile-top-row">
+                  <div class="top-row-company">INTC</div>
+                  <div class="top-row-value">45.55</div>
+                </div>
+                <div class="tile-bot-row">
+                  <div class="bot-row-full-name">Intel Corp</div>
+                  <div class="pos">+4.44 (+10.8%)</div>
+                </div>
+              </div>
+            </div>
+            <div class="river-market-movers-bot">
+              <div class="aside-subheader">BOTTOM</div>
+              <div class="river-market-movers-tile highlight">
+                <div class="tile-top-row">
+                  <div class="top-row-company">MSTR</div>
+                  <div class="top-row-value">157.33</div>
+                </div>
+                <div class="tile-bot-row">
+                  <div class="bot-row-full-name">Strategy</div>
+                  <div class="neg aside-quote-right">-9.64 (-5.77%)</div>
+                </div>
+              </div>
+              <div class="river-market-movers-tile">
+                <div class="tile-top-row">
+                  <div class="top-row-company">LVS</div>
+                  <div class="top-row-value">58.95</div>
+                </div>
+                <div class="tile-bot-row">
+                  <div class="bot-row-full-name">Las Vegas Sands Corp</div>
+                  <div class="neg aside-quote-right">-2.95 (-4.77%)</div>
+                </div>
+              </div>
+              <div class="river-market-movers-tile highlight">
+                <div class="tile-top-row">
+                  <div class="top-row-company">CSGP</div>
+                  <div class="top-row-value">58.49</div>
+                </div>
+                <div class="tile-bot-row">
+                  <div class="bot-row-full-name">CoStar Group Inc</div>
+                  <div class="neg aside-quote-right">-2.87 (-4.68%)</div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- start card -->
+        <section class="river-stories" id="trivias" aria-label="Trivias">
+          <div class="river-card">
+            <div class="river-card-text">
+              <h4 class="river-card-headline">
+                How long until this resort is under water? What to do when your
+                beachfront home becomes a houseboat
+              </h4>
+              <a href="#">Alexis Presa</a>
+            </div>
+            <div class="river-card-thumbnail">
+              <img
+                src="./river-images/alexis-presa-OCvXQfLHHx0-unsplash.jpg"
+                alt="Beach Resort"
+              />
+            </div>
+          </div>
+          <!-- end card -->
+          <!-- start card -->
+          <div class="river-card">
+            <div class="river-card-text">
+              <h4 class="river-card-headline">
+                Vacationing family dies waiting for isolated gate to open
+              </h4>
+              <p>Officials say only AI can solve this problem</p>
+              <a href="#">Dan Begel</a>
+            </div>
+            <div class="river-card-thumbnail">
+              <img
+                src="./river-images/dan-begel-oyT-3_6wqNQ-unsplash.jpg"
+                alt="Desert Road"
+              />
+            </div>
+          </div>
+          <!-- end card -->
+          <!-- start card -->
+          <div class="river-card">
+            <div class="river-card-text">
+              <h4 class="river-card-headline">
+                Greenhouse Coalition accused of lack of transparency
+              </h4>
+              <p>Employees allege glass ceiling in place</p>
+              <a href="#">Lando Lakes</a>
+            </div>
+            <div class="river-card-thumbnail">
+              <img
+                src="./river-images/land-o-lakes-inc-9cmbLTARQMA-unsplash.jpg"
+                alt="Greenhouse"
+              />
+            </div>
+          </div>
+          <!-- end card -->
+          <!-- start card -->
+          <div class="river-card">
+            <div class="river-card-text">
+              <h4 class="river-card-headline">
+                Examining the delusions of people who wish for the return of
+                'the good old days'
+              </h4>
+              <p>
+                Life was much better when everything contained lead and
+                asbestos, right?
+              </p>
+              <a href="#">Will Shelley</a>
+            </div>
+            <div class="river-card-thumbnail">
+              <img
+                src="./river-images/will-shelley-_BAmtyGBbZU-unsplash.jpg"
+                alt="Aquaduct"
+              />
+            </div>
+          </div>
+          <!-- end card -->
+          <!-- start card -->
+          <div class="river-card">
+            <div class="river-card-text">
+              <h4 class="river-card-headline">
+                Keying classic cars to fight 'the establishment'
+              </h4>
+              <p>
+                Examining mindless destruction as a means of achieving social
+                justice
+              </p>
+              <a href="#">Zhen Yao</a>
+            </div>
+            <div class="river-card-thumbnail">
+              <img
+                src="./river-images/zhen-yao-TQjQ9DTr4vs-unsplash.jpg"
+                alt="Yellow Car"
+              />
+            </div>
+          </div>
+          <!-- end card -->
+          <!-- start card -->
+          <div class="river-card">
+            <div class="river-card-text">
+              <h4 class="river-card-headline">
+                Officials insist they can't predict knee injuries
+              </h4>
+              <a href="#">Natalia Grela</a>
+            </div>
+            <div class="river-card-thumbnail">
+              <img
+                src="./river-images/natalia-grela-6MM7l0QRBdk-unsplash.jpg"
+                alt="Ski Resort"
+              />
+            </div>
+          </div>
+          <!-- end card -->
+          <!-- start card -->
+          <div class="river-card">
+            <div class="river-card-text">
+              <h4 class="river-card-headline">
+                Colourful flags have never been so popular - but does anyone
+                know why we tie them to strings in the middle of a field?
+              </h4>
+              <a href="#">Lu Wen</a>
+            </div>
+            <div class="river-card-thumbnail">
+              <img
+                src="./river-images/wwwwww-lu-kYqe1UpbZq4-unsplash.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- end card -->
+          <!-- MID RIVER FEATURE ARTICLES -->
+          <section class="river-stories-mid-features">
+            <div class="river-mid-feature left">
+              <div class="river-mid-feature-thumbnail">
+                <img
+                  src="./river-images/land-o-lakes-inc-iFx1WMvjvpw-unsplash.jpg"
+                  alt="Man harvests oranges"
+                />
+              </div>
+              <div class="river-mid-feature-headline">
+                <h4>
+                  Man harvesting oranges increasingly concerned by the sound of
+                  approaching helicopters
+                </h4>
+              </div>
+            </div>
+            <div class="river-mid-feature right">
+              <div class="river-mid-feature-thumbnail">
+                <img
+                  src="./river-images/oleksandr-voloshchenko-6CA6iArzYEE-unsplash.jpg"
+                  alt="Low-flying bird"
+                />
+              </div>
+              <div class="river-mid-feature-headline">
+                <h4>
+                  Pelican narrowly avoids Border Patrol - insists that birds
+                  can't carry proof of citizenship
+                </h4>
+              </div>
+            </div>
+          </section>
+          <!-- END FEATURES -->
+          <!-- start card -->
+          <div class="river-card">
+            <div class="river-card-text">
+              <h4 class="river-card-headline">
+                If global warming is real, why is this place so cold? Checkmate,
+                science!
+              </h4>
+              <a href="#">Maeva Vigier</a>
+            </div>
+            <div class="river-card-thumbnail">
+              <img
+                src="./river-images/maeva-vigier-ZV8Ikhksk1M-unsplash.jpg"
+                alt="City in winter"
+              />
+            </div>
+          </div>
+          <!-- end card -->
+          <!-- start card -->
+          <div class="river-card">
+            <div class="river-card-text">
+              <h4 class="river-card-headline">
+                We've finally found a place where you won't be judged while
+                learning Smoke on the Water
+              </h4>
+              <p>
+                Stairway to Heaven also considered acceptable, if slightly less
+                realistic
+              </p>
+              <a href="#">Spenser Sembrat</a>
+            </div>
+            <div class="river-card-thumbnail">
+              <img
+                src="./river-images/spenser-sembrat-WlRDNUJ06fc-unsplash.jpg"
+                alt="Lute player on the Steppes"
+              />
+            </div>
+          </div>
+          <!-- end card -->
+          <!-- start card -->
+          <div class="river-card">
+            <div class="river-card-text">
+              <h4 class="river-card-headline">
+                Examining the effects of the drug epidemic on the flamingos of
+                Ansenuza National Park, Argentina
+              </h4>
+              <a href="#">Philippe Bontemps</a>
+            </div>
+            <div class="river-card-thumbnail">
+              <img
+                src="./river-images/philippe-bontemps-SC6CSaaibio-unsplash.jpg"
+                alt="Flamingos doing flamingo things"
+              />
+            </div>
+          </div>
+          <!-- end card -->
+          <!-- start card -->
+          <div class="river-card">
+            <div class="river-card-text">
+              <h4 class="river-card-headline">
+                Showing your worth by living in the tallest building in the
+                city.
+              </h4>
+              <p>Yes, a spire is absolutely legitimate height</p>
+              <a href="#">Zhenyu Luo</a>
+            </div>
+            <div class="river-card-thumbnail">
+              <img
+                src="./river-images/zhenyu-luo--kyIjCKZdfg-unsplash.jpg"
+                alt="Yet another cityscape at dusk"
+              />
+            </div>
+          </div>
+          <!-- end card -->
+        </section>
+        <div class="river-ads">This is a placeholder for advertising</div>
+      </div>
+    </section>
+
+    <!-- <div class="site-section-separator"></div> -->
+    <section class="market-section" id="markets" aria-label="Markets">
+      <div class="site-section-separator"></div>
+      <h1 class="site-section-title">Markets</h1>
+      <div class="market-section-container">
+        <div class="market-movers">
+          <div class="m-title">
+            <h3 class="market-section-subtitle">Market Movers</h3>
+            <div class="m-title-list">
+              <ul>
+                <li>
+                  <a href="#">S&P </a>
+                  <a href="#">Nasdaq</a>
+                  <a href="#">Dow</a>
+                  <a href="#">EUR</a>
+                  <a href="#">Asia</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="chart">
+            <div class="chart-top">
+              <h4>Top</h4>
+              <div class="market-item">
+                <p>apa <span class="plus">+</span></p>
+                <p class="market-item-name">Apa Corp (US)</p>
+                <p class="market-green">8.944%</p>
+                <div class="market-bar">
+                  <div class="bar"></div>
+                </div>
+              </div>
+              <div class="market-item">
+                <p>sw <span class="plus">+</span></p>
+                <p class="market-item-name">Sw Corp</p>
+                <p class="market-green">8.766%</p>
+                <div class="market-bar">
+                  <div class="bar"></div>
+                </div>
+              </div>
+              <div class="market-item">
+                <p>Lyb <span class="plus">+</span></p>
+                <p class="market-item-name">LyondellBasell</p>
+                <p class="market-green">7.393%</p>
+                <div class="market-bar">
+                  <div class="bar"></div>
+                </div>
+              </div>
+              <div class="market-item">
+                <p>bg <span class="plus">+</span></p>
+                <p class="market-item-name">BG Group</p>
+                <p class="market-green">7.163%</p>
+                <div class="market-bar">
+                  <div class="bar"></div>
+                </div>
+              </div>
+              <div class="market-item">
+                <p>ip <span class="plus">+</span></p>
+                <p class="market-item-name">International</p>
+                <p class="market-green">6.8%</p>
+                <div class="market-bar">
+                  <div class="bar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="chart-bottom">
+              <h4>Bottom</h4>
+              <div class="market-item">
+                <p>apa <span class="plus">+</span></p>
+                <p class="market-item-name">Apa Corp (US)</p>
+                <p class="market-red">8.944%</p>
+                <div class="market-bar">
+                  <div class="red-bar"></div>
+                </div>
+              </div>
+              <div class="market-item">
+                <p>sw <span class="plus">+</span></p>
+                <p class="market-item-name">Sw Corp</p>
+                <p class="market-red">8.766%</p>
+                <div class="market-bar">
+                  <div class="red-bar"></div>
+                </div>
+              </div>
+              <div class="market-item">
+                <p>Lyb <span class="plus">+</span></p>
+                <p class="market-item-name">LyondellBasell</p>
+                <p class="market-red">7.393%</p>
+                <div class="market-bar">
+                  <div class="red-bar"></div>
+                </div>
+              </div>
+              <div class="market-item">
+                <p>bg <span class="plus">+</span></p>
+                <p class="market-item-name">BG Group</p>
+                <p class="market-red">7.163%</p>
+                <div class="market-bar">
+                  <div class="red-bar"></div>
+                </div>
+              </div>
+              <div class="market-item">
+                <p>ip <span class="plus">+</span></p>
+                <p class="market-item-name">International</p>
+                <p class="market-red">6.8%</p>
+                <div class="market-bar">
+                  <div class="red-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="market-most-active"
+          id="active-stocks"
+          aria-label="Active Stocks"
+        >
+          <h2 class="market-section-subtitle">Most Active</h2>
+          <table class="market-table">
+            <thead>
+              <tr>
+                <th>NAME</th>
+                <th>PRICE</th>
+                <th>CHG</th>
+                <th>%CHG</th>
+                <th>VOL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>AAPL <a href="#" class="plus">+</a></td>
+                <td>150.75</td>
+                <td class="market-green">+1.23</td>
+                <td class="market-green">+1.25 ▲</td>
+                <td>100,000</td>
+              </tr>
+              <tr>
+                <td>MSFT <a href="#" class="plus">+</a></td>
+                <td>210.22</td>
+                <td class="market-red">-0.34</td>
+                <td class="market-red">-0.16 ▼</td>
+                <td>150,000</td>
+              </tr>
+              <tr>
+                <td>GOOGL <a href="#" class="plus">+</a></td>
+                <td>2,800.12</td>
+                <td class="market-green">+12.45</td>
+                <td class="market-green">+0.45 ▲</td>
+                <td>200,000</td>
+              </tr>
+              <tr>
+                <td>AMZN <a href="#" class="plus">+</a></td>
+                <td>3,500.23</td>
+                <td class="market-red">-1.23</td>
+                <td class="market-red">-0.04 ▼</td>
+                <td>120,000</td>
+              </tr>
+              <tr>
+                <td>TSLA <a href="#" class="plus">+</a></td>
+                <td>1,000.50</td>
+                <td class="market-green">+5.23</td>
+                <td class="market-green">+0.23 ▲</td>
+                <td>180,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="market-latest-news">
+          <h2 class="market-section-subtitle">Latest News</h2>
+          <div class="market-latest-news-list">
+            <ul class="market-latest-news-list-items">
+              <li>
+                <a href="#">
+                  <h3 class="news-title">
+                    <span class="news-live">live</span>Stock market crashes
+                    after CEO forgets to feed his goldfish
+                  </h3>
+                </a>
+                <div class="news-footer">
+                  <div class="news-date">2 hours ago</div>
+                  <div class="news-author">· Penny Stocks</div>
+                </div>
+              </li>
+              <li>
+                <a href="#">
+                  <h3 class="news-title">
+                    <span class="news-club">club</span>Analyst predicts Bitcoin
+                    will hit $1 million or $0, definitely one of those
+                  </h3>
+                </a>
+                <div class="news-footer">
+                  <div class="news-date">5 hours ago</div>
+                  <div class="news-author">· Warren Buffet's Cousin</div>
+                </div>
+              </li>
+              <li>
+                <a href="#">
+                  <h3 class="news-title">
+                    <span class="news-pro">pro</span>Fed raises interest rates,
+                    millennials still can't afford avocado toast
+                  </h3>
+                </a>
+                <div class="news-footer">
+                  <div class="news-date">8 hours ago</div>
+                  <div class="news-author">· Cash Money</div>
+                </div>
+              </li>
+              <li>
+                <a href="#">
+                  <h3 class="news-title">
+                    <span class="news-live">live</span>Tech stocks rally after
+                    AI learns to make coffee, investors optimistic
+                  </h3>
+                </a>
+                <div class="news-footer">
+                  <div class="news-date">12 hours ago</div>
+                  <div class="news-author">· Bull Market</div>
+                </div>
+              </li>
+              <li>
+                <a href="#">
+                  <h3 class="news-title">
+                    <span class="news-pro">pro</span>Wall Street in chaos as
+                    trader accidentally buys 10,000 shares of "STONKS"
+                  </h3>
+                </a>
+                <div class="news-footer">
+                  <div class="news-date">1 day ago</div>
+                  <div class="news-author">· Diamond Hands</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="market-ususual-volume" id="volumes" aria-label="Volumes">
+          <h2 class="market-section-subtitle">Ususual Volume</h2>
+          <table class="market-table">
+            <thead>
+              <tr>
+                <th>NAME</th>
+                <th>PRICE</th>
+                <th>CHG</th>
+                <th>%CHG</th>
+                <th>X10 DAY VOL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>NVDA <a href="#" class="plus">+</a></td>
+                <td>485.67</td>
+                <td class="market-green">+8.92</td>
+                <td class="market-green">+1.87 ▲</td>
+                <td>95,000</td>
+              </tr>
+              <tr>
+                <td>META <a href="#" class="plus">+</a></td>
+                <td>325.44</td>
+                <td class="market-red">-2.15</td>
+                <td class="market-red">-0.66 ▼</td>
+                <td>125,000</td>
+              </tr>
+              <tr>
+                <td>NFLX <a href="#" class="plus">+</a></td>
+                <td>425.88</td>
+                <td class="market-red">-6.34</td>
+                <td class="market-red">-1.51 ▼</td>
+                <td>88,000</td>
+              </tr>
+              <tr>
+                <td>JPM <a href="#" class="plus">+</a></td>
+                <td>142.33</td>
+                <td class="market-green">+0.87</td>
+                <td class="market-green">+0.61 ▲</td>
+                <td>165,000</td>
+              </tr>
+              <tr>
+                <td>AMD <a href="#" class="plus">+</a></td>
+                <td>128.56</td>
+                <td class="market-green">+3.21</td>
+                <td class="market-green">+2.56 ▲</td>
+                <td>142,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles -->
+    <section class="articles" id="finance" aria-label="Finance">
+      <div class="article-section-container">
+        <div class="site-section-separator"></div>
+        <h1 class="site-section-title">Finance</h1>
+        <div class="articles-container">
+          <article class="news-card primary-article">
+            <img
+              src="../images/finance_article_1.png"
+              alt="A stressed man staring at three monitors showing red stock charts, holding a coffee mug labeled 'Buy the Dip'"
+            />
+            <div class="card-content">
+              <h2 class="article-headline">
+                <span class="news-pro">Meme Stocks</span>
+                Local Investor Declares Himself “Long-Term Holder” After
+                Portfolio Drops 73% Overnight
+              </h2>
+              <h3 class="article-excerpt">
+                After confidently announcing his commitment to long-term
+                investing last night, a local retail investor clarified this
+                morning that the decision was made entirely because selling now
+                would “lock in the pain.”
+              </h3>
+              <p class="article-body">
+                Local retail investor Jason M. officially rebranded himself as a
+                “long-term holder” Tuesday night after watching his portfolio
+                lose 73% of its value in a single session. “I believe in the
+                fundamentals now,” Jason said, clarifying that this belief
+                formed immediately after selling would have required him to
+                emotionally process the loss. “It’s only unrealized if I don’t
+                look at it.” The portfolio—once labeled “high
+                conviction”—includes meme stocks, speculative AI plays, and a
+                cryptocurrency Jason admits he bought “because the logo was
+                cool.” At press time, Jason confirmed plans to average down with
+                his remaining $42, confidently stating, “This is definitely the
+                bottom.”
+              </p>
+              <div class="news-footer">
+                <span class="news-author">Maxwell "Bull Trap" Ledger</span>
+                <span class="news-date">January 8, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="news-card secondary-article">
+            <img
+              src="../images/finance_article_2.jpg"
+              alt="A blurred photo of a suited official staring thoughtfully at charts"
+            />
+            <div class="card-content">
+              <h2 class="article-headline">
+                Federal Reserve Confirms Rate Decision Based on “Vibes, Gut
+                Feelings, and One Very Strong Coffee”
+              </h2>
+              <span class="news-club">Investor Confusion</span>
+              <p class="article-body">
+                The Federal Reserve confirmed Wednesday that its most recent
+                interest rate decision was reached after extensive analysis of
+                economic indicators, followed by a quick check of market vibes.
+                “We reviewed inflation data, employment numbers, and then asked
+                ourselves how we felt about it,” said one official, speaking on
+                condition of anonymity while aggressively stirring a latte. “It
+                just didn’t feel like a cut kind of day.” Markets initially
+                rallied on hopes of clarity before reversing sharply when
+                investors realized no one was entirely sure what the statement
+                meant. Analysts described the guidance as “cautiously
+                optimistic, but emotionally noncommittal.” At press time, the
+                Fed reiterated that future decisions will remain
+                “data-dependent,” clarifying that the data includes charts,
+                forecasts, and “whatever everyone’s talking about that week.”
+              </p>
+              <div class="news-footer">
+                <span class="news-author">Olivia Margin-Call</span>
+                <span class="news-date">January 7, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img
+              src="../images/finance_article_3.jpg"
+              alt="A trader staring blankly at a screen filled with red charts while a phone notification reads: “Your alert has triggered again.”"
+            />
+            <div class="card-content content-small">
+              <h2 class="article-headline headline-small">
+                Markets React Poorly
+              </h2>
+              <span class="news-club">Stock Sell-Off</span>
+              <h3 class="article-excerpt">
+                Global markets moved sharply today after investors collectively
+                decided they did not like what they were seeing.
+              </h3>
+              <div class="news-footer">
+                <span class="news-author">Evan Stop-Loss</span>
+                <span class="news-date">January 6, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img
+              src="../images/finance_article_4.jpg"
+              alt="A digital display of plummeting cryptocurrency prices, with a person facepalming in front of multiple monitors."
+            />
+            <div class="card-content content-small">
+              <h2 class="article-headline headline-small">
+                Crypto Melts Again
+              </h2>
+              <span class="news-pro">Cryptocurrency</span>
+              <h3 class="article-excerpt">
+                After a brief rally, cryptocurrency prices plunged again,
+                leaving investors questioning both the market and their life
+                choices.
+              </h3>
+              <div class="news-footer">
+                <span class="news-author">Samantha Cashflow</span>
+                <span class="news-date">January 8, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img
+              src="../images/finance_article_5.jpg"
+              alt="An office desk cluttered with financial reports literally piled high, with a stressed trader holding one in their hands and looking overwhelmed."
+            />
+            <div class="card-content content-small">
+              <h2 class="article-headline headline-small">
+                Wall Street Eats Its Own Reports
+              </h2>
+              <span class="news-club">Investor Confusion</span>
+              <h3 class="article-excerpt">
+                After a week of confusing guidance and conflicting data, Wall
+                Street analysts have reportedly started ignoring their own
+                reports—literally.
+              </h3>
+              <div class="news-footer">
+                <span class="news-author">Derek Margincall</span>
+                <span class="news-date">January 8, 2026</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-science" id="science" aria-label="Science">
+      <div class="site-section-separator"></div>
+      <h1 class="site-section-title">Science</h1>
+      <section class="main-article">
+        <div class="hero-article">
+          <h3>YOUTH AND AI<br />SEARCHING FOR HOPE<br />IN A LOUD WORLD</h3>
+          <p>By Future Minds Journal</p>
+        </div>
+      </section>
+      <div class="science-header">
+        <span class="arrow-icon">▼</span>
+        <h2>Read our Top Stories from Future Minds Journal</h2>
+      </div>
+      <section class="science" id="stories" aria-label="Stories">
+        <div id="science-content" class="science-articles">
+          <article class="science-part">
+            <img src="/photos/pexels-vantik93-12197326.jpg" alt="" />
+            <h2 class="article-title">
+              How AI is reshaping education for the next generation
+            </h2>
+            <p class="article-lead">
+              Exploring the transformative impact of artificial intelligence on
+              learning experiences worldwide.
+            </p>
+            <p class="article-body">
+              In recent years, artificial intelligence (AI) has emerged as a
+              powerful tool in various sectors, and education is no exception.
+              The integration of AI technologies into educational settings is
+              revolutionizing the way students learn and teachers instruct. From
+              personalized learning experiences to intelligent tutoring systems,
+              AI is reshaping the educational landscape in profound ways.
+            </p>
+          </article>
+          <article class="science-part">
+            <img
+              src="/photos/sad-boy-being-bullied-stairs-low-angle.jpg"
+              alt=""
+            />
+            <h2 class="article-title">
+              How AI is reshaping education for the next generation
+            </h2>
+            <p class="article-lead">
+              Exploring the transformative impact of artificial intelligence on
+              learning experiences worldwide.
+            </p>
+            <p class="article-body">
+              In recent years, artificial intelligence (AI) has emerged as a
+              powerful tool in various sectors, and education is no exception.
+              The integration of AI technologies into educational settings is
+              revolutionizing the way students learn and teachers instruct. From
+              personalized learning experiences to intelligent tutoring systems,
+              AI is reshaping the educational landscape in profound ways.
+            </p>
+          </article>
+        </div>
+      </section>
+    </section>
+  </body>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-wrapper">
+      <section class="footer-head">
+        <span class="footer-logo">SSDC</span>
+        <div class="footer-social-links">
+          <ul>
+            <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    d="M16,2c-7.732,0-14,6.268-14,14,0,6.566,4.52,12.075,10.618,13.588v-9.31h-2.887v-4.278h2.887v-1.843c0-4.765,2.156-6.974,6.835-6.974,.887,0,2.417,.174,3.043,.348v3.878c-.33-.035-.904-.052-1.617-.052-2.296,0-3.183,.87-3.183,3.13v1.513h4.573l-.786,4.278h-3.787v9.619c6.932-.837,12.304-6.74,12.304-13.897,0-7.732-6.268-14-14-14Z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    d="M18.42,14.009L27.891,3h-2.244l-8.224,9.559L10.855,3H3.28l9.932,14.455L3.28,29h2.244l8.684-10.095,6.936,10.095h7.576l-10.301-14.991h0Zm-3.074,3.573l-1.006-1.439L6.333,4.69h3.447l6.462,9.243,1.006,1.439,8.4,12.015h-3.447l-6.854-9.804h0Z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    d="M26.111,3H5.889c-1.595,0-2.889,1.293-2.889,2.889V26.111c0,1.595,1.293,2.889,2.889,2.889H26.111c1.595,0,2.889-1.293,2.889-2.889V5.889c0-1.595-1.293-2.889-2.889-2.889ZM10.861,25.389h-3.877V12.87h3.877v12.519Zm-1.957-14.158c-1.267,0-2.293-1.034-2.293-2.31s1.026-2.31,2.293-2.31,2.292,1.034,2.292,2.31-1.026,2.31-2.292,2.31Zm16.485,14.158h-3.858v-6.571c0-1.802-.685-2.809-2.111-2.809-1.551,0-2.362,1.048-2.362,2.809v6.571h-3.718V12.87h3.718v1.686s1.118-2.069,3.775-2.069,4.556,1.621,4.556,4.975v7.926Z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  d="M10.202,2.098c-1.49,.07-2.507,.308-3.396,.657-.92,.359-1.7,.84-2.477,1.619-.776,.779-1.254,1.56-1.61,2.481-.345,.891-.578,1.909-.644,3.4-.066,1.49-.08,1.97-.073,5.771s.024,4.278,.096,5.772c.071,1.489,.308,2.506,.657,3.396,.359,.92,.84,1.7,1.619,2.477,.779,.776,1.559,1.253,2.483,1.61,.89,.344,1.909,.579,3.399,.644,1.49,.065,1.97,.08,5.771,.073,3.801-.007,4.279-.024,5.773-.095s2.505-.309,3.395-.657c.92-.36,1.701-.84,2.477-1.62s1.254-1.561,1.609-2.483c.345-.89,.579-1.909,.644-3.398,.065-1.494,.081-1.971,.073-5.773s-.024-4.278-.095-5.771-.308-2.507-.657-3.397c-.36-.92-.84-1.7-1.619-2.477s-1.561-1.254-2.483-1.609c-.891-.345-1.909-.58-3.399-.644s-1.97-.081-5.772-.074-4.278,.024-5.771,.096m.164,25.309c-1.365-.059-2.106-.286-2.6-.476-.654-.252-1.12-.557-1.612-1.044s-.795-.955-1.05-1.608c-.192-.494-.423-1.234-.487-2.599-.069-1.475-.084-1.918-.092-5.656s.006-4.18,.071-5.656c.058-1.364,.286-2.106,.476-2.6,.252-.655,.556-1.12,1.044-1.612s.955-.795,1.608-1.05c.493-.193,1.234-.422,2.598-.487,1.476-.07,1.919-.084,5.656-.092,3.737-.008,4.181,.006,5.658,.071,1.364,.059,2.106,.285,2.599,.476,.654,.252,1.12,.555,1.612,1.044s.795,.954,1.051,1.609c.193,.492,.422,1.232,.486,2.597,.07,1.476,.086,1.919,.093,5.656,.007,3.737-.006,4.181-.071,5.656-.06,1.365-.286,2.106-.476,2.601-.252,.654-.556,1.12-1.045,1.612s-.955,.795-1.608,1.05c-.493,.192-1.234,.422-2.597,.487-1.476,.069-1.919,.084-5.657,.092s-4.18-.007-5.656-.071M21.779,8.517c.002,.928,.755,1.679,1.683,1.677s1.679-.755,1.677-1.683c-.002-.928-.755-1.679-1.683-1.677,0,0,0,0,0,0-.928,.002-1.678,.755-1.677,1.683m-12.967,7.496c.008,3.97,3.232,7.182,7.202,7.174s7.183-3.232,7.176-7.202c-.008-3.97-3.233-7.183-7.203-7.175s-7.182,3.233-7.174,7.203m2.522-.005c-.005-2.577,2.08-4.671,4.658-4.676,2.577-.005,4.671,2.08,4.676,4.658,.005,2.577-2.08,4.671-4.658,4.676-2.577,.005-4.671-2.079-4.676-4.656h0"
+                ></path>
+              </svg>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    d="M31.331,8.248c-.368-1.386-1.452-2.477-2.829-2.848-2.496-.673-12.502-.673-12.502-.673,0,0-10.007,0-12.502,.673-1.377,.37-2.461,1.462-2.829,2.848-.669,2.512-.669,7.752-.669,7.752,0,0,0,5.241,.669,7.752,.368,1.386,1.452,2.477,2.829,2.847,2.496,.673,12.502,.673,12.502,.673,0,0,10.007,0,12.502-.673,1.377-.37,2.461-1.462,2.829-2.847,.669-2.512,.669-7.752,.669-7.752,0,0,0-5.24-.669-7.752ZM12.727,20.758V11.242l8.364,4.758-8.364,4.758Z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    d="M30.116,7.642c-.438-3.223-3.278-5.764-6.645-6.256-.568-.083-2.72-.386-7.705-.386h-.037c-4.987,0-6.056,.303-6.624,.386-3.273,.479-6.262,2.761-6.987,6.023-.349,1.606-.386,3.387-.321,5.02,.092,2.343,.11,4.681,.325,7.014,.149,1.55,.408,3.087,.776,4.601,.689,2.795,3.48,5.121,6.214,6.07,2.927,.99,6.075,1.154,9.091,.474,.332-.076,.66-.165,.984-.266,.732-.23,1.591-.488,2.222-.941,.009-.006,.016-.015,.021-.024,.005-.009,.008-.02,.008-.031v-2.261c0-.01-.003-.02-.007-.029-.004-.009-.011-.017-.019-.023-.008-.006-.017-.01-.027-.013-.01-.002-.02-.002-.03,0-1.932,.457-3.913,.685-5.899,.682-3.419,0-4.339-1.605-4.602-2.273-.212-.577-.346-1.18-.4-1.792,0-.01,.001-.021,.006-.03,.004-.009,.011-.018,.019-.024,.008-.006,.018-.011,.028-.013,.01-.002,.021-.002,.031,0,1.9,.453,3.848,.682,5.803,.682,.47,0,.939,0,1.409-.012,1.966-.055,4.038-.154,5.972-.528,.048-.01,.097-.018,.138-.03,3.051-.579,5.954-2.398,6.249-7.004,.011-.181,.039-1.899,.039-2.088,.001-.64,.208-4.536-.03-6.931Zm-4.696,11.493h-3.208v-7.772c0-1.636-.689-2.471-2.091-2.471-1.541,0-2.313,.987-2.313,2.937v4.254h-3.189v-4.254c0-1.95-.773-2.937-2.315-2.937-1.394,0-2.09,.834-2.091,2.471v7.772h-3.205V11.127c0-1.636,.422-2.936,1.267-3.9,.871-.961,2.014-1.455,3.433-1.455,1.642,0,2.883,.624,3.71,1.872l.798,1.325,.8-1.325c.827-1.248,2.068-1.872,3.707-1.872,1.417,0,2.56,.494,3.434,1.455,.845,.963,1.267,2.263,1.267,3.9l-.003,8.008Z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                >
+                  <circle cx="6.566" cy="25.434" r="3.566"></circle>
+                  <path
+                    d="M20.234,29h-5.051c0-6.728-5.454-12.183-12.183-12.183h0v-5.051c9.518,0,17.234,7.716,17.234,17.234Z"
+                  ></path>
+                  <path
+                    d="M23.8,29c0-11.488-9.312-20.8-20.8-20.8V3c14.359,0,26,11.641,26,26h-5.2Z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <ul class="footer-links">
+        <li><a href="#">Subscribe to CNBC PRO</a></li>
+        <li><a href="#">Subscribe to Investing Club</a></li>
+        <li><a href="#">Licensing & Reprints</a></li>
+        <li><a href="#">CNBC Councils</a></li>
+        <li><a href="#">Select Personal Finance</a></li>
+        <li><a href="#">Join the CNBC Panel</a></li>
+        <li><a href="#">Closed Captioning</a></li>
+        <li><a href="#">Digital Products</a></li>
+        <li><a href="#">News Releases</a></li>
+        <li><a href="#">Internships</a></li>
+        <li><a href="#">Corrections</a></li>
+        <li><a href="#">About CNBC</a></li>
+        <li><a href="#">Site Map</a></li>
+        <li><a href="#">Podcasts</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <section class="footer-cta">
+        <div class="footer-news-tips">
+          <h2>News Tips</h2>
+          <p>Got a confidential news tip? We want to hear from you.</p>
+          <button class="footer-btn">Get In Touch</button>
+        </div>
+        <div class="footer-advertise">
+          <h2>Advertise With Us</h2>
+          <button class="footer-btn">Please Contact Us</button>
+        </div>
+        <div class="footer-newsletters">
+          <h2>CNBC Newsletters</h2>
+          <p>
+            Sign up for free newsletters and get more CNBC delivered to your
+            inbox
+          </p>
+          <button class="footer-btn">Sign Up Now</button>
+          <p class="subtle" style="margin-top: 1rem">
+            Get this delivered to your inbox, and more info about our products
+            and services.
+          </p>
+        </div>
+      </section>
+      <section class="legal">
+        <ul class="footer-legal-links">
+          <li><a href="#">Ad Choices</a></li>
+          <li>|</li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li>|</li>
+          <li><a href="#">Cookie Notice</a></li>
+          <li>|</li>
+          <li><a href="#">CA Notice</a></li>
+          <li>|</li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+        <p class="copy">© <span id="year"></span> SSDC. All rights reduced.</p>
+        <p class="disclaimer">
+          Data not grounded in reality. Time is a flat circle. Please don't base
+          your investments on this absurdity
+        </p>
+        <a href="#">Market Data Terms of Use and Disclaimers</a>
+      </section>
+    </div>
+  </footer>
 </html>
