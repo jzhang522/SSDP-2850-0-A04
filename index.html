@@ -1,19 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Site Title</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Title</title>
 
-        <!-- styles -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="styles/index.css" />
-        <link rel="stylesheet" href="styles/slider.css" />
+    <!-- styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/slider.css" />
 
         <!-- script -->
         <script src="scripts/index.js" defer></script>
@@ -107,100 +107,79 @@
                 </div>
             </div>
 
-            <div class="site-header-second-section">
-                <div class="site-header-second-section-left">
-                    <button
-                        class="hamburger-menu"
-                        aria-label="Open desktop navigation"
-                        id="desktop-menu-button"
-                        aria-controls="nav-overlay-desktop"
-                        aria-expanded="false"
-                    >
-                        <svg
-                            width="30"
-                            height="30"
-                            viewBox="0 0 30 30"
-                            fill="none"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <rect
-                                y="6"
-                                width="25"
-                                height="3"
-                                rx="1.5"
-                                fill="currentColor"
-                            />
-                            <rect
-                                y="13.5"
-                                width="25"
-                                height="3"
-                                rx="1.5"
-                                fill="currentColor"
-                            />
-                            <rect
-                                y="21"
-                                width="25"
-                                height="3"
-                                rx="1.5"
-                                fill="currentColor"
-                            />
-                        </svg>
-                    </button>
-                    <nav
-                        id="site-nav"
-                        class="site-nav"
-                        aria-label="Main-navigation"
-                    >
-                        <ul class="nav-list">
-                            <li><a href="#headlines">HEADLINES</a></li>
-                            <li><a href="#quotes">QUOTES</a></li>
-                            <li><a href="#trivias">TRIVIAS</a></li>
-                            <li><a href="#markets">MARKETS</a></li>
-                            <li><a href="#volumes">VOLUMES</a></li>
-                            <li><a href="#finance">FINANCE</a></li>
-                            <li><a href="#science">SCIENCE</a></li>
-                            <li><a href="#stories">STORIES</a></li>
-                            <li>
-                                <a href="#">PRO</a
-                                ><sup class="join-link">JOIN</sup>
-                            </li>
-                            <li>
-                                <a href="#" id="livestream-link"
-                                    >🔴LIVESTREAM</a
-                                >
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="site-header-second-section-right">
-                    <a href="#" id="ca-link">CA</a>
-                    <span class="separator">·</span>
-                    <a href="#">INTL</a>
-                </div>
-            </div>
+      <div class="site-header-second-section">
+        <div class="site-header-second-section-left">
+          <button
+            class="hamburger-menu"
+            aria-label="Open desktop navigation"
+            id="desktop-menu-button"
+            aria-controls="nav-overlay-desktop"
+            aria-expanded="false"
+          >
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect y="6" width="25" height="3" rx="1.5" fill="currentColor" />
+              <rect
+                y="13.5"
+                width="25"
+                height="3"
+                rx="1.5"
+                fill="currentColor"
+              />
+              <rect y="21" width="25" height="3" rx="1.5" fill="currentColor" />
+            </svg>
+          </button>
+          <nav id="site-nav" class="site-nav" aria-label="Main-navigation">
+            <ul class="nav-list">
+              <li><a href="#headlines">HEADLINES</a></li>
+              <li><a href="#quotes">QUOTES</a></li>
+              <li><a href="#trivias">TRIVIAS</a></li>
+              <li><a href="#markets">MARKETS</a></li>
+              <li><a href="#volumes">VOLUMES</a></li>
+              <li><a href="#finance">FINANCE</a></li>
+              <li><a href="#science">SCIENCE</a></li>
+              <li><a href="#stories">STORIES</a></li>
+              <li><a href="#">PRO</a><sup class="join-link">JOIN</sup></li>
+              <li>
+                <a href="#" id="livestream-link">🔴LIVESTREAM</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="site-header-second-section-right">
+          <a href="#" id="ca-link">CA</a>
+          <span class="separator">·</span>
+          <a href="#">INTL</a>
+        </div>
+      </div>
 
-            <div id="nav-overlay" class="nav-overlay" aria-hidden="true">
-                <div
-                    class="overlay-panel"
-                    role="dialog"
-                    aria-modal="true"
-                    aria-label="navigation menu"
-                >
-                    <div class="overlay-topbar">
-                        <h1 class="site-name">SSDC</h1>
-                        <button
-                            class="overlay-close"
-                            type="button"
-                            aria-label="Close navigation"
-                        >
-                            X
-                        </button>
-                    </div>
-                    <div class="overlay-content" id="overlay-nav-slot"></div>
-                </div>
-            </div>
-        </header>
+      <div id="nav-overlay" class="nav-overlay" aria-hidden="true">
+        <div
+          class="overlay-panel"
+          role="dialog"
+          aria-modal="true"
+          aria-label="navigation menu"
+        >
+          <div class="overlay-topbar">
+            <h1 class="site-name">SSDC</h1>
+            <button
+              class="overlay-close"
+              type="button"
+              aria-label="Close navigation"
+            >
+              X
+            </button>
+          </div>
+          <div class="overlay-content" id="overlay-nav-slot"></div>
+        </div>
+      </div>
+    </header>
 
         <!-- Stock Ticker -->
         <section class="stock-ticker-section">
@@ -619,339 +598,307 @@
             </div>
         </section>
 
-        <section class="quick-links">
-            <span class="quick-link-title">Quick Links</span>
-            <a class="quick-link" href="#headlines">Headlines</a>
-            <a class="quick-link" href="#quotes">Quotes</a>
-            <a class="quick-link" href="#trivias">Trivias</a>
-            <a class="quick-link" href="#markets">Markets</a>
-            <a class="quick-link" href="#volumes">Volumes</a>
-            <a class="quick-link" href="#finance">Finance</a>
-            <a class="quick-link" href="#science">Science</a>
-            <a class="quick-link" href="#stories">Stories</a>
-        </section>
+    <section class="quick-links">
+      <span class="quick-link-title">Quick Links</span>
+      <a class="quick-link" href="#headlines">Headlines</a>
+      <a class="quick-link" href="#quotes">Quotes</a>
+      <a class="quick-link" href="#trivias">Trivias</a>
+      <a class="quick-link" href="#markets">Markets</a>
+      <a class="quick-link" href="#volumes">Volumes</a>
+      <a class="quick-link" href="#finance">Finance</a>
+      <a class="quick-link" href="#science">Science</a>
+      <a class="quick-link" href="#stories">Stories</a>
+    </section>
 
-        <section class="banner" id="headlines" aria-label="Headlines">
-            <div class="auto-track">
-                <div class="banner-slide">
-                    <img
-                        class="auto-slide"
-                        src="../photos/img4.jpg"
-                        alt="Family in front of the house"
-                    />
-                    <div class="slider-headlines">
-                        <h1 class="slider-title">
-                            AI startup Mistral raises $113 million to take on
-                            OpenAI and Anthropic
-                        </h1>
-                        <p class="slider-par">
-                            French company aims to develop open-source AI models
-                        </p>
-                    </div>
+    <section class="banner" id="headlines" aria-label="Headlines">
+      <div class="auto-track">
+        <div class="banner-slide">
+          <img
+            class="auto-slide"
+            src="../photos/img4.jpg"
+            alt="Family in front of the house"
+          />
+          <div class="slider-headlines">
+            <h1 class="slider-title">
+              AI startup Mistral raises $113 million to take on OpenAI and
+              Anthropic
+            </h1>
+            <p class="slider-par">
+              French company aims to develop open-source AI models
+            </p>
+          </div>
+        </div>
+        <div class="banner-slide">
+          <img
+            class="auto-slide"
+            src="../photos/img1.jpg"
+            alt="Mountain view"
+          />
+          <div class="slider-headlines">
+            <h1 class="slider-title">
+              US stocks rise on optimism over economic data
+            </h1>
+            <p class="slider-par">
+              Investors hopeful about upcoming earnings reports
+            </p>
+          </div>
+        </div>
+      </div>
+      <section class="center-banner">
+        <div class="center-section">
+          <div class="center-img">
+            <img class="center-section-img" src="../photos/img5.jpg" alt="" />
+          </div>
+          <h2 class="dek">
+            One year on from the UK’s grand AI plan: Has its infrastructure
+            buildout been a success?
+          </h2>
+        </div>
+        <div class="center-section">
+          <div class="center-img">
+            <img class="center-section-img" src="../photos/img2.jpg" alt="" />
+          </div>
+          <h2 class="dek">
+            Nvidia-Groq deal is structured to keep ‘fiction of competition
+            alive,’ analyst says
+          </h2>
+        </div>
+      </section>
+
+      <section class="news-feed" aria-label="Latest news">
+        <h2 class="news">Latest News</h2>
+        <div class="news-scroll">
+          <ol class="news-list">
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">18 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    ><span class="news-pro">pro</span> Oil edges higher as
+                    traders watch Middle East shipping lanes</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">16 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    >Tech shares rebound after a volatile premarket session</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">14 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    ><span class="news-pro">pro</span> Treasury yields dip as
+                    investors price in softer growth</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">12 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    >Retailers report strong holiday traffic — but margins stay
+                    tight</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">10 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    ><span class="news-club">club</span> Analysts raise price
+                    targets on chipmakers after upbeat guidance</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">9 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    >European markets open mixed as traders digest inflation
+                    data</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">7 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#">
+                    <span class="news-club">club</span> Big banks set aside more
+                    reserves; executives talk 2026 outlook</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">6 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    >Shipping stocks jump after freight rates tick higher</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">5 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    ><span class="news-pro">pro</span> Crypto prices swing as
+                    traders react to risk-on sentiment</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">3 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    ><span class="news-pro">pro</span> Airlines add routes for
+                    spring — demand looks strong</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">2 hours ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    >Futures inch up as investors look ahead to earnings
+                    season</a
+                  >
+                </h3>
+              </div>
+            </li>
+
+            <li class="news-item">
+              <div class="news-meta">
+                <span class="dot" aria-hidden="true"></span>
+                <p class="news-time">1h ago</p>
+                <h3 class="news-title">
+                  <a href="#"
+                    >Market recap: stocks end higher after late-day rally</a
+                  >
+                </h3>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </section>
+
+    <!-- Content River -->
+    <section class="river-wrapper">
+      <div class="content-river">
+        <div class="river-aside">
+          <section class="river-quote-finder" id="quotes" aria-label="Quotes">
+            <div class="quote-finder-search">
+              <h4 class="aside-header">Quote Finder</h4>
+
+              <div class="river-aside-quote-search-container">
+                <div class="river-aside-quote-search">
+                  <input
+                    type="text"
+                    name="quote-search"
+                    id="quote-search"
+                    placeholder="SEARCH"
+                  />
                 </div>
-                <div class="banner-slide">
-                    <img
-                        class="auto-slide"
-                        src="../photos/img1.jpg"
-                        alt="Mountain view"
+                <button type="submit" class="river-aside-search-btn">
+                  <!-- AI generated svg icon for search -->
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
                     />
-                    <div class="slider-headlines">
-                        <h1 class="slider-title">
-                            US stocks rise on optimism over economic data
-                        </h1>
-                        <p class="slider-par">
-                            Investors hopeful about upcoming earnings reports
-                        </p>
-                    </div>
+                  </svg>
+                </button>
+              </div>
+              <!-- end quote search -->
+              <div class="river-aside-popular-quotes">
+                <h4 class="aside-header" id="pop-quotes">Popular quotes</h4>
+                <div class="river-aside-quote">
+                  <div class="aside-quote-left">US10Y</div>
+                  <div class="aside-quote-right">
+                    <div class="aside-quote-right-top">4.17</div>
+                    <div class="neg">-0.02 (-0.38%)</div>
+                  </div>
                 </div>
+                <div class="river-aside-quote highlight">
+                  <div class="aside-quote-left">BTC.CM-</div>
+                  <div class="aside-quote-right">
+                    <div class="aside-quote-right-top">90497.21</div>
+                    <div class="pos">+23.15(0.03%)</div>
+                  </div>
+                </div>
+                <div class="river-aside-quote">
+                  <div class="aside-quote-left">SHW</div>
+                  <div class="aside-quote-right">
+                    <div class="aside-quote-right-top">353.28</div>
+                    <div class="pos">+12.25(3.59%)</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <section class="center-banner">
-                <div class="center-section">
-                    <div class="center-img">
-                        <img
-                            class="center-section-img"
-                            src="../photos/img5.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <h2 class="dek">
-                        One year on from the UK’s grand AI plan: Has its
-                        infrastructure buildout been a success?
-                    </h2>
-                </div>
-                <div class="center-section">
-                    <div class="center-img">
-                        <img
-                            class="center-section-img"
-                            src="../photos/img2.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <h2 class="dek">
-                        Nvidia-Groq deal is structured to keep ‘fiction of
-                        competition alive,’ analyst says
-                    </h2>
-                </div>
-            </section>
+          </section>
 
-            <section class="news-feed" aria-label="Latest news">
-                <h2 class="news">Latest News</h2>
-                <div class="news-scroll">
-                    <ol class="news-list">
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">18 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        ><span class="news-pro">pro</span> Oil
-                                        edges higher as traders watch Middle
-                                        East shipping lanes</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">16 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        >Tech shares rebound after a volatile
-                                        premarket session</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">14 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        ><span class="news-pro">pro</span>
-                                        Treasury yields dip as investors price
-                                        in softer growth</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">12 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        >Retailers report strong holiday traffic
-                                        — but margins stay tight</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">10 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        ><span class="news-club">club</span>
-                                        Analysts raise price targets on
-                                        chipmakers after upbeat guidance</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">9 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        >European markets open mixed as traders
-                                        digest inflation data</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">7 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#">
-                                        <span class="news-club">club</span> Big
-                                        banks set aside more reserves;
-                                        executives talk 2026 outlook</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">6 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        >Shipping stocks jump after freight
-                                        rates tick higher</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">5 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        ><span class="news-pro">pro</span>
-                                        Crypto prices swing as traders react to
-                                        risk-on sentiment</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">3 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        ><span class="news-pro">pro</span>
-                                        Airlines add routes for spring — demand
-                                        looks strong</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">2 hours ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        >Futures inch up as investors look ahead
-                                        to earnings season</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-
-                        <li class="news-item">
-                            <div class="news-meta">
-                                <span class="dot" aria-hidden="true"></span>
-                                <p class="news-time">1h ago</p>
-                                <h3 class="news-title">
-                                    <a href="#"
-                                        >Market recap: stocks end higher after
-                                        late-day rally</a
-                                    >
-                                </h3>
-                            </div>
-                        </li>
-                    </ol>
-                </div>
-            </section>
-        </section>
-
-        <!-- Content River -->
-        <section class="river-wrapper">
-            <div class="content-river">
-                <div class="river-aside">
-                    <section
-                        class="river-quote-finder"
-                        id="quotes"
-                        aria-label="Quotes"
-                    >
-                        <div class="quote-finder-search">
-                            <h4 class="aside-header">Quote Finder</h4>
-
-                            <div class="river-aside-quote-search-container">
-                                <div class="river-aside-quote-search">
-                                    <input
-                                        type="text"
-                                        name="quote-search"
-                                        id="quote-search"
-                                        placeholder="SEARCH"
-                                    />
-                                </div>
-                                <button
-                                    type="submit"
-                                    class="river-aside-search-btn"
-                                >
-                                    <!-- AI generated svg icon for search -->
-                                    <svg
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </button>
-                            </div>
-                            <!-- end quote search -->
-                            <div class="river-aside-popular-quotes">
-                                <h4 class="aside-header" id="pop-quotes">
-                                    Popular quotes
-                                </h4>
-                                <div class="river-aside-quote">
-                                    <div class="aside-quote-left">US10Y</div>
-                                    <div class="aside-quote-right">
-                                        <div class="aside-quote-right-top">
-                                            4.17
-                                        </div>
-                                        <div class="neg">-0.02 (-0.38%)</div>
-                                    </div>
-                                </div>
-                                <div class="river-aside-quote highlight">
-                                    <div class="aside-quote-left">BTC.CM-</div>
-                                    <div class="aside-quote-right">
-                                        <div class="aside-quote-right-top">
-                                            90497.21
-                                        </div>
-                                        <div class="pos">+23.15(0.03%)</div>
-                                    </div>
-                                </div>
-                                <div class="river-aside-quote">
-                                    <div class="aside-quote-left">SHW</div>
-                                    <div class="aside-quote-right">
-                                        <div class="aside-quote-right-top">
-                                            353.28
-                                        </div>
-                                        <div class="pos">+12.25(3.59%)</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="river-market-movers">
-                        <h4 class="aside-header">Market Movers</h4>
-                        <div class="river-market-movers-region-select">
-                            <div><a href="#">US</a></div>
-                            <div><a href="#">EUR</a></div>
-                            <div><a href="#">ASIA</a></div>
-                        </div>
-                        <div class="river-market-movers-top">
-                            <div class="aside-subheader">TOP</div>
+          <section class="river-market-movers">
+            <h4 class="aside-header">Market Movers</h4>
+            <div class="river-market-movers-region-select">
+              <div><a href="#">US</a></div>
+              <div><a href="#">EUR</a></div>
+              <div><a href="#">ASIA</a></div>
+            </div>
+            <div class="river-market-movers-top">
+              <div class="aside-subheader">TOP</div>
 
                             <div class="river-market-movers-tile highlight">
                                 <div class="tile-top-row">
@@ -1323,471 +1270,436 @@
             </div>
         </section>
 
-        <!-- <div class="site-section-separator"></div> -->
-        <section class="market-section" id="markets" aria-label="Markets">
-            <div class="site-section-separator"></div>
-            <h1 class="site-section-title">Markets</h1>
-            <div class="market-section-container">
-                <div class="market-movers">
-                    <div class="m-title">
-                        <h3 class="market-section-subtitle">Market Movers</h3>
-                        <div class="m-title-list">
-                            <ul>
-                                <li>
-                                    <a href="#">S&P </a>
-                                    <a href="#">Nasdaq</a>
-                                    <a href="#">Dow</a>
-                                    <a href="#">EUR</a>
-                                    <a href="#">Asia</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="chart">
-                        <div class="chart-top">
-                            <h4>Top</h4>
-                            <div class="market-item">
-                                <p>apa <span class="plus">+</span></p>
-                                <p class="market-item-name">Apa Corp (US)</p>
-                                <p class="market-green">8.944%</p>
-                                <div class="market-bar">
-                                    <div class="bar"></div>
-                                </div>
-                            </div>
-                            <div class="market-item">
-                                <p>sw <span class="plus">+</span></p>
-                                <p class="market-item-name">Sw Corp</p>
-                                <p class="market-green">8.766%</p>
-                                <div class="market-bar">
-                                    <div class="bar"></div>
-                                </div>
-                            </div>
-                            <div class="market-item">
-                                <p>Lyb <span class="plus">+</span></p>
-                                <p class="market-item-name">LyondellBasell</p>
-                                <p class="market-green">7.393%</p>
-                                <div class="market-bar">
-                                    <div class="bar"></div>
-                                </div>
-                            </div>
-                            <div class="market-item">
-                                <p>bg <span class="plus">+</span></p>
-                                <p class="market-item-name">BG Group</p>
-                                <p class="market-green">7.163%</p>
-                                <div class="market-bar">
-                                    <div class="bar"></div>
-                                </div>
-                            </div>
-                            <div class="market-item">
-                                <p>ip <span class="plus">+</span></p>
-                                <p class="market-item-name">International</p>
-                                <p class="market-green">6.8%</p>
-                                <div class="market-bar">
-                                    <div class="bar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="chart-bottom">
-                            <h4>Bottom</h4>
-                            <div class="market-item">
-                                <p>apa <span class="plus">+</span></p>
-                                <p class="market-item-name">Apa Corp (US)</p>
-                                <p class="market-red">8.944%</p>
-                                <div class="market-bar">
-                                    <div class="red-bar"></div>
-                                </div>
-                            </div>
-                            <div class="market-item">
-                                <p>sw <span class="plus">+</span></p>
-                                <p class="market-item-name">Sw Corp</p>
-                                <p class="market-red">8.766%</p>
-                                <div class="market-bar">
-                                    <div class="red-bar"></div>
-                                </div>
-                            </div>
-                            <div class="market-item">
-                                <p>Lyb <span class="plus">+</span></p>
-                                <p class="market-item-name">LyondellBasell</p>
-                                <p class="market-red">7.393%</p>
-                                <div class="market-bar">
-                                    <div class="red-bar"></div>
-                                </div>
-                            </div>
-                            <div class="market-item">
-                                <p>bg <span class="plus">+</span></p>
-                                <p class="market-item-name">BG Group</p>
-                                <p class="market-red">7.163%</p>
-                                <div class="market-bar">
-                                    <div class="red-bar"></div>
-                                </div>
-                            </div>
-                            <div class="market-item">
-                                <p>ip <span class="plus">+</span></p>
-                                <p class="market-item-name">International</p>
-                                <p class="market-red">6.8%</p>
-                                <div class="market-bar">
-                                    <div class="red-bar"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="market-most-active"
-                    id="active-stocks"
-                    aria-label="Active Stocks"
-                >
-                    <h2 class="market-section-subtitle">Most Active</h2>
-                    <table class="market-table">
-                        <thead>
-                            <tr>
-                                <th>NAME</th>
-                                <th>PRICE</th>
-                                <th>CHG</th>
-                                <th>%CHG</th>
-                                <th>VOL</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>AAPL <a href="#" class="plus">+</a></td>
-                                <td>150.75</td>
-                                <td class="market-green">+1.23</td>
-                                <td class="market-green">+1.25 ▲</td>
-                                <td>100,000</td>
-                            </tr>
-                            <tr>
-                                <td>MSFT <a href="#" class="plus">+</a></td>
-                                <td>210.22</td>
-                                <td class="market-red">-0.34</td>
-                                <td class="market-red">-0.16 ▼</td>
-                                <td>150,000</td>
-                            </tr>
-                            <tr>
-                                <td>GOOGL <a href="#" class="plus">+</a></td>
-                                <td>2,800.12</td>
-                                <td class="market-green">+12.45</td>
-                                <td class="market-green">+0.45 ▲</td>
-                                <td>200,000</td>
-                            </tr>
-                            <tr>
-                                <td>AMZN <a href="#" class="plus">+</a></td>
-                                <td>3,500.23</td>
-                                <td class="market-red">-1.23</td>
-                                <td class="market-red">-0.04 ▼</td>
-                                <td>120,000</td>
-                            </tr>
-                            <tr>
-                                <td>TSLA <a href="#" class="plus">+</a></td>
-                                <td>1,000.50</td>
-                                <td class="market-green">+5.23</td>
-                                <td class="market-green">+0.23 ▲</td>
-                                <td>180,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="market-latest-news">
-                    <h2 class="market-section-subtitle">Latest News</h2>
-                    <div class="market-latest-news-list">
-                        <ul class="market-latest-news-list-items">
-                            <li>
-                                <a href="#">
-                                    <h3 class="news-title">
-                                        <span class="news-live">live</span>Stock
-                                        market crashes after CEO forgets to feed
-                                        his goldfish
-                                    </h3>
-                                </a>
-                                <div class="news-footer">
-                                    <div class="news-date">2 hours ago</div>
-                                    <div class="news-author">
-                                        · Penny Stocks
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <h3 class="news-title">
-                                        <span class="news-club">club</span
-                                        >Analyst predicts Bitcoin will hit $1
-                                        million or $0, definitely one of those
-                                    </h3>
-                                </a>
-                                <div class="news-footer">
-                                    <div class="news-date">5 hours ago</div>
-                                    <div class="news-author">
-                                        · Warren Buffet's Cousin
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <h3 class="news-title">
-                                        <span class="news-pro">pro</span>Fed
-                                        raises interest rates, millennials still
-                                        can't afford avocado toast
-                                    </h3>
-                                </a>
-                                <div class="news-footer">
-                                    <div class="news-date">8 hours ago</div>
-                                    <div class="news-author">· Cash Money</div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <h3 class="news-title">
-                                        <span class="news-live">live</span>Tech
-                                        stocks rally after AI learns to make
-                                        coffee, investors optimistic
-                                    </h3>
-                                </a>
-                                <div class="news-footer">
-                                    <div class="news-date">12 hours ago</div>
-                                    <div class="news-author">· Bull Market</div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <h3 class="news-title">
-                                        <span class="news-pro">pro</span>Wall
-                                        Street in chaos as trader accidentally
-                                        buys 10,000 shares of "STONKS"
-                                    </h3>
-                                </a>
-                                <div class="news-footer">
-                                    <div class="news-date">1 day ago</div>
-                                    <div class="news-author">
-                                        · Diamond Hands
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div
-                    class="market-ususual-volume"
-                    id="volumes"
-                    aria-label="Volumes"
-                >
-                    <h2 class="market-section-subtitle">Ususual Volume</h2>
-                    <table class="market-table">
-                        <thead>
-                            <tr>
-                                <th>NAME</th>
-                                <th>PRICE</th>
-                                <th>CHG</th>
-                                <th>%CHG</th>
-                                <th>X10 DAY VOL</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>NVDA <a href="#" class="plus">+</a></td>
-                                <td>485.67</td>
-                                <td class="market-green">+8.92</td>
-                                <td class="market-green">+1.87 ▲</td>
-                                <td>95,000</td>
-                            </tr>
-                            <tr>
-                                <td>META <a href="#" class="plus">+</a></td>
-                                <td>325.44</td>
-                                <td class="market-red">-2.15</td>
-                                <td class="market-red">-0.66 ▼</td>
-                                <td>125,000</td>
-                            </tr>
-                            <tr>
-                                <td>NFLX <a href="#" class="plus">+</a></td>
-                                <td>425.88</td>
-                                <td class="market-red">-6.34</td>
-                                <td class="market-red">-1.51 ▼</td>
-                                <td>88,000</td>
-                            </tr>
-                            <tr>
-                                <td>JPM <a href="#" class="plus">+</a></td>
-                                <td>142.33</td>
-                                <td class="market-green">+0.87</td>
-                                <td class="market-green">+0.61 ▲</td>
-                                <td>165,000</td>
-                            </tr>
-                            <tr>
-                                <td>AMD <a href="#" class="plus">+</a></td>
-                                <td>128.56</td>
-                                <td class="market-green">+3.21</td>
-                                <td class="market-green">+2.56 ▲</td>
-                                <td>142,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+    <!-- <div class="site-section-separator"></div> -->
+    <section class="market-section" id="markets" aria-label="Markets">
+      <div class="site-section-separator"></div>
+      <h1 class="site-section-title">Markets</h1>
+      <div class="market-section-container">
+        <div class="market-movers">
+          <div class="m-title">
+            <h3 class="market-section-subtitle">Market Movers</h3>
+            <div class="m-title-list">
+              <ul>
+                <li>
+                  <a href="#">S&P </a>
+                  <a href="#">Nasdaq</a>
+                  <a href="#">Dow</a>
+                  <a href="#">EUR</a>
+                  <a href="#">Asia</a>
+                </li>
+              </ul>
             </div>
-        </section>
-
-        <!-- Articles -->
-        <section class="articles" id="finance" aria-label="Finance">
-            <div class="article-section-container">
-                <div class="site-section-separator"></div>
-                <h1 class="site-section-title">Finance</h1>
-                <div class="articles-container">
-                    <article class="news-card primary-article">
-                        <img
-                            src="../images/finance_article_1.png"
-                            alt="A stressed man staring at three monitors showing red stock charts, holding a coffee mug labeled 'Buy the Dip'"
-                        />
-                        <div class="card-content">
-                            <h2 class="article-headline">
-                                <span class="news-pro">Meme Stocks</span>
-                                Local Investor Declares Himself “Long-Term
-                                Holder” After Portfolio Drops 73% Overnight
-                            </h2>
-                            <h3 class="article-excerpt">
-                                After confidently announcing his commitment to
-                                long-term investing last night, a local retail
-                                investor clarified this morning that the
-                                decision was made entirely because selling now
-                                would “lock in the pain.”
-                            </h3>
-                            <p class="article-body">
-                                Local retail investor Jason M. officially
-                                rebranded himself as a “long-term holder”
-                                Tuesday night after watching his portfolio lose
-                                73% of its value in a single session. “I believe
-                                in the fundamentals now,” Jason said, clarifying
-                                that this belief formed immediately after
-                                selling would have required him to emotionally
-                                process the loss. “It’s only unrealized if I
-                                don’t look at it.” The portfolio—once labeled
-                                “high conviction”—includes meme stocks,
-                                speculative AI plays, and a cryptocurrency Jason
-                                admits he bought “because the logo was cool.” At
-                                press time, Jason confirmed plans to average
-                                down with his remaining $42, confidently
-                                stating, “This is definitely the bottom.”
-                            </p>
-                            <div class="news-footer">
-                                <span class="news-author"
-                                    >Maxwell "Bull Trap" Ledger</span
-                                >
-                                <span class="news-date">January 8, 2026</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="news-card secondary-article">
-                        <img
-                            src="../images/finance_article_2.jpg"
-                            alt="A blurred photo of a suited official staring thoughtfully at charts"
-                        />
-                        <div class="card-content">
-                            <h2 class="article-headline">
-                                Federal Reserve Confirms Rate Decision Based on
-                                “Vibes, Gut Feelings, and One Very Strong
-                                Coffee”
-                            </h2>
-                            <span class="news-club">Investor Confusion</span>
-                            <p class="article-body">
-                                The Federal Reserve confirmed Wednesday that its
-                                most recent interest rate decision was reached
-                                after extensive analysis of economic indicators,
-                                followed by a quick check of market vibes. “We
-                                reviewed inflation data, employment numbers, and
-                                then asked ourselves how we felt about it,” said
-                                one official, speaking on condition of anonymity
-                                while aggressively stirring a latte. “It just
-                                didn’t feel like a cut kind of day.” Markets
-                                initially rallied on hopes of clarity before
-                                reversing sharply when investors realized no one
-                                was entirely sure what the statement meant.
-                                Analysts described the guidance as “cautiously
-                                optimistic, but emotionally noncommittal.” At
-                                press time, the Fed reiterated that future
-                                decisions will remain “data-dependent,”
-                                clarifying that the data includes charts,
-                                forecasts, and “whatever everyone’s talking
-                                about that week.”
-                            </p>
-                            <div class="news-footer">
-                                <span class="news-author"
-                                    >Olivia Margin-Call</span
-                                >
-                                <span class="news-date">January 7, 2026</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="news-card">
-                        <img
-                            src="../images/finance_article_3.jpg"
-                            alt="A trader staring blankly at a screen filled with red charts while a phone notification reads: “Your alert has triggered again.”"
-                        />
-                        <div class="card-content content-small">
-                            <h2 class="article-headline headline-small">
-                                Markets React Poorly
-                            </h2>
-                            <span class="news-club">Stock Sell-Off</span>
-                            <h3 class="article-excerpt">
-                                Global markets moved sharply today after
-                                investors collectively decided they did not like
-                                what they were seeing.
-                            </h3>
-                            <div class="news-footer">
-                                <span class="news-author">Evan Stop-Loss</span>
-                                <span class="news-date">January 6, 2026</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="news-card">
-                        <img
-                            src="../images/finance_article_4.jpg"
-                            alt="A digital display of plummeting cryptocurrency prices, with a person facepalming in front of multiple monitors."
-                        />
-                        <div class="card-content content-small">
-                            <h2 class="article-headline headline-small">
-                                Crypto Melts Again
-                            </h2>
-                            <span class="news-pro">Cryptocurrency</span>
-                            <h3 class="article-excerpt">
-                                After a brief rally, cryptocurrency prices
-                                plunged again, leaving investors questioning
-                                both the market and their life choices.
-                            </h3>
-                            <div class="news-footer">
-                                <span class="news-author"
-                                    >Samantha Cashflow</span
-                                >
-                                <span class="news-date">January 8, 2026</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="news-card">
-                        <img
-                            src="../images/finance_article_5.jpg"
-                            alt="An office desk cluttered with financial reports literally piled high, with a stressed trader holding one in their hands and looking overwhelmed."
-                        />
-                        <div class="card-content content-small">
-                            <h2 class="article-headline headline-small">
-                                Wall Street Eats Its Own Reports
-                            </h2>
-                            <span class="news-club">Investor Confusion</span>
-                            <h3 class="article-excerpt">
-                                After a week of confusing guidance and
-                                conflicting data, Wall Street analysts have
-                                reportedly started ignoring their own
-                                reports—literally.
-                            </h3>
-                            <div class="news-footer">
-                                <span class="news-author"
-                                    >Derek Margincall</span
-                                >
-                                <span class="news-date">January 8, 2026</span>
-                            </div>
-                        </div>
-                    </article>
+          </div>
+          <div class="chart">
+            <div class="chart-top">
+              <h4>Top</h4>
+              <div class="market-item">
+                <p>apa <span class="plus">+</span></p>
+                <p class="market-item-name">Apa Corp (US)</p>
+                <p class="market-green">8.944%</p>
+                <div class="market-bar">
+                  <div class="bar"></div>
                 </div>
+              </div>
+              <div class="market-item">
+                <p>sw <span class="plus">+</span></p>
+                <p class="market-item-name">Sw Corp</p>
+                <p class="market-green">8.766%</p>
+                <div class="market-bar">
+                  <div class="bar"></div>
+                </div>
+              </div>
+              <div class="market-item">
+                <p>Lyb <span class="plus">+</span></p>
+                <p class="market-item-name">LyondellBasell</p>
+                <p class="market-green">7.393%</p>
+                <div class="market-bar">
+                  <div class="bar"></div>
+                </div>
+              </div>
+              <div class="market-item">
+                <p>bg <span class="plus">+</span></p>
+                <p class="market-item-name">BG Group</p>
+                <p class="market-green">7.163%</p>
+                <div class="market-bar">
+                  <div class="bar"></div>
+                </div>
+              </div>
+              <div class="market-item">
+                <p>ip <span class="plus">+</span></p>
+                <p class="market-item-name">International</p>
+                <p class="market-green">6.8%</p>
+                <div class="market-bar">
+                  <div class="bar"></div>
+                </div>
+              </div>
             </div>
-        </section>
+            <div class="chart-bottom">
+              <h4>Bottom</h4>
+              <div class="market-item">
+                <p>apa <span class="plus">+</span></p>
+                <p class="market-item-name">Apa Corp (US)</p>
+                <p class="market-red">8.944%</p>
+                <div class="market-bar">
+                  <div class="red-bar"></div>
+                </div>
+              </div>
+              <div class="market-item">
+                <p>sw <span class="plus">+</span></p>
+                <p class="market-item-name">Sw Corp</p>
+                <p class="market-red">8.766%</p>
+                <div class="market-bar">
+                  <div class="red-bar"></div>
+                </div>
+              </div>
+              <div class="market-item">
+                <p>Lyb <span class="plus">+</span></p>
+                <p class="market-item-name">LyondellBasell</p>
+                <p class="market-red">7.393%</p>
+                <div class="market-bar">
+                  <div class="red-bar"></div>
+                </div>
+              </div>
+              <div class="market-item">
+                <p>bg <span class="plus">+</span></p>
+                <p class="market-item-name">BG Group</p>
+                <p class="market-red">7.163%</p>
+                <div class="market-bar">
+                  <div class="red-bar"></div>
+                </div>
+              </div>
+              <div class="market-item">
+                <p>ip <span class="plus">+</span></p>
+                <p class="market-item-name">International</p>
+                <p class="market-red">6.8%</p>
+                <div class="market-bar">
+                  <div class="red-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="market-most-active"
+          id="active-stocks"
+          aria-label="Active Stocks"
+        >
+          <h2 class="market-section-subtitle">Most Active</h2>
+          <table class="market-table">
+            <thead>
+              <tr>
+                <th>NAME</th>
+                <th>PRICE</th>
+                <th>CHG</th>
+                <th>%CHG</th>
+                <th>VOL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>AAPL <a href="#" class="plus">+</a></td>
+                <td>150.75</td>
+                <td class="market-green">+1.23</td>
+                <td class="market-green">+1.25 ▲</td>
+                <td>100,000</td>
+              </tr>
+              <tr>
+                <td>MSFT <a href="#" class="plus">+</a></td>
+                <td>210.22</td>
+                <td class="market-red">-0.34</td>
+                <td class="market-red">-0.16 ▼</td>
+                <td>150,000</td>
+              </tr>
+              <tr>
+                <td>GOOGL <a href="#" class="plus">+</a></td>
+                <td>2,800.12</td>
+                <td class="market-green">+12.45</td>
+                <td class="market-green">+0.45 ▲</td>
+                <td>200,000</td>
+              </tr>
+              <tr>
+                <td>AMZN <a href="#" class="plus">+</a></td>
+                <td>3,500.23</td>
+                <td class="market-red">-1.23</td>
+                <td class="market-red">-0.04 ▼</td>
+                <td>120,000</td>
+              </tr>
+              <tr>
+                <td>TSLA <a href="#" class="plus">+</a></td>
+                <td>1,000.50</td>
+                <td class="market-green">+5.23</td>
+                <td class="market-green">+0.23 ▲</td>
+                <td>180,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="market-latest-news">
+          <h2 class="market-section-subtitle">Latest News</h2>
+          <div class="market-latest-news-list">
+            <ul class="market-latest-news-list-items">
+              <li>
+                <a href="#">
+                  <h3 class="news-title">
+                    <span class="news-live">live</span>Stock market crashes
+                    after CEO forgets to feed his goldfish
+                  </h3>
+                </a>
+                <div class="news-footer">
+                  <div class="news-date">2 hours ago</div>
+                  <div class="news-author">· Penny Stocks</div>
+                </div>
+              </li>
+              <li>
+                <a href="#">
+                  <h3 class="news-title">
+                    <span class="news-club">club</span>Analyst predicts Bitcoin
+                    will hit $1 million or $0, definitely one of those
+                  </h3>
+                </a>
+                <div class="news-footer">
+                  <div class="news-date">5 hours ago</div>
+                  <div class="news-author">· Warren Buffet's Cousin</div>
+                </div>
+              </li>
+              <li>
+                <a href="#">
+                  <h3 class="news-title">
+                    <span class="news-pro">pro</span>Fed raises interest rates,
+                    millennials still can't afford avocado toast
+                  </h3>
+                </a>
+                <div class="news-footer">
+                  <div class="news-date">8 hours ago</div>
+                  <div class="news-author">· Cash Money</div>
+                </div>
+              </li>
+              <li>
+                <a href="#">
+                  <h3 class="news-title">
+                    <span class="news-live">live</span>Tech stocks rally after
+                    AI learns to make coffee, investors optimistic
+                  </h3>
+                </a>
+                <div class="news-footer">
+                  <div class="news-date">12 hours ago</div>
+                  <div class="news-author">· Bull Market</div>
+                </div>
+              </li>
+              <li>
+                <a href="#">
+                  <h3 class="news-title">
+                    <span class="news-pro">pro</span>Wall Street in chaos as
+                    trader accidentally buys 10,000 shares of "STONKS"
+                  </h3>
+                </a>
+                <div class="news-footer">
+                  <div class="news-date">1 day ago</div>
+                  <div class="news-author">· Diamond Hands</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="market-ususual-volume" id="volumes" aria-label="Volumes">
+          <h2 class="market-section-subtitle">Ususual Volume</h2>
+          <table class="market-table">
+            <thead>
+              <tr>
+                <th>NAME</th>
+                <th>PRICE</th>
+                <th>CHG</th>
+                <th>%CHG</th>
+                <th>X10 DAY VOL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>NVDA <a href="#" class="plus">+</a></td>
+                <td>485.67</td>
+                <td class="market-green">+8.92</td>
+                <td class="market-green">+1.87 ▲</td>
+                <td>95,000</td>
+              </tr>
+              <tr>
+                <td>META <a href="#" class="plus">+</a></td>
+                <td>325.44</td>
+                <td class="market-red">-2.15</td>
+                <td class="market-red">-0.66 ▼</td>
+                <td>125,000</td>
+              </tr>
+              <tr>
+                <td>NFLX <a href="#" class="plus">+</a></td>
+                <td>425.88</td>
+                <td class="market-red">-6.34</td>
+                <td class="market-red">-1.51 ▼</td>
+                <td>88,000</td>
+              </tr>
+              <tr>
+                <td>JPM <a href="#" class="plus">+</a></td>
+                <td>142.33</td>
+                <td class="market-green">+0.87</td>
+                <td class="market-green">+0.61 ▲</td>
+                <td>165,000</td>
+              </tr>
+              <tr>
+                <td>AMD <a href="#" class="plus">+</a></td>
+                <td>128.56</td>
+                <td class="market-green">+3.21</td>
+                <td class="market-green">+2.56 ▲</td>
+                <td>142,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles -->
+    <section class="articles" id="finance" aria-label="Finance">
+      <div class="article-section-container">
+        <div class="site-section-separator"></div>
+        <h1 class="site-section-title">Finance</h1>
+        <div class="articles-container">
+          <article class="news-card primary-article">
+            <img
+              src="../images/finance_article_1.png"
+              alt="A stressed man staring at three monitors showing red stock charts, holding a coffee mug labeled 'Buy the Dip'"
+            />
+            <div class="card-content">
+              <h2 class="article-headline">
+                <span class="news-pro">Meme Stocks</span>
+                Local Investor Declares Himself “Long-Term Holder” After
+                Portfolio Drops 73% Overnight
+              </h2>
+              <h3 class="article-excerpt">
+                After confidently announcing his commitment to long-term
+                investing last night, a local retail investor clarified this
+                morning that the decision was made entirely because selling now
+                would “lock in the pain.”
+              </h3>
+              <p class="article-body">
+                Local retail investor Jason M. officially rebranded himself as a
+                “long-term holder” Tuesday night after watching his portfolio
+                lose 73% of its value in a single session. “I believe in the
+                fundamentals now,” Jason said, clarifying that this belief
+                formed immediately after selling would have required him to
+                emotionally process the loss. “It’s only unrealized if I don’t
+                look at it.” The portfolio—once labeled “high
+                conviction”—includes meme stocks, speculative AI plays, and a
+                cryptocurrency Jason admits he bought “because the logo was
+                cool.” At press time, Jason confirmed plans to average down with
+                his remaining $42, confidently stating, “This is definitely the
+                bottom.”
+              </p>
+              <div class="news-footer">
+                <span class="news-author">Maxwell "Bull Trap" Ledger</span>
+                <span class="news-date">January 8, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="news-card secondary-article">
+            <img
+              src="../images/finance_article_2.jpg"
+              alt="A blurred photo of a suited official staring thoughtfully at charts"
+            />
+            <div class="card-content">
+              <h2 class="article-headline">
+                Federal Reserve Confirms Rate Decision Based on “Vibes, Gut
+                Feelings, and One Very Strong Coffee”
+              </h2>
+              <span class="news-club">Investor Confusion</span>
+              <p class="article-body">
+                The Federal Reserve confirmed Wednesday that its most recent
+                interest rate decision was reached after extensive analysis of
+                economic indicators, followed by a quick check of market vibes.
+                “We reviewed inflation data, employment numbers, and then asked
+                ourselves how we felt about it,” said one official, speaking on
+                condition of anonymity while aggressively stirring a latte. “It
+                just didn’t feel like a cut kind of day.” Markets initially
+                rallied on hopes of clarity before reversing sharply when
+                investors realized no one was entirely sure what the statement
+                meant. Analysts described the guidance as “cautiously
+                optimistic, but emotionally noncommittal.” At press time, the
+                Fed reiterated that future decisions will remain
+                “data-dependent,” clarifying that the data includes charts,
+                forecasts, and “whatever everyone’s talking about that week.”
+              </p>
+              <div class="news-footer">
+                <span class="news-author">Olivia Margin-Call</span>
+                <span class="news-date">January 7, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img
+              src="../images/finance_article_3.jpg"
+              alt="A trader staring blankly at a screen filled with red charts while a phone notification reads: “Your alert has triggered again.”"
+            />
+            <div class="card-content content-small">
+              <h2 class="article-headline headline-small">
+                Markets React Poorly
+              </h2>
+              <span class="news-club">Stock Sell-Off</span>
+              <h3 class="article-excerpt">
+                Global markets moved sharply today after investors collectively
+                decided they did not like what they were seeing.
+              </h3>
+              <div class="news-footer">
+                <span class="news-author">Evan Stop-Loss</span>
+                <span class="news-date">January 6, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img
+              src="../images/finance_article_4.jpg"
+              alt="A digital display of plummeting cryptocurrency prices, with a person facepalming in front of multiple monitors."
+            />
+            <div class="card-content content-small">
+              <h2 class="article-headline headline-small">
+                Crypto Melts Again
+              </h2>
+              <span class="news-pro">Cryptocurrency</span>
+              <h3 class="article-excerpt">
+                After a brief rally, cryptocurrency prices plunged again,
+                leaving investors questioning both the market and their life
+                choices.
+              </h3>
+              <div class="news-footer">
+                <span class="news-author">Samantha Cashflow</span>
+                <span class="news-date">January 8, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img
+              src="../images/finance_article_5.jpg"
+              alt="An office desk cluttered with financial reports literally piled high, with a stressed trader holding one in their hands and looking overwhelmed."
+            />
+            <div class="card-content content-small">
+              <h2 class="article-headline headline-small">
+                Wall Street Eats Its Own Reports
+              </h2>
+              <span class="news-club">Investor Confusion</span>
+              <h3 class="article-excerpt">
+                After a week of confusing guidance and conflicting data, Wall
+                Street analysts have reportedly started ignoring their own
+                reports—literally.
+              </h3>
+              <div class="news-footer">
+                <span class="news-author">Derek Margincall</span>
+                <span class="news-date">January 8, 2026</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
         <section class="section-science" id="science" aria-label="Science">
             <div class="site-section-separator"></div>
