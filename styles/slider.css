@@ -351,6 +351,7 @@
   letter-spacing: 2px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
   padding: 0 2rem;
@@ -379,7 +380,7 @@
 /* Market Charts & Bars */
 .chart{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   gap: 2rem;
 }
@@ -393,7 +394,7 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: clamp(0.7rem, 0.5vw + 0.5rem, 0.9rem);
-}
+} 
 
 .market-item{
   display: grid;
@@ -455,6 +456,21 @@
   line-height: 1rem;
 }
 
+@media (max-width: 900px) {
+  .market-movers{
+    min-width: 460px;
+  }
+  .chart{
+    flex-direction: column;
+    min-width: 460px;
+  }
+}
+
+@media (max-width: 675px) {
+  .m-title-list{
+    display: none;
+  }
+}
 /*--------------------------------------------------------------
 # Main Article Section
 --------------------------------------------------------------*/
