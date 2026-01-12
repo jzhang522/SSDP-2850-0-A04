@@ -2,16 +2,29 @@
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Base
-    - Css variable
-	- Typography
+    - CSS Variables
+    - Typography
 # Components
     - Header
-    - Hero
-    - Card
-	- Footer
-# Effects
-    - Overlay
-    - animation
+    - Stock Ticker
+    - Quick Links
+    - River
+        - River Aside (Left)
+        - River Stories (Mid)
+        - River Ads (Right)
+        - River Responsiveness
+    - Market Section
+    - Articles
+        - Article Cards
+    - Footer
+        - Footer Logo/Socials
+        - Footer Social Media Links
+        - Footer Nav/Links/Lists
+        - Footer Call-to-Action
+        - Footer Legal Links/Copyright
+        - Footer Responsiveness
+# Functions
+    - Scroll Behavior
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
