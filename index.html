@@ -4,10 +4,224 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio-project</title>
+    <title>SSDC Portfolio</title>
   </head>
   <body>
-    <div id="app"></div>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="site-header-first-section">
+        <h1 class="site-name">SSDC</h1>
+        <div class="site-header-first-section-right">
+          <search>
+            <form
+              action=""
+              method="GET"
+              class="header-search-form"
+              id="header-search-form"
+            >
+              <input
+                type="search"
+                id="header-search"
+                name="header-search"
+                placeholder="Search quotes, news & videos"
+              />
+              <button
+                type="submit"
+                aria-label="Search"
+                class="header-search-button"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </form>
+          </search>
+          <a href="#" id="watchlist-link">WATCHLIST 🔔</a>
+          <span class="separator">|</span>
+          <a href="#" id="sign-in-link">SIGN IN</a>
+          <a href="#" id="sign-up-link">CREATE NEW ACCOUNT</a>
+          <button
+            class="hamburger-menu"
+            id="mobile-menu-button"
+            aria-label="Open mobile navigation"
+            aria-controls="nav-overlay-mobile"
+            aria-expanded="false"
+          >
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect y="6" width="25" height="3" rx="1.5" fill="currentColor"/>
+              <rect y="13.5" width="25" height="3" rx="1.5" fill="currentColor"/>
+              <rect y="21" width="25" height="3" rx="1.5" fill="currentColor"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="site-header-second-section">
+        <div class="site-header-second-section-left">
+          <button
+            class="hamburger-menu"
+            aria-label="Open desktop navigation"
+            id="desktop-menu-button"
+            aria-controls="nav-overlay-desktop"
+            aria-expanded="false"
+          >
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <rect y="6" width="25" height="3" rx="1.5" fill="currentColor"/>
+              <rect y="13.5" width="25" height="3" rx="1.5" fill="currentColor"/>
+              <rect y="21" width="25" height="3" rx="1.5" fill="currentColor"/>
+            </svg>
+          </button>
+          <nav id="site-nav" class="site-nav" aria-label="Main-navigation">
+            <ul class="nav-list">
+              <li><a href="#headlines">HEADLINES</a></li>
+              <li><a href="#quotes">QUOTES</a></li>
+              <li><a href="#trivias">TRIVIAS</a></li>
+              <li><a href="#markets">MARKETS</a></li>
+              <li><a href="#volumes">VOLUMES</a></li>
+              <li><a href="#finance">FINANCE</a></li>
+              <li><a href="#science">SCIENCE</a></li>
+              <li><a href="#stories">STORIES</a></li>
+              <li><a href="#">PRO</a><sup class="join-link">JOIN</sup></li>
+              <li><a href="#" id="livestream-link">🔴LIVESTREAM</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="site-header-second-section-right">
+          <a href="#" id="ca-link">CA</a>
+          <span class="separator">·</span>
+          <a href="#">INTL</a>
+        </div>
+      </div>
+
+      <div id="nav-overlay" class="nav-overlay" aria-hidden="true">
+        <div class="overlay-panel" role="dialog" aria-modal="true" aria-label="navigation menu">
+          <div class="overlay-topbar">
+            <h1 class="site-name">SSDC</h1>
+            <button class="overlay-close" type="button" aria-label="Close navigation">X</button>
+          </div>
+          <div class="overlay-content" id="overlay-nav-slot"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Stock Ticker Section -->
+    <section class="stock-ticker-section">
+      <!-- Put your tickers HTML here, paths updated to /photos/... -->
+      <div class="stock-ticker-container">
+        <div class="stock-tickers">
+          <div class="tickers">
+            <a href="#" class="ticker-container">
+              <div class="stock-info">
+                <div class="stock-name">Apple</div>
+                <div class="stock-price">$172.45</div>
+              </div>
+              <div class="stock-stats">
+                <div class="stock-change">▲</div>
+                <div class="stock-change-value">
+                  <div class="stock-change-amount">+10.00</div>
+                  <div class="stock-change-percentage">1.25%</div>
+                </div>
+              </div>
+              <div class="ticker-date">LAST | 12/24/2025</div>
+            </a>
+            <!-- Add the rest of tickers here as before -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+      <span class="quick-link-title">Quick Links</span>
+      <a class="quick-link" href="#headlines">Headlines</a>
+      <a class="quick-link" href="#quotes">Quotes</a>
+      <a class="quick-link" href="#trivias">Trivias</a>
+      <a class="quick-link" href="#markets">Markets</a>
+      <a class="quick-link" href="#volumes">Volumes</a>
+      <a class="quick-link" href="#finance">Finance</a>
+      <a class="quick-link" href="#science">Science</a>
+      <a class="quick-link" href="#stories">Stories</a>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="banner" id="headlines" aria-label="Headlines">
+      <div class="auto-track">
+        <div class="banner-slide">
+          <img class="auto-slide" src="/photos/img4.jpg" alt="Family in front of the house" />
+          <div class="slider-headlines">
+            <h1 class="slider-title">
+              AI startup Mistral raises $113 million to take on OpenAI and Anthropic
+            </h1>
+            <p class="slider-par">French company aims to develop open-source AI models</p>
+          </div>
+        </div>
+        <div class="banner-slide">
+          <img class="auto-slide" src="/photos/img1.jpg" alt="Mountain view" />
+          <div class="slider-headlines">
+            <h1 class="slider-title">
+              US stocks rise on optimism over economic data
+            </h1>
+            <p class="slider-par">Investors hopeful about upcoming earnings reports</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Science & Stories Sections -->
+    <section class="section-science" id="science" aria-label="Science">
+      <div class="site-section-separator"></div>
+      <h1 class="site-section-title">Science</h1>
+      <section class="main-article">
+        <div class="hero-article">
+          <h3>
+            YOUTH AND AI<br />SEARCHING FOR HOPE<br />IN A LOUD WORLD
+          </h3>
+          <p>By Future Minds Journal</p>
+        </div>
+      </section>
+      <div class="science-header">
+        <span class="arrow-icon">▼</span>
+        <h2>Read our Top Stories from Future Minds Journal</h2>
+      </div>
+      <section class="science" id="stories" aria-label="Stories">
+        <div id="science-content" class="science-articles">
+          <article class="science-part">
+            <img src="/photos/pexels-vantik93-12197326.jpg" alt="" />
+            <span class="news-pro" id="education-tag">Education</span>
+            <h2 class="article-title">How AI is reshaping education for the next generation</h2>
+            <p class="article-lead">
+              Exploring the transformative impact of artificial intelligence on learning experiences worldwide.
+            </p>
+            <p class="article-body">
+              In recent years, artificial intelligence (AI) has emerged as a powerful tool in various sectors, and education is no exception. The integration of AI technologies into educational settings is revolutionizing the way students learn and teachers instruct. From personalized learning experiences to intelligent tutoring systems, AI is reshaping the educational landscape in profound ways.
+            </p>
+          </article>
+          <!-- Add the second article here similarly -->
+        </div>
+      </section>
+    </section>
+
+    <!-- Main JS -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
